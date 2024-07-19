@@ -1,0 +1,25 @@
+/* Comments */
+
+.header .cart-menu {
+   position: absolute;
+   z-index: 150;
+   bottom: 0;
+   right: calc(50% - 575px);
+   /* right: 0; */
+}
+
+.swiper {
+   overflow: visible;
+}
+
+@media(max-width:1200px) {
+   .header .cart-menu {
+      right: calc(50% - calc(358px + (575 - 358) * ((100vw - 768px) / (1200 - 768))));
+   }
+}
+
+@media(max-width:768px) {
+   .header .cart-menu {
+      right: calc(50% - calc(172px + (358 - 172) * ((100vw - 360px) / (768 - 360))));
+   }
+}

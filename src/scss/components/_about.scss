@@ -1,0 +1,192 @@
+.about-page {
+   .hero {
+      padding-top: 0;
+      background-image: url("../images/about-us/hero/bg_img.png");
+      height: 49.2rem;
+      background-position: center center;
+
+      &__container {
+         position: relative;
+      }
+
+      &__title {
+         font-size: 9.6rem;
+         font-weight: 400;
+         color: #fff;
+         /* margin-left: 25.5rem; */
+         text-transform: uppercase;
+         position: absolute;
+         left: 25.5rem;
+         top: 18.3rem;
+      }
+
+      &__text {
+         font-size: 4.8rem;
+         color: rgba(241, 201, 165, 0.48);
+         font-weight: 400;
+         text-transform: uppercase;
+         position: absolute;
+         top: 17.8rem;
+         left: 0;
+      }
+   }
+
+   .corner {
+      background-color: $project-bg;
+      padding-top: 7.4rem;
+      padding-bottom: 12rem;
+
+      &__info {
+         padding: 6rem 500px 43px 102px;
+         border-radius: 10px;
+         /* padding-right: 30px; */
+         width: 100%;
+         background-color: rgba(241, 201, 165, 0.6);
+      }
+
+      &__text {
+         position: relative;
+         p {
+            font-size: 18px;
+            line-height: 140%;
+            color: #8b4513;
+         }
+
+         p ~ p {
+            margin-top: 28px;
+         }
+      }
+
+      &__img {
+         position: absolute;
+         overflow: hidden;
+         right: -875px;
+         top: 0;
+         /* margin-right: -44rem; */
+         width: 845px;
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+
+         img {
+            position: relative;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+         }
+      }
+   }
+}
+
+@media (max-width: 1920px) {
+   .about-page {
+      .corner {
+         overflow: hidden;
+         &__img {
+            img {
+               right: calc(360px + (0 - 360) * ((100vw - 1200px) / (1920 - 1200)));
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   .about-page {
+      .hero {
+         height: calc(300px + (492 - 300) * ((100vw - 360px) / (1200 - 360)));
+         &__title {
+            font-size: calc(34px + (96 - 34) * ((100vw - 360px) / (1200 - 360)));
+            left: calc(102px + (255 - 102) * ((100vw - 360px) / (1200 - 360)));
+            top: calc(252px + (183 - 252) * ((100vw - 360px) / (1200 - 360)));
+         }
+
+         &__text {
+            font-size: calc(24px + (48 - 24) * ((100vw - 360px) / (1200 - 360)));
+            left: calc(20px + (0 - 20) * ((100vw - 360px) / (1200 - 360)));
+            top: calc(235px + (178 - 235) * ((100vw - 360px) / (1200 - 360)));
+         }
+      }
+      .corner {
+         &__info {
+            padding-left: calc(20px + (102 - 20) * ((100vw - 768px) / (1200 - 768)));
+            padding-right: calc(360px + (500 - 360) * ((100vw - 768px) / (1200 - 768)));
+         }
+
+         &__text {
+            p {
+               font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
+            }
+
+            p ~ p {
+               margin-top: calc(25px + (28 - 25) * ((100vw - 768px) / (1200 - 768)));
+            }
+         }
+
+         &__img {
+            right: calc(-860px + (-875 - -860) * ((100vw - 768px) / (1200 - 768)));
+            img {
+               border-radius: 10px;
+               right: calc(520px + (360 - 520) * ((100vw - 768px) / (1200 - 768)));
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .about-page {
+      .corner {
+         &__info {
+            padding-right: 20px;
+            padding-left: 20px;
+         }
+         &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+         &__img {
+            position: static;
+            width: 100%;
+            margin-top: 30px;
+
+            img {
+               position: static;
+               width: 100%;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   .about-page {
+      .corner {
+         padding-top: 0;
+         padding-bottom: 0;
+         &__container {
+            padding-left: 0;
+            padding-right: 0;
+         }
+
+         &__info {
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+         }
+
+         &__text p {
+            padding-left: 20px;
+            padding-right: 20px;
+         }
+
+         &__img {
+            border-radius: 0;
+            img {
+               border-radius: 0;
+            }
+         }
+      }
+   }
+}

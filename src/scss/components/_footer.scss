@@ -1,0 +1,187 @@
+.footer {
+   margin: 0 auto;
+   /* background-color: rgb(241, 201, 165); */
+
+   /* Поднимаем слой, чтобы выпадающее из него меню выходило поверх текста блока hero */
+   position: relative;
+   z-index: 50;
+   /* Цвет имитируется в &-copy */
+   background-color: rgba(241, 201, 165, 0);
+
+   &-copy {
+      position: absolute;
+      /* Без следующей строки этот блок будет иметь начало */
+      /* как и у контейнера, а не у левой границы экрана */
+      left: 0;
+      pointer-events: none;
+      margin: 0 auto;
+      width: 100%;
+      height: calc(100% + 20px);
+      /* height: calc(100%); */
+      /* Имитируем цвет header-а */
+      background-color: rgba(241, 201, 165, 1);
+      /* Если z-index будет больше, чем у контейнера, то этот блок закроет содержимое контейнера header-а */
+      z-index: -3;
+   }
+
+   &__drop--cover {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 100%;
+      height: calc(100% + 300px);
+      background-color: rgba(0, 0, 0, 0);
+      pointer-events: none;
+      z-index: -5;
+      overflow: hidden;
+   }
+
+   &__container {
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 4.7rem;
+      padding-bottom: 4.7rem;
+   }
+
+   & .drop__consult {
+      position: absolute;
+      pointer-events: all;
+      /* top: 0px; */
+      top: 0px;
+      width: 230px;
+      /* max-height: 274px; */
+      padding: 20px 20px 27px;
+      background-color: #F1C9A5;
+      border: .5px solid rgba(139, 69, 19, .3);
+      line-height: 23px;
+
+
+      /* В этом блоке отличия от хедера */
+      /* left: 33%; */
+      left: calc(50% - 21rem);
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+
+      transition: transform .5s;
+      z-index: -11;
+
+      &__menu {
+         width: 100%;
+      }
+
+      &__item {
+         display: block;
+         width: calc(100% + 40px);
+         margin-left: -20px;
+
+         &:hover {
+            background-color: #F2E8DE;
+            cursor: pointer;
+         }
+      }
+
+      &__item~&__item {
+         margin-top: 8px;
+      }
+
+      &__item:first-child {
+         padding-bottom: 0px;
+         border-bottom: #8B4513 2px solid;
+
+         & a {
+            font-size: 16px;
+         }
+      }
+
+      &__anchor {
+         font-size: 14px;
+         font-weight: 500;
+         color: #8B4513;
+         margin-left: 20px;
+      }
+   }
+
+   & .drop__artifacts {
+      position: absolute;
+      pointer-events: all;
+      top: 0;
+      width: 230px;
+      /* max-height: 274px; */
+      padding: 20px 20px 27px;
+      background-color: #F1C9A5;
+      border: .5px solid rgba(139, 69, 19, .3);
+      line-height: 23px;
+
+      /* В этом блоке отличия от хедера */
+      /* left: 45%; */
+      left: calc(50% - 7rem);
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      transition: transform .5s;
+      z-index: -11;
+
+      &__menu {
+         width: 100%;
+      }
+
+      &__item {
+         display: block;
+         width: calc(100% + 40px);
+         margin-left: -20px;
+
+         &:hover {
+            background-color: #F2E8DE;
+            cursor: pointer;
+         }
+      }
+
+      &__item~&__item {
+         margin-top: 8px;
+      }
+
+      &__item:first-child {
+         padding-bottom: 0px;
+         border-bottom: #8B4513 2px solid;
+
+         & a {
+            font-size: 16px;
+         }
+      }
+
+      &__anchor {
+         font-size: 14px;
+         font-weight: 500;
+         color: #8B4513;
+         margin-left: 20px;
+      }
+   }
+
+   & .drop__hidden {
+      /* В этом блоке отличия от хедера */
+      transform: translateY(calc(100% + 10px));
+   }
+
+   & .drop__shown {
+      /* В этом блоке отличия от хедера */
+      transform: translateY(10px);
+   }
+
+   &__copyright {
+      color: #8B4513;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2.0rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+   }
+}
+
+@media(max-width:768px) {
+
+   .footer {
+      &__container {
+         justify-content: center;
+      }
+   }
+}

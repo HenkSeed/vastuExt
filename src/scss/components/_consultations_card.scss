@@ -1,0 +1,892 @@
+.consultations-card {
+   .hero {
+      background-image: url('../images/consultations_card/hero/bg_img.png');
+      height: 49.2rem;
+
+      &__container {
+         position: relative;
+      }
+
+      &__title {
+         font-size: 9.6rem;
+         font-weight: 400;
+         color: #fff;
+         /* margin-left: 25.5rem; */
+         text-transform: uppercase;
+         position: absolute;
+         left: 25.5rem;
+         top: 18.3rem;
+      }
+
+      &__text {
+         font-size: 4.8rem;
+         color: rgba(241, 201, 165, .48);
+         font-weight: 400;
+         text-transform: uppercase;
+         position: absolute;
+         top: 17.8rem;
+         left: 0;
+      }
+   }
+
+   .crowd {
+      background-color: #F2E8DE;
+      background-image: url('../images/consultations_card/crowd/bg_img.svg');
+      background-position: center 12rem;
+      background-repeat: no-repeat;
+      background-size: auto;
+
+      &__container {
+         padding-top: 12rem;
+         padding-bottom: 12rem;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         height: calc(468px + 12rem + 12rem);
+      }
+
+      &__info {
+         width: 39%;
+         margin-right: 95px;
+         margin-top: 34px;
+      }
+
+      &__header {
+         font-size: 40px;
+         color: #8B4513;
+         margin-bottom: 20px;
+      }
+
+      &__text {
+         font-size: 18px;
+         color: #8B4513;
+         line-height: 137%;
+      }
+
+      &__images {
+         display: flex;
+         justify-content: space-between;
+         gap: 4rem;
+      }
+
+      &__img {
+
+         &--1 {
+            /* width: 19.7%; */
+            width: 230px;
+            align-self: self-end;
+
+            & img {
+               width: 100%;
+               border-radius: 10px;
+            }
+         }
+
+         &--2 {
+            /* width: 25.6%; */
+            width: 300px;
+
+            & img {
+               width: 100%;
+               border-radius: 10px;
+            }
+         }
+      }
+   }
+
+   .green {
+      background-color: #F2E8DE;
+      padding-bottom: 12rem;
+
+      &__container {
+         padding: 0 15px;
+      }
+
+      &__wrapper {
+         display: flex;
+         position: relative;
+         flex-direction: column;
+         justify-content: space-between;
+         background-image: url('../images/consultations_card/green/bg_img.png');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         /* background-size: 97.4%; */
+         border-radius: 10px;
+         height: calc(60rem);
+         padding-left: 6rem;
+         padding-top: 6.4rem;
+         padding-bottom: 7.7rem;
+
+         &::after {
+            content: "";
+            display: block;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            transition: all 350ms;
+            pointer-events: none;
+            border-radius: 10px;
+         }
+      }
+
+      &__slogan {
+         /* Поднимаем над полутенью */
+         position: relative;
+         z-index: 5;
+
+         width: 72.2%;
+         font-size: 32px;
+         line-height: 180%;
+         color: #fff;
+      }
+
+      &__btn {
+         /* Поднимаем над полутенью */
+         position: relative;
+         z-index: 5;
+
+         background-color: transparent;
+         color: #fff;
+         border: #fff solid 1px;
+
+         box-sizing: border-box;
+         padding-top: 19px;
+         padding-bottom: 19px;
+         padding-left: 3rem;
+         padding-right: 3rem;
+         max-width: 340px;
+         text-align: center;
+         border: #fff 1px solid;
+         border-radius: 10px;
+         font-size: 24px;
+         transition: all 0.3s
+      }
+   }
+
+   .cups {
+      background-color: #F2E8DE;
+      padding-bottom: 12rem;
+
+      &__container {
+         gap: 30px;
+
+         & p {
+            font-size: 18px;
+            color: #8B4513;
+            line-height: 140%;
+         }
+
+         & p~p {
+            margin-top: 2.6rem;
+         }
+
+      }
+
+      &__left {
+         width: 40.1%;
+      }
+
+      &__left-image {
+         width: 100%;
+         margin-bottom: 34px;
+
+         & img {
+            width: 100%;
+            border-radius: 10px;
+         }
+      }
+
+      &__left-text {
+         text-align: right;
+         margin-left: 8px;
+      }
+
+      &__right {
+         width: 57.2%;
+      }
+
+      &__right-header {
+         font-size: 40px;
+         color: #8B4513;
+         line-height: 140%;
+         margin-bottom: 20px;
+      }
+
+      &__right-text {
+         margin-bottom: 4rem;
+      }
+
+      &__right-images {
+         display: flex;
+         justify-content: space-between;
+
+         &--1 {
+            width: 52.8%;
+            margin-top: 3.8rem;
+
+            & img {
+               width: 100%;
+               border-radius: 10px;
+            }
+         }
+
+         &--2 {
+            width: 41.9%;
+
+            & img {
+               width: 100%;
+               border-radius: 10px;
+            }
+         }
+      }
+   }
+
+   .city-view {
+      background-color: #F2E8DE;
+
+      padding-bottom: 12rem;
+
+      &__container {
+         position: relative;
+         height: 650px;
+
+         & p {
+            font-size: 18px;
+            color: #8B4513;
+            line-height: 140%;
+         }
+      }
+
+      &__info {
+         background-color: rgba(241, 201, 165, .6);
+         background-image: url('../images/consultations_card/city_view/bg_img.png');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: auto 100%;
+
+         width: 93.1%;
+         position: absolute;
+         top: 0;
+         right: 15px;
+         border-radius: 10px;
+         padding-top: 80px;
+         padding-right: 60px;
+         padding-bottom: 216px;
+         /* padding-left: 55rem; */
+         padding-left: 50.4%;
+      }
+
+      &__header {
+         font-size: 40px;
+         color: #8B4513;
+         line-height: 140%;
+         margin-bottom: 20px;
+      }
+
+      &__img {
+         width: 48.7%;
+         position: absolute;
+         left: 15px;
+         bottom: 0;
+         z-index: 5;
+         border-radius: 10px;
+         overflow: hidden;
+
+         & img {
+            width: 100%;
+            border-radius: 10px;
+         }
+      }
+   }
+
+   .flower {
+      background-color: #F2E8DE;
+      background-image: url('../images/consultations_card/flower/bg_img.svg');
+      background-position: center 1rem;
+      background-repeat: no-repeat;
+      background-size: auto;
+
+      &__container {
+         padding-bottom: 12rem;
+         justify-content: space-between;
+
+         height: calc(46.8rem + 12rem);
+         /* gap: 4rem; */
+      }
+
+      &__images {
+         display: flex;
+         justify-content: space-between;
+         width: 51%;
+      }
+
+      &__img {
+         &--1 {
+            width: 52.6%;
+            align-self: self-start;
+
+            & img {
+               width: 100%;
+               border-radius: 10px;
+            }
+         }
+
+         &--2 {
+            width: 40.4%;
+            align-self: self-end;
+
+            & img {
+               width: 100%;
+               border-radius: 10px;
+            }
+         }
+      }
+
+      &__info {
+         width: 39.2%;
+         margin-top: 3.4rem;
+      }
+
+      &__header {
+         font-size: 40px;
+         color: #8B4513;
+         margin-bottom: 2rem;
+      }
+
+      &__text {
+         font-size: 18px;
+         color: #8B4513;
+         line-height: 137%;
+      }
+   }
+
+   .candle {
+      background-color: #F2E8DE;
+      padding-bottom: 12rem;
+
+      &__wrapper {
+         display: flex;
+         border-radius: 10px;
+         overflow: hidden;
+         width: 100%;
+      }
+
+      &__img {
+         width: 60.7%;
+
+         & img {
+            width: 100%;
+            height: 100%;
+         }
+      }
+
+      &__form {
+         display: flex;
+         flex-direction: column;
+         flex-shrink: 0;
+         flex-grow: 2;
+         background-color: rgb(241, 201, 165);
+         padding: 40px 40px 80px;
+         overflow: hidden;
+
+         & label {
+            color: #8B4513;
+            font-size: 16px;
+            margin-left: 15px;
+         }
+
+         & input {
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            color: #8B4513;
+            padding-left: 50px;
+
+            &::placeholder {
+               color: #D3D3D3;
+            }
+         }
+      }
+
+      &__price {
+         width: 190px;
+         background-color: rgba(139, 69, 19, .5);
+         color: #fff;
+         padding: 8px 20px;
+         margin-left: -40px;
+         margin-bottom: 20px;
+         font-size: 24px;
+         text-align: right;
+         border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+      }
+
+      &__header {
+         margin-bottom: 50px;
+
+         & h2,
+         p {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 140%;
+            color: #8B4513;
+         }
+
+         & p {
+            text-transform: uppercase;
+         }
+      }
+
+      &__field {
+         display: flex;
+         flex-direction: column;
+         gap: 7px;
+         margin-bottom: 20px;
+
+         &:last-of-type {
+            margin-bottom: 70px;
+         }
+      }
+
+      &__input-name {
+         background: url('../images/consultations/form_name_icon.svg') #fff no-repeat 10px center;
+      }
+
+      &__input-email {
+         background: url('../images/consultations/form_email_icon.svg') #fff no-repeat 10px center;
+      }
+
+      &__input-phone {
+         background: url('../images/consultations/form_phone_icon.svg') #fff no-repeat 10px center;
+      }
+
+      &__button {
+         &--submit {
+            background-color: #8B4513;
+            color: #fff;
+            font-size: 18px;
+            margin-top: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+            width: 100%;
+            border-radius: 10px;
+
+            @include media-hover() {
+               background-color: #A66321;
+               border-color: #A66321;
+            }
+         }
+      }
+   }
+}
+
+@media(max-width: 1200px) {
+   .consultations-card {
+
+      .hero {
+         height: calc(300px + (492 - 300) * ((100vw - 360px) / (1200 - 360)));
+      }
+
+      .crowd {
+         background-size: calc(161px + (290 - 161) * ((100vw - 360px) / (1200 - 360))) calc(164px + (296 - 164) * ((100vw - 360px) / (1200 - 360)));
+
+         &__container {
+            height: calc(calc(393px + (468 - 393) * ((100vw - 768px) / (1200 - 768))) + 12rem + 12rem);
+            /*             height: calc(calc(515px - (515 - 468) * ((100vw - 768px) / (1200 - 768))) + 12rem + 12rem); */
+         }
+
+         &__info {
+            margin-right: calc(0px + (95 - 0) * ((100vw - 768px) / (1200 - 768)));
+            margin-top: calc(0px + (34 - 0) * ((100vw - 768px) / (1200 - 768)));
+         }
+
+         &__header {
+            font-size: calc(30px + (40 - 30) * ((100vw - 360px) / (1200 - 360)));
+            margin-bottom: 20px;
+         }
+
+         &__text {
+            font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
+         }
+
+         &__img {
+
+            &--1 {
+               /* width: 19.7%; */
+               width: 23rem;
+               align-self: self-end;
+
+               & img {
+                  width: 100%;
+                  border-radius: 10px;
+               }
+            }
+
+            &--2 {
+               /* width: 25.6%; */
+               width: 30rem;
+               margin-bottom: 40px;
+
+               & img {
+                  width: 100%;
+                  border-radius: 10px;
+               }
+            }
+         }
+      }
+
+      .cups {
+         &__container {
+
+            & p {
+               font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
+            }
+         }
+
+         &__right-header {
+            font-size: calc(30px + (40 - 30) * ((100vw - 360px) / (1200 - 360)));
+         }
+      }
+
+      .city-view {
+
+         &__container {
+            height: calc(425px + (650 - 425) * ((100vw - 768px) / (1200 - 768)));
+
+            & p {
+               font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
+            }
+         }
+
+         &__info {
+            /*             background-size: cover;
+            background-image: none; */
+            padding-top: calc(30px + (80 - 30) * ((100vw - 768px) / (1200 - 768)));
+            padding-right: calc(20px + (60 - 20) * ((100vw - 768px) / (1200 - 768)));
+            padding-bottom: calc(34px + (216 - 34) * ((100vw - 768px) / (1200 - 768)));
+         }
+
+         &__header {
+            font-size: calc(30px + (40 - 30) * ((100vw - 360px) / (1200 - 360)));
+         }
+      }
+
+      .flower {
+         background-size: calc(161px + (269 - 161) * ((100vw - 360px) / (1200 - 360))) calc(164px + (274 - 164) * ((100vw - 360px) / (1200 - 360)));
+
+         &__header {
+            font-size: calc(30px + (40 - 30) * ((100vw - 360px) / (1200 - 360)));
+            margin-bottom: 20px;
+         }
+
+         &__text {
+            font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
+         }
+      }
+
+      .candle {
+         &__img {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+               display: block;
+               width: 721px;
+            }
+         }
+
+         &__form {
+            padding-top: calc(30px + (40 - 30) * ((100vw - 992px) / (1200 - 992)));
+            padding-right: calc(20px + (40 - 20) * ((100vw - 992px) / (1200 - 992)));
+            padding-bottom: calc(40px + (80 - 40) * ((100vw - 992px) / (1200 - 992)));
+            padding-left: calc(20px + (40 - 20) * ((100vw - 992px) / (1200 - 992)));
+
+            & input {
+               height: 50px;
+            }
+         }
+
+         &__header {
+            margin-bottom: calc(40px + (50 - 40) * ((100vw - 992px) / (1200 - 992)));
+
+            & h2,
+            p {
+               font-size: calc(28px + (32 - 28) * ((100vw - 360px) / (1200 - 360)));
+            }
+         }
+
+
+         &__field {
+
+            &:last-of-type {
+               margin-bottom: calc(60px + (70 - 60) * ((100vw - 992px) / (1200 - 992)));
+            }
+         }
+      }
+   }
+}
+
+@media(max-width: 992px) {
+   .consultations-card {
+      .candle {
+         &__container {
+            max-height: none;
+         }
+
+         &__img {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+         }
+
+         &__form {
+            padding-top: 30px;
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            min-width: 320px;
+
+            & input {
+               height: 50px;
+            }
+         }
+
+         &__header {
+            margin-bottom: 40px;
+         }
+
+         &__field {
+
+            &:last-of-type {
+               margin-bottom: 60px;
+            }
+         }
+
+      }
+   }
+}
+
+@media(max-width: 900px) {
+   .consultations-card {
+      .green {
+         &__slogan {
+            font-size: calc(17px + (32 - 17) * ((100vw - 360px) / (900 - 360)));
+         }
+      }
+   }
+}
+
+@media(max-width: 768px) {
+   .consultations-card {
+
+      .crowd {
+         background-position: calc(15px + (250 - 15) * ((100vw - 360px) / (768 - 360))) calc(305px - (305 - 252) * ((100vw - 360px) / (768 - 360)));
+
+         &__container {
+            height: calc(515px + 12rem + 12rem);
+            flex-direction: column;
+         }
+
+         &__info {
+            margin-right: 0px;
+            margin-top: 0px;
+            width: 100%;
+         }
+
+         &__img {
+            &--1 {
+               width: calc(130px + (170 - 130) * ((100vw - 360px) / (768 - 360)));
+            }
+
+            &--2 {
+               width: calc(170px + (223 - 170) * ((100vw - 360px) / (768 - 360)));
+               margin-bottom: 40px;
+            }
+         }
+
+      }
+
+      .green {
+         &__container {
+            padding: 0 0;
+            /* border-radius: 0; */
+         }
+
+         &__wrapper {
+            border-radius: 0;
+            min-height: 360px;
+            padding-top: calc(60px - (60 - 47.5) * ((100vw - 360px) / (768 - 360)));
+            padding-right: calc(20px - (20 - 0) * ((100vw - 360px) / (768 - 360)));
+            padding-bottom: calc(30px + (57 - 30) * ((100vw - 360px) / (768 - 360)));
+            padding-left: calc(20px + (44.5 - 20) * ((100vw - 360px) / (768 - 360)));
+
+            &::after {
+               border-radius: 0;
+            }
+         }
+
+         &__slogan {
+            width: 100%;
+            font-weight: 300;
+            line-height: 145%;
+         }
+
+         &__btn {
+            max-width: calc(250px + (340 - 250) * ((100vw - 360px) / (768 - 360)));
+            padding-top: calc(12px + (19 - 12) * ((100vw - 360px) / (768 - 360)));
+            padding-bottom: calc(12px + (19 - 12) * ((100vw - 360px) / (768 - 360)));
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (768 - 360)));
+            font-weight: 300;
+         }
+      }
+
+      .city-view {
+         &__container {
+            flex-direction: column;
+            height: auto;
+            padding-left: 0;
+            padding-right: 0;
+         }
+
+         &__info {
+            position: static;
+            width: 100%;
+            padding: 30px 20px;
+            border-radius: 0;
+            background-image: none;
+         }
+
+         &__img {
+            position: static;
+            width: 100%;
+            border-radius: 0;
+
+            & img {
+               border-radius: 0;
+            }
+         }
+      }
+
+      .flower {
+         background-position: right calc(0px + (50 - 0) * ((100vw - 360px) / (768 - 360))) bottom calc(165px + (450 - 165) * ((100vw - 360px) / (768 - 360)));
+
+         &__container {
+            flex-direction: column-reverse;
+            height: auto;
+            gap: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+         }
+
+         &__info {
+            margin-top: 0;
+            width: 100%;
+         }
+
+         &__images {
+            width: 100%;
+         }
+
+         &__img {
+            &--1 {
+               /* margin-bottom: 39px; */
+               margin-bottom: 8rem;
+            }
+         }
+      }
+
+      .candle {
+         &__container {
+            padding-left: 0;
+            padding-right: 0;
+            height: auto;
+         }
+
+         &__wrapper {
+            border-radius: 0;
+            flex-direction: column-reverse;
+         }
+
+         &__img {
+            width: 100%;
+
+            & img {
+               display: inline;
+               width: 100%;
+            }
+         }
+
+         &__form {
+            min-width: none;
+            /* padding-left: calc(50% - 160px);
+               padding-right: calc(50% - 160px); */
+         }
+
+         &__button {
+            &--submit {
+               max-width: 320px;
+            }
+         }
+      }
+
+   }
+}
+
+@media(max-width: 576px) {
+   .consultations-card {
+      .cups {
+         &__container {
+            flex-direction: column;
+         }
+
+         &__left,
+         &__right {
+            width: 100%;
+         }
+
+         &__left-text {
+            text-align: left;
+            margin-left: 0;
+         }
+      }
+   }
+}
+
+@media(max-width: 360px) {
+   .consultations-card {
+      .crowd {
+         &__header {
+            font-size: 30px;
+         }
+
+         &__text {
+            font-size: 14px;
+         }
+      }
+
+      .city-view {
+         &__container {
+            & p {
+               font-size: 14px;
+            }
+         }
+
+         &__header {
+            font-size: 30px;
+         }
+      }
+   }
+}

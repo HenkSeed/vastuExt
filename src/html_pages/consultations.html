@@ -1,0 +1,233 @@
+@@include('html_parts/head.html') @@include('html_parts/main_dark-bg.html')
+@@include('html_parts/header.html')
+
+<!-- Фон для быстрого заказа консультации -->
+<div class="consultations__dark dark--invisible">
+  <!-- Форма отправки -->
+  <div class="consultations__form consultations__form--invisible">
+    <div class="consultations__price">10 200 РУБ.</div>
+    <div class="consultations__header">
+      <h2>Консультация</h2>
+      <p>Васту БИЗНЕС</p>
+    </div>
+    <div class="consultations__name consultations__field">
+      <label for="consultations-name">Имя</label>
+      <input
+        type="text"
+        id="consultations-name"
+        placeholder="Введите Ваше имя"
+        class="consultations__input-name"
+        autocomplete="off"
+      />
+    </div>
+    <div class="consultations__email consultations__field">
+      <label for="consultations-email">E-mail</label>
+      <input
+        type="email"
+        id="consultations-email"
+        placeholder="Введите электронную почту"
+        class="consultations__input-email"
+        autocomplete="off"
+      />
+    </div>
+    <div class="consultations__phone consultations__field">
+      <label for="consultations-phone">Телефон</label>
+      <input
+        type="tel"
+        id="consultations-phone"
+        placeholder="Введите номер телефона"
+        class="consultations__input-phone"
+        autocomplete="off"
+      />
+    </div>
+
+    <button type="submit" class="consultations__button--submit">
+      Заказать консультацию
+    </button>
+  </div>
+</div>
+
+<section class="consultations__hero center">
+  <div class="container consultations__hero-container"></div>
+</section>
+
+<div class="consultations__title center">
+  <div class="container consultations__title-container">
+    <div class="consultations__title-mod">
+      <h2 class="consultations__title-header">Консультации</h2>
+    </div>
+  </div>
+</div>
+
+<section class="consultations__chapter consultations__business center">
+  <div class="container consultations__chapter-container top first">
+    <div class="consultations__chapter-bg-img">
+      <a href="#">
+        <img
+          src="images/consultations/chapter_business_img.png"
+          alt="Business Bg Image"
+        />
+      </a>
+    </div>
+    <div class="consultations__chapter-info">
+      <div class="consultations__chapter-header-block">
+        <span class="consultations__chapter-header">Бизнес</span>
+        <span class="consultations__chapter-price">17 500 РУБ.</span>
+      </div>
+      <p>
+        Наши консультации по Васту для бизнеса предназначены для
+        предпринимателей и руководителей, желающих оптимизировать рабочее
+        пространство и повысить эффективность своего бизнеса. Наши эксперты
+        помогут вам создать гармоничное и энергетически благоприятное рабочее
+        окружение, которое способствует успеху и процветанию.
+      </p>
+
+      <div class="consultations__chapter-btns">
+        <a
+          href="consultations_card.html"
+          class="consultations__chapter-more-btn"
+        >
+          Узнать подробнее
+        </a>
+        <button
+          data-order="business"
+          class="consultations__chapter-quick-order"
+        >
+          Быстрый заказ
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="consultations__chapter consultations__house center">
+  <div class="container consultations__chapter-container no-top second">
+    <div class="consultations__chapter-bg-img">
+      <a href="#">
+        <img
+          src="images/consultations/chapter_house_img.png"
+          alt="Business Bg Image"
+        />
+      </a>
+    </div>
+    <div class="consultations__chapter-info">
+      <div class="consultations__chapter-header-block">
+        <span class="consultations__chapter-header">Дом</span>
+        <span class="consultations__chapter-price">17 500 РУБ.</span>
+      </div>
+      <p>
+        Наша консультация по Васту для вашего дома представляет собой
+        индивидуальный подход к созданию гармоничного пространства,
+        способствующего вашему благополучию и энергетической гармонии. Мы
+        проведем анализ вашего дома, учитывая его уникальные особенности, и
+        предоставим вам рекомендации по оптимизации расположения мебели,
+        использованию цветовой гаммы и выбору символов и элементов дизайна. С
+        нашей помощью ваш дом станет местом, где вы будете чувствовать себя
+        комфортно и защищенно, привлекая гармонию и успех в свою жизнь.
+      </p>
+
+      <div class="consultations__chapter-btns">
+        <a
+          href="consultations_card.html"
+          class="consultations__chapter-more-btn"
+        >
+          Узнать подробнее
+        </a>
+        <button data-order="house" class="consultations__chapter-quick-order">
+          Быстрый заказ
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="consultations__chapter consultations__flat center">
+  <div class="container consultations__chapter-container no-top third">
+    <div class="consultations__chapter-bg-img">
+      <a href="consultations_card.html">
+        <img
+          src="images/consultations/chapter_flat_img.png"
+          alt="Business Bg Image"
+        />
+      </a>
+    </div>
+    <div class="consultations__chapter-info">
+      <div class="consultations__chapter-header-block">
+        <span class="consultations__chapter-header">Квартира</span>
+        <span class="consultations__chapter-price">17 500 РУБ.</span>
+      </div>
+      <p>
+        Хотите преобразить свою квартиру в гармоничное и энергетически
+        благоприятное пространство? Наши консультации по Васту для квартиры
+        помогут вам создать дом, который способствует вашему благополучию и
+        гармонии. Мы проведем анализ вашего жилища, учитывая его особенности, и
+        предоставим вам рекомендации по оптимизации расположения мебели, выбору
+        цветовой гаммы и использованию символов и элементов дизайна. Наша цель -
+        помочь вам создать пространство, где вы будете чувствовать себя
+        комфортно и защищенно, а также привлечете гармонию и успех в свою жизнь.
+        Обратитесь к нам сегодня и начните путь к созданию баланса и процветания
+        в своем доме.
+      </p>
+
+      <div class="consultations__chapter-btns">
+        <a
+          href="consultations_card.html"
+          class="consultations__chapter-more-btn"
+        >
+          Узнать подробнее
+        </a>
+        <button data-order="flat" class="consultations__chapter-quick-order">
+          Быстрый заказ
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="consultations__chapter consultations__artifacts center">
+  <div class="container consultations__chapter-container no-top fourth">
+    <div class="consultations__chapter-bg-img">
+      <a href="#">
+        <img
+          src="images/consultations/chapter_artifacts_img.png"
+          alt="Business Bg Image"
+        />
+      </a>
+    </div>
+
+    <div class="consultations__chapter-info">
+      <div class="consultations__chapter-header-block">
+        <span class="consultations__chapter-header">Артефакты</span>
+        <span class="consultations__chapter-price">17 500 РУБ.</span>
+      </div>
+
+      <p>
+        Вы хотите привнести баланс и гармонию в свой дом с помощью артефактов
+        Васту? Наши консультации помогут вам разобраться, как правильно выбирать
+        и использовать артефакты Васту, чтобы создать благоприятную энергетику в
+        вашем жилище. Мы предоставим вам экспертные рекомендации по выбору
+        артефактов, их расположению и влиянию на энергетику вашего дома.
+        Независимо от того, нужны ли вам артефакты для гармонизации пространства
+        или для достижения определенных целей, мы поможем вам выбрать подходящие
+        предметы и оптимально интегрировать их в ваш интерьер.
+      </p>
+
+      <div class="consultations__chapter-btns">
+        <a
+          href="consultations_card.html"
+          class="consultations__chapter-more-btn"
+        >
+          Узнать подробнее
+        </a>
+        <button
+          data-order="artifacts"
+          class="consultations__chapter-quick-order"
+        >
+          Быстрый заказ
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('html_parts/footer.html') @@include('html_parts/foot.html')

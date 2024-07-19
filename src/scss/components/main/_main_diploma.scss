@@ -1,0 +1,156 @@
+.diploma {
+   position: relative;
+   background-color: rgba(241, 201, 165, 0.27);
+   padding-top: 12rem;
+   padding-bottom: 6rem;
+   height: 70.5rem;
+
+   &__container {
+      /* position: relative; */
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+   }
+
+   &__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6rem;
+      gap: 4rem;
+   }
+
+   &__header {
+      color: #8B4513;
+      font-size: 4.8rem;
+      font-weight: 400;
+      /* margin-bottom: 6rem; */
+   }
+
+   &__line {
+      width: 199px;
+      height: 0;
+      border: 1px solid #F1C9A5;
+      margin-top: 5px;
+      /* display: inline; */
+   }
+
+   &__bg-img {
+      position: absolute;
+      right: 0%;
+      bottom: 20%;
+
+      & img {
+         width: 100%;
+      }
+   }
+
+   &__images {
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      z-index: 10;
+   }
+
+   &__left-img {
+      position: relative;
+      @include image-hover;
+   }
+
+   &__main-img {
+      position: relative;
+      @include image-hover;
+   }
+
+   &__right-img {
+      position: relative;
+      @include image-hover;
+   }
+}
+
+@media(max-width:1920px) {
+   .diploma {
+      &__bg-img {
+         right: calc(0px + (290 - 0) * ((100vw - 1200px) / (1920 - 1200)));
+      }
+   }
+}
+
+@media(max-width:1200px) {
+
+   .diploma {
+
+      &__header {
+         font-size: calc(34px + (48 - 34) * ((100vw - 360px) / (1200 - 360)));
+      }
+
+      &__bg-img {
+         position: absolute;
+         right: 0%;
+         bottom: 20%;
+         width: calc(360px + (740 - 360) * ((100vw - 768px) / (1200 - 768)));
+
+         & img {
+            width: 100%;
+         }
+      }
+
+      &__images {
+         gap: calc(20px + (30 - 20) * ((100vw - 360px) / (1200 - 360)));
+      }
+
+      &__main-img {
+         width: calc(260px + (570 - 260) * ((100vw - 360px) / (1200 - 360)));
+         height: auto;
+
+         & img {
+            width: 100%;
+         }
+      }
+
+      &__left-img,
+      &__right-img {
+         width: calc(180px + (270 - 180) * ((100vw - 360px) / (1200 - 360)));
+         height: auto;
+
+         & img {
+            width: 100%;
+         }
+      }
+   }
+}
+
+@media(max-width:768px) {
+   .diploma {
+      &__title {
+         width: 100%;
+         flex-direction: column;
+         gap: 0;
+      }
+
+      &__header {
+         align-self: flex-start;
+      }
+
+      &__line {
+         width: 100%;
+      }
+
+      &__bg-img {
+         display: none;
+      }
+   }
+}
+
+@media(max-width:360px) {
+   .diploma {
+      &__header {
+         font-size: 34px;
+      }
+
+      &__images {
+         gap: 20px;
+      }
+   }
+}

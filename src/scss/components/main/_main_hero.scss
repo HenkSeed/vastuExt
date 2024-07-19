@@ -1,0 +1,83 @@
+.hero {
+   --header-color: #fff;
+   margin: 0 auto;
+   background-image: url('../images/main/hero/main_bg.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y: top;
+
+   height: 54vw;
+
+   &__container {
+      position: relative;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 33px;
+      align-items: center;
+
+      &__title {
+         margin-top: 10.3rem;
+         font-family: "Cinzel Decorative", serif;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 9.6rem;
+         line-height: 135%;
+         color: var(--header-color);
+      }
+
+      &__text {
+         font-size: 3.2rem;
+         line-height: 121%;
+         font-family: "Cormorant Infant", serif;
+         font-weight: 500;
+         font-style: normal;
+         max-width: 56.5rem;
+         text-align: center;
+         color: #fff;
+      }
+   }
+
+}
+
+@media(max-width:1920px) {
+   .hero__container__title {
+      margin-top: calc(53px + (103 - 53) * ((100vw - 1200px) / (1920 - 1200)));
+   }
+}
+
+@media(max-width:1200px) {
+
+   .hero {
+      &__container {
+         gap: calc(10px + (33 - 10) * ((100vw - 768px) / (1200 - 768)));
+      }
+   }
+}
+
+@media(max-width:768px) {
+   .hero {
+      height: calc(470px + (414.72 - 470) * ((100vw - 360px) / (768 - 360)));
+
+      background-position-y: top;
+
+      background-size: calc(684px + (768 - 684) * ((100vw - 360px) / (768 - 360))) 100%;
+
+      background-position-x: calc(-128px + (128 - 0) * ((100vw - 360px) / (768 - 360)));
+
+      &__container {
+         gap: 0;
+
+         &__title {
+            font-size: calc(64px + (71.3 - 64) * ((100vw - 360px) / (768 - 360)));
+            margin-top: calc(30px - (30 - 23) * ((100vw - 360px) / (768 - 360)));
+         }
+
+         &__text {
+            font-size: calc(28px - (28 - 23.77) * ((100vw - 360px) / (768 - 360)));
+            font-weight: 400;
+            max-width: 320px;
+         }
+      }
+   }
+}

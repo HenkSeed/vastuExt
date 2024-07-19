@@ -1,0 +1,22 @@
+<header class="header center">
+   <!-- Затемнение для меню корзины -->
+   <div class="dark__header dark dark--invisible"></div>
+
+   <!-- Слой для имитирования тени и цвета хедера, перекрывающих выпадающие из nav меню -->
+   <div class="header-copy"></div>
+   <!-- Блоки меню, выпадающие из nav-меню -->
+   @@include('drop_consult.html')
+   @@include('drop_artifacts.html')
+
+   <div class="container header__container">
+
+      @@include('header_burger_icon.html')
+      @@include('header_logo.html')
+      @@include('header_nav.html')
+      @@include('header_social.html')
+      @@include('header_cart.html')
+      @@include('cart_menu.html')
+
+   </div>
+
+</header>

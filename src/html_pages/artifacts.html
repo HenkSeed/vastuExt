@@ -1,0 +1,41 @@
+@@include('html_parts/head.html') @@include('html_parts/main_dark-bg.html')
+@@include('html_parts/shadow.html') @@include('html_parts/header.html')
+
+<!-- Оболочка страницы -->
+<div class="artifacts">
+  <section class="hero center">
+    <div class="container hero__container"></div>
+  </section>
+
+  <section class="title-unit center">
+    <div class="container title-unit__container">
+      <div class="title-unit__title-mod">
+        <h2 class="title-unit__title-header">Артефакты</h2>
+      </div>
+    </div>
+  </section>
+
+  @@include('html_parts/artifacts/artifacts_carousel.html')
+  @@include('html_parts/artifacts/artifacts_jewelry.html')
+  @@include('html_parts/artifacts/artifacts_correction.html')
+
+  <section class="cards center">
+    <div class="container cards__container">
+      @@loop('html_parts/artifacts/artifacts_tests.html','../files/artifacts_tests.json')
+    </div>
+  </section>
+
+  <section class="back center">
+    <div class="container back__container">
+      <div class="back__info">
+        <div class="back__header">Оплата и доставка</div>
+        <div class="back__text">
+          Вы можете оплатить заказ и выбрать доставку любым удобным для Вас
+          способом в корзине!
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+@@include('html_parts/footer.html') @@include('html_parts/foot.html')

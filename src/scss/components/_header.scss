@@ -1,0 +1,320 @@
+.header {
+   margin: 0 auto;
+   /* Поднимаем слой, чтобы выпадающее из него меню выходило поверх текста блока hero */
+   position: relative;
+   z-index: 50;
+   /* Цвет имитируется в &-copy */
+   background-color: rgba(241, 201, 165, 0);
+   /* Тень имитируется в &-copy */
+   /* box-shadow: 0 4px 4px 0 rgba(91, 51, 15, 0.25); */
+
+   &-copy {
+      position: absolute;
+      /* Без следующей строки этот блок будет иметь начало */
+      /* как и у контейнера, а не у левой границы экрана */
+      left: 0;
+      pointer-events: none;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      /* Имитируем цвет header-а */
+      background-color: rgba(241, 201, 165, 1);
+      /* Если z-index будет больше, чем у контейнера, то этот блок закроет содержимое контейнера header-а */
+      z-index: -3;
+      /* Имитируем тень header-а */
+      box-shadow: 0 4px 4px 0 rgba(91, 51, 15, 0.25);
+   }
+
+   &__container {
+      /* position: relative; - затемняет окно корзины*/
+      z-index: 0;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 22px;
+      padding-bottom: 22px;
+   }
+
+   & .drop__consult {
+      position: absolute;
+      top: 0;
+      /* left: 26%; */
+      left: calc(50% - 27rem);
+      /* */
+      width: 230px;
+      /* max-height: 274px; */
+      padding: 20px 20px 27px;
+      background-color: #F1C9A5;
+      border: .5px solid rgba(139, 69, 19, .3);
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      box-shadow: 1px 4px 0px 1px rgba(139, 69, 19, .2);
+      transition: transform .5s;
+      z-index: -11;
+      line-height: 23px;
+
+      &__menu {
+         width: 100%;
+      }
+
+      &__item {
+         display: block;
+         width: calc(100% + 40px);
+         margin-left: -20px;
+
+         &:hover {
+            background-color: #F2E8DE;
+            cursor: pointer;
+         }
+      }
+
+      &__item~&__item {
+         margin-top: 8px;
+      }
+
+      &__item:first-child {
+         padding-bottom: 0px;
+         border-bottom: #8B4513 2px solid;
+
+         & a {
+            font-size: 16px;
+         }
+      }
+
+      &__anchor {
+         font-size: 14px;
+         font-weight: 500;
+         color: #8B4513;
+         margin-left: 20px;
+      }
+   }
+
+   & .drop__artifacts {
+      position: absolute;
+      top: 0;
+      /* left: 38%; */
+      left: calc(50% - 13rem);
+      /*  */
+      width: 230px;
+      /* max-height: 274px; */
+      padding: 20px 20px 27px;
+      background-color: #F1C9A5;
+      border: .5px solid rgba(139, 69, 19, .3);
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      box-shadow: 1px 4px 0px 1px rgba(139, 69, 19, .2);
+      transition: transform .5s;
+      z-index: -11;
+      line-height: 23px;
+
+      &__menu {
+         width: 100%;
+      }
+
+      &__item {
+         display: block;
+         width: calc(100% + 40px);
+         margin-left: -20px;
+
+         &:hover {
+            background-color: #F2E8DE;
+            cursor: pointer;
+         }
+      }
+
+      &__item~&__item {
+         margin-top: 8px;
+      }
+
+      &__item:first-child {
+         padding-bottom: 0px;
+         border-bottom: #8B4513 2px solid;
+
+         & a {
+            font-size: 16px;
+         }
+      }
+
+      &__anchor {
+         font-size: 14px;
+         font-weight: 500;
+         color: #8B4513;
+         margin-left: 20px;
+      }
+   }
+
+   & .drop__hidden {
+      transform: translateY(calc(-100% - 5px));
+   }
+
+   & .drop__shown {
+      transform: translateY(76px);
+   }
+
+   &__burger__icon {
+      display: none;
+      cursor: pointer;
+   }
+
+   &__logo {
+      /*       position: relative;
+      z-index: -200; */
+      color: #fff;
+      font-size: 2.4rem;
+      font-weight: 500;
+   }
+
+   &__nav {
+      display: flex;
+      gap: 30px;
+      /* gap: 3rem; */
+
+      &__item {
+         color: #8B4513;
+         font-size: 1.4rem;
+         text-transform: uppercase;
+         font-weight: 500;
+         /* Подчёркивание при наведении. Верхняя граница для компенсации смещения */
+         border-bottom: rgba(242, 232, 222, 0) 3px solid;
+         border-top: rgba(242, 232, 222, 0) 3px solid;
+         padding-top: 2px;
+         padding-bottom: 2px;
+         transition: border-bottom 0.2s ease-in;
+
+         &:hover {
+            border-bottom: rgba(242, 232, 222, 1) 3px solid;
+         }
+      }
+   }
+
+   &__social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+
+      /* Родительский блок для каждой иконки */
+      &__item {
+         width: 38px;
+         height: 38px;
+         /* Обрезаем по окружности его содержимое */
+         border-radius: 50%;
+         overflow: hidden;
+      }
+
+      &__telegram {
+         fill: #F1C9A5;
+      }
+
+      /* Окружность вокруг иконки */
+      &__telegram-circle {
+         stroke: #8B4513;
+         transition: all 0.3s;
+      }
+
+      /* При наведении закрашиваем фон иконки и окружность */
+      &__telegram:hover &__telegram-circle {
+         fill: #37AEE2;
+         stroke: #37AEE2;
+      }
+
+      &__whatsup {
+         fill: #F1C9A5;
+      }
+
+      &__whatsup-circle {
+         stroke: #8B4513;
+         transition: all 0.3s;
+      }
+
+      &__whatsup:hover &__whatsup-circle {
+         fill: #25D366;
+         stroke: #25D366;
+      }
+
+      &__vk {
+         fill: #F1C9A5;
+      }
+
+      &__vk-circle {
+         stroke: #8B4513;
+         transition: all 0.3s;
+      }
+
+      &__vk:hover &__vk-circle {
+         fill: #4C6C91;
+         stroke: #4C6C91;
+      }
+   }
+
+   &__cart {
+      /* "Поглащает" выступающий счётчик, сохраняя общий padding блока header */
+      padding-right: 2.0rem;
+      cursor: pointer;
+
+      &__image {
+         position: relative;
+
+         & img {
+            /* width: 3.6rem;
+            height: 3.5rem; */
+            width: 36px;
+            height: 35px;
+         }
+      }
+
+      &__counter {
+         /* width: 2.0rem;
+         height: 2.0rem; */
+         width: 20px;
+         height: 20px;
+         position: absolute;
+         /* top: -0.5rem;
+         right: -1.0rem; */
+         top: -5px;
+         right: -10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: red;
+         border-radius: 50%;
+         color: #fff;
+         /* font-size: 1.2rem; */
+         font-size: 12px;
+      }
+
+   }
+}
+
+@media(max-width:1200px) {
+
+   .header {
+
+      &__nav {
+         gap: calc(10px + (30 - 10) * ((100vw - 768px) / (1200 - 768)));
+      }
+   }
+}
+
+@media(max-width:768px) {
+   .header {
+      &__container {
+         padding: 20px 20px;
+      }
+
+      &__burger__icon {
+         display: block;
+      }
+
+      &__logo {
+         font-size: 24px;
+      }
+
+      /* Прячем навигационное меню и иконки соцсетей,
+      но только в шапке и подвале */
+      &__nav,
+      footer &__social,
+      header &__social {
+         display: none;
+      }
+   }
+}

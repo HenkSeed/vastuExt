@@ -1,0 +1,188 @@
+@@include('html_parts/head.html') @@include('html_parts/main_dark-bg.html')
+@@include('html_parts/shadow.html') @@include('html_parts/header.html')
+
+<!-- Оболочка страницы -->
+<div class="cart-page">
+  <section class="line-header center">
+    <div class="container line-header__container">
+      <span class="line-header__title">Оформление заказа</span>
+      <div class="line-header__line"></div>
+    </div>
+  </section>
+
+  <section class="order-items center">
+    <div class="container order-items__container">
+      <!-- Сделать циклом с базой JSON -->
+      @@include('html_parts/universals/cart_menu_item.html')
+      @@include('html_parts/universals/cart_menu_item.html')
+      @@include('html_parts/universals/cart_menu_item.html')
+      @@include('html_parts/universals/cart_menu_item.html')
+    </div>
+  </section>
+
+  <section class="price-result center">
+    <div class="container price-result__container">
+      <div class="price-result__sum">
+        <span>Сумма:</span>
+        <span>6800 руб.</span>
+      </div>
+
+      <div class="price-result__delivery">
+        <span>Доставка:</span>
+        <span>590 руб.</span>
+      </div>
+
+      <div class="price-result__result">
+        <span>Итого:</span>
+        <span>7390 руб.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="conditions center">
+    <div class="container conditions__container">
+      <div class="conditions__delivery">
+        <div class="conditions__header">Способ доставки</div>
+
+        <div class="cdek">
+          <div class="form-unit cdek__form-unit">
+            <input
+              class="custom-radio"
+              id="cdek"
+              type="radio"
+              name="delivery"
+              required
+            />
+            <label for="cdek">СДЭК</label>
+          </div>
+          <div class="cdek__img">
+            <img
+              src="images/cart_page/conditions/cdek_logo.png"
+              alt="CDEK Logo"
+            />
+          </div>
+          <span>0 РУБ.</span>
+        </div>
+
+        <div class="rf-post">
+          <div class="form-unit rf-post__form-unit">
+            <input
+              class="custom-radio"
+              id="rf-post"
+              type="radio"
+              name="delivery"
+              required
+            />
+            <label for="rf-post">Почта России</label>
+          </div>
+          <div class="rf-post__img">
+            <img
+              src="images/cart_page/conditions/rf_post_logo.png"
+              alt="RF-post Logo"
+            />
+          </div>
+          <span>590 РУБ.</span>
+        </div>
+      </div>
+
+      <div class="conditions__pay">
+        <div class="conditions__header">Способ оплаты</div>
+
+        <div class="u-cash">
+          <div class="form-unit cdek__form-unit">
+            <input
+              class="custom-radio"
+              id="u-cash"
+              type="radio"
+              name="pay"
+              required
+            />
+            <label for="u-cash">ЮKassa</label>
+          </div>
+          <div class="u-cash__img">
+            <img
+              src="images/cart_page/conditions/u_cash_logo.png"
+              alt="u-cash Logo"
+            />
+          </div>
+        </div>
+
+        <div class="after-pay">
+          <div class="form-unit after-pay__form-unit">
+            <input
+              class="custom-radio"
+              id="after-pay"
+              type="radio"
+              name="pay"
+              required
+            />
+            <label for="after-pay">Оплата после консультации</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="address center">
+    <div class="container address__container">
+      <!-- Форма отправки -->
+      <div class="address__form">
+        <div class="address__header">
+          <h2>Адрес доставки</h2>
+        </div>
+
+        <div class="address__fields">
+          <div class="address__name address__field">
+            <label for="address-name">Имя</label>
+            <input
+              type="text"
+              id="address-name"
+              placeholder="Введите Ваше имя"
+              class="address__input-name"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="address__email address__field">
+            <label for="address-email">E-mail</label>
+            <input
+              type="email"
+              id="address-email"
+              placeholder="Введите электронную почту"
+              class="address__input-email"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="address__phone address__field">
+            <label for="address-phone">Телефон</label>
+            <input
+              type="tel"
+              id="address-phone"
+              placeholder="Введите номер телефона"
+              class="address__input-phone"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="address__addr address__field">
+            <label for="address-addr">Адрес</label>
+            <input
+              type="text"
+              id="address-addr"
+              placeholder="Укажите адрес доставки"
+              class="address__input-addr"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="address__button--submit">
+          Перейти к оплате
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+
+@@include('html_parts/footer.html') @@include('html_parts/foot.html')

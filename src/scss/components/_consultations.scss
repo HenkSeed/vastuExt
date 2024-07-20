@@ -179,12 +179,12 @@
          padding-bottom: 60px;
          position: relative;
 
-         &.fourth {
-            padding-bottom: 120px;
-         }
-
          &.top {
             padding-top: 120px;
+         }
+
+         &.fourth {
+            padding-bottom: 120px;
          }
       }
 
@@ -343,19 +343,19 @@
             /* Для всех, без исключения, секций __chapter */
             padding-bottom: calc(20px + (60 - 20) * ((100vw - 360px) / (1200 - 360)));
 
-            /* Для последней секции */
-            &.fourth {
-               padding-bottom: calc(60px + (120 - 60) * ((100vw - 360px) / (1200 - 360)));
-            }
-
             /* Для верхней секции */
             &.top {
                padding-top: calc(60px + (120 - 60) * ((100vw - 360px) / (1200 - 360)));
             }
+
+            /* Для последней секции */
+            &.fourth {
+               padding-bottom: calc(60px + (120 - 60) * ((100vw - 360px) / (1200 - 360)));
+            }
          }
 
-         /* Центрирование по вертикали блока -info к картинке */
          &-container.top &-info {
+            /* Центрирование по вертикали блока -info к картинке */
             top: calc(
                50% +
                   (
@@ -434,18 +434,17 @@
             padding-right: 0;
          }
 
-         /* Для уже последней третьей секции */
          &-container.third {
+            /* Для уже последней третьей секции */
             padding-bottom: calc(60px + (89.143 - 60) * ((100vw - 360px) / (768 - 360)));
          }
 
          &-container.third &-info {
             top: calc(50% - (calc(60px + (89.143 - 60) * ((100vw - 360px) / (768 - 360)))) / 2);
-            /*             top: calc(50% - (calc(20px + (60 - 20) * ((100vw - 360px) / (1200 - 360)))) / 2); */
          }
 
-         /* Высота блока -info */
          &-container.top &-info {
+            /* Высота блока -info */
             height: calc(
                100% -
                   (

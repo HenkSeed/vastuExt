@@ -349,11 +349,11 @@
       }
 
       .price-result {
+         padding-bottom: calc(20px + (40 - 20) * ((100vw - 360px) / (1200 - 360)));
+
          & span {
             font-size: calc(16px + (22 - 16) * ((100vw - 360px) / (1200 - 360)));
          }
-
-         padding-bottom: calc(20px + (40 - 20) * ((100vw - 360px) / (1200 - 360)));
       }
    }
 }

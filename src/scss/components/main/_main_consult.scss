@@ -15,7 +15,7 @@
    }
 
    &__header {
-      color: #8B4513;
+      color: #8b4513;
       font-size: 4.8rem;
       font-weight: 400;
    }
@@ -23,7 +23,7 @@
    &__line {
       height: 0;
       width: 80vw;
-      border: 1px solid #F1C9A5;
+      border: 1px solid #f1c9a5;
       margin-top: 5px;
    }
 
@@ -51,8 +51,7 @@
             width: 100%;
          }
 
-         /* @include image-hover; */
-         @include image-hover-params (0.3, 0.1);
+         @include image-hover-params(0.3, 0.1);
       }
 
       &__info {
@@ -60,7 +59,7 @@
          right: 0;
          display: flex;
          flex-direction: column;
-         background-image: url('../images/main/consult/bg_img.png');
+         background-image: url("../images/main/consult/bg_img.png");
          background-color: rgba(242, 232, 222, 1);
          background-position: center;
          background-repeat: no-repeat;
@@ -74,14 +73,14 @@
 
       &__title {
          font-size: 4rem;
-         color: #8B4513;
+         color: #8b4513;
          font-weight: 500;
          margin-bottom: 20px;
       }
 
       &__text {
          font-size: 18px;
-         color: #2A2A2A;
+         color: #2a2a2a;
          margin-bottom: 185px;
          line-height: 136%;
          letter-spacing: -0.3px;
@@ -96,34 +95,32 @@
 
       &__more-btn,
       &__all-btn {
-         /* padding: 1.2rem 4.5rem; */
          box-sizing: border-box;
          padding-top: 12px;
          padding-bottom: 12px;
          padding-left: 45px;
          padding-right: 45px;
-         border: #8B4513 1px solid;
+         border: #8b4513 1px solid;
          border-radius: 10px;
          font-size: 1.8rem;
          transition: all 0.3s;
       }
 
       &__more-btn {
-         background-color: #8B4513;
+         background-color: #8b4513;
          color: #fff;
 
          @include media-hover() {
-            background-color: #A66321;
+            background-color: #a66321;
          }
       }
 
       &__all-btn {
-         color: #8B4513;
-         background-color: #F2E8DE;
-
+         color: #8b4513;
+         background-color: #f2e8de;
 
          @include media-hover() {
-            background-color: #A66321;
+            background-color: #a66321;
             color: #fff;
          }
       }
@@ -164,7 +161,7 @@
          font-size: 24px;
          line-height: 130%;
          font-weight: 800;
-         color: #2A2A2A;
+         color: #2a2a2a;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -172,10 +169,8 @@
    }
 }
 
-@media(max-width:1200px) {
-
+@media (max-width: 1200px) {
    .consult {
-
       &__opened {
          &__title {
             font-size: calc(30px + (40 - 30) * ((100vw - 768px) / (1200 - 768)));
@@ -203,7 +198,7 @@
    }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
    .consult {
       padding-top: 12rem;
       padding-bottom: 6rem;
@@ -284,7 +279,7 @@
    }
 }
 
-@media(max-width:500px) {
+@media (max-width: 500px) {
    .consult {
       &__line {
          width: 100%;
@@ -312,7 +307,7 @@
    }
 }
 
-@media(max-width:360px) {
+@media (max-width: 360px) {
    .consult {
       &__opened {
          &__text {

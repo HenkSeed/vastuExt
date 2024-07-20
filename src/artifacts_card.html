@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <title>Vastu main</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+   <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<!-- Затемнённый фон для бургер-меню -->
+<div class="dark-bg center">
+   <div class="container dark-bg__container">
+
+      <div class="dark-bg__burger-menu get-visible">
+   <img class="dark-bg__burger-menu-cross" src="images/main/dark_bg/cross_close.svg" alt="Closing cross">
+
+   <ul>
+      <li class="dark-bg__burger-menu-item">
+         <a href="#">О компании</a>
+      </li>
+      <li class="dark-bg__burger-menu-item">
+         <a href="#">Консультации <img src="images/main/dark_bg/burger_menu_arrow_right.svg"
+               alt="Burger Menu Arrow"></a>
+      </li>
+      <li class="dark-bg__burger-menu-item">
+         <a href="#">Артефакты <img src="images/main/dark_bg/burger_menu_arrow_right.svg" alt="Burger Menu Arrow"></a>
+      </li>
+      <li class="dark-bg__burger-menu-item">
+         <a href="#">Отзывы</a>
+      </li>
+      <li class="dark-bg__burger-menu-item">
+         <a href="#">Новости</a>
+      </li>
+      <li class="dark-bg__burger-menu-item">
+         <a href="#">Контакты</a>
+      </li>
+   </ul>
+
+   <div class="header__social">
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__telegram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__telegram-circle"
+            d="M19 37C28.9411 37 37 28.9411 37 19C37 9.05887 28.9411 1 19 1C9.05887 1 1 9.05887 1 19C1 28.9411 9.05887 37 19 37Z"
+            stroke="" />
+         <path d="M15.7008 27.25C15.1176 27.25 15.2167 27.0298 15.0156 26.4746L13.3008 20.8309L26.5008 13"
+            fill="#C8DAEA" />
+         <path d="M15.6992 27.2501C16.1492 27.2501 16.348 27.0443 16.5992 26.8001L18.9992 24.4664L16.0055 22.6611"
+            fill="#A9C9DD" />
+         <path
+            d="M16.0061 22.6616L23.2601 28.021C24.0879 28.4777 24.6853 28.2412 24.8915 27.2524L27.8442 13.338C28.1465 12.126 27.3822 11.5762 26.5903 11.9358L9.25182 18.6214C8.0683 19.0961 8.0752 19.7564 9.03609 20.0506L13.4855 21.4393L23.7865 14.9406C24.2728 14.6457 24.7191 14.8043 24.3528 15.1294"
+            fill="url(#paint0_linear_223_3590)" />
+         <defs>
+            <linearGradient id="paint0_linear_223_3590" x1="16.7468" y1="20.1058" x2="18.67" y2="26.327"
+               gradientUnits="userSpaceOnUse">
+               <stop stop-color="#EFF7FC" />
+               <stop offset="1" stop-color="white" />
+            </linearGradient>
+         </defs>
+      </svg>
+   </a>
+</div>
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__whatsup" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__whatsup-circle"
+            d="M19 37C28.9411 37 37 28.9411 37 19C37 9.05887 28.9411 1 19 1C9.05887 1 1 9.05887 1 19C1 28.9411 9.05887 37 19 37Z"
+            stroke="" />
+         <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M19.5941 29.014H19.5897C17.7983 29.0134 16.0381 28.5639 14.4748 27.7112L8.80078 29.1996L10.3192 23.6532C9.38258 22.03 8.88972 20.1887 8.89052 18.3023C8.89287 12.4009 13.6944 7.59961 19.594 7.59961C22.4573 7.60085 25.1446 8.71551 27.1654 10.7387C29.1862 12.7617 30.2985 15.4509 30.2974 18.3107C30.295 24.2108 25.4954 29.0116 19.5941 29.014ZM14.7377 25.7735L15.0625 25.9663C16.4284 26.7769 17.9941 27.2057 19.5905 27.2064H19.5941C24.4974 27.2064 28.4882 23.2155 28.4902 18.3101C28.4911 15.933 27.5666 13.6979 25.887 12.0163C24.2074 10.3348 21.9738 9.40826 19.5976 9.40744C14.6905 9.40744 10.6996 13.3979 10.6977 18.3029C10.697 19.9839 11.1673 21.621 12.0578 23.0373L12.2694 23.3739L11.3706 26.6568L14.7377 25.7735ZM24.6201 20.6152C24.8066 20.7053 24.9326 20.7662 24.9864 20.856C25.0532 20.9675 25.0532 21.5029 24.8305 22.1277C24.6075 22.7524 23.5391 23.3226 23.0252 23.3994C22.5645 23.4682 21.9814 23.497 21.3407 23.2934C20.9523 23.1701 20.4542 23.0056 19.8161 22.73C17.3089 21.6474 15.6146 19.2174 15.2943 18.7581C15.2719 18.726 15.2562 18.7035 15.2474 18.6918L15.2453 18.6889C15.1038 18.5 14.1554 17.2347 14.1554 15.9252C14.1554 14.6933 14.7605 14.0476 15.0391 13.7504C15.0582 13.73 15.0757 13.7113 15.0914 13.6941C15.3366 13.4264 15.6263 13.3594 15.8046 13.3594C15.9829 13.3594 16.1614 13.3611 16.3172 13.3689C16.3364 13.3699 16.3564 13.3697 16.3771 13.3696C16.5329 13.3687 16.7272 13.3676 16.9189 13.828C16.9927 14.0052 17.1006 14.2679 17.2144 14.5449C17.4445 15.1052 17.6987 15.7242 17.7435 15.8138C17.8104 15.9476 17.8549 16.1038 17.7658 16.2823C17.7524 16.3091 17.74 16.3344 17.7282 16.3585C17.6612 16.4952 17.612 16.5958 17.4983 16.7284C17.4537 16.7806 17.4075 16.8369 17.3613 16.8931C17.2693 17.0052 17.1773 17.1172 17.0972 17.197C16.9633 17.3304 16.8239 17.475 16.9799 17.7428C17.1359 18.0105 17.6727 18.8863 18.4677 19.5955C19.3224 20.3578 20.0652 20.68 20.4417 20.8433C20.5152 20.8752 20.5747 20.901 20.6184 20.9229C20.8858 21.0568 21.0418 21.0344 21.1978 20.856C21.3538 20.6775 21.8664 20.075 22.0446 19.8073C22.2229 19.5397 22.4012 19.5842 22.6463 19.6735C22.8915 19.7628 24.2064 20.4097 24.4738 20.5436C24.526 20.5697 24.5748 20.5933 24.6201 20.6152Z"
+            fill="#FDFDFD" />
+      </svg>
+   </a>
+</div>
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__vk" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__vk-circle"
+            d="M1 19C1 9.05887 9.05887 1 19 1C28.9411 1 37 9.05887 37 19C37 28.9411 28.9411 37 19 37C9.05887 37 1 28.9411 1 19Z"
+            stroke="" />
+         <path
+            d="M19.942 24.9073C19.942 24.9073 20.2885 24.8695 20.466 24.6823C20.6284 24.5109 20.6228 24.1873 20.6228 24.1873C20.6228 24.1873 20.6012 22.6765 21.3159 22.4534C22.0202 22.2341 22.9245 23.9145 23.8842 24.5607C24.6092 25.0492 25.1595 24.9423 25.1595 24.9423L27.7241 24.9073C27.7241 24.9073 29.0651 24.8261 28.4293 23.791C28.3767 23.7062 28.0584 23.025 26.523 21.6257C24.9144 20.161 25.1304 20.3979 27.0667 17.8639C28.2462 16.3208 28.7176 15.3787 28.5702 14.9759C28.4303 14.5906 27.5626 14.6929 27.5626 14.6929L24.6759 14.7104C24.6759 14.7104 24.4617 14.6818 24.303 14.7749C24.1481 14.8662 24.0476 15.0791 24.0476 15.0791C24.0476 15.0791 23.5912 16.2728 22.9818 17.2887C21.6962 19.4309 21.1825 19.5443 20.9722 19.4115C20.4829 19.1009 20.605 18.1653 20.605 17.5007C20.605 15.4239 20.9261 14.5583 19.9805 14.3343C19.6668 14.2597 19.4358 14.2108 18.6329 14.2025C17.6028 14.1924 16.7313 14.2062 16.2373 14.4431C15.9087 14.6007 15.6551 14.9528 15.8101 14.9731C16.0007 14.998 16.4327 15.0874 16.6618 15.3935C16.9576 15.7889 16.9473 16.6757 16.9473 16.6757C16.9473 16.6757 17.1173 19.1203 16.5501 19.4235C16.1613 19.6318 15.6279 19.2069 14.4813 17.2628C13.8944 16.2673 13.4511 15.1667 13.4511 15.1667C13.4511 15.1667 13.3657 14.9611 13.2126 14.8505C13.0276 14.7169 12.7694 14.6754 12.7694 14.6754L10.0263 14.6929C10.0263 14.6929 9.61407 14.704 9.46288 14.88C9.32859 15.0358 9.45255 15.3593 9.45255 15.3593C9.45255 15.3593 11.6002 20.2919 14.0324 22.7779C16.2627 25.0566 18.7944 24.9073 18.7944 24.9073H19.942Z"
+            fill="white" />
+      </svg>
+   </a>
+</div>
+</div>
+</div>
+
+      <div class="dark-bg__burger-consult get-invisible">
+   <img class="dark-bg__burger-consult-cross" src="images/main/dark_bg/cross_close.svg" alt="Closing cross">
+
+   <a href="#"><img src="images/main/dark_bg/burger_menu_arrow_left.svg" alt="Burger Menu Arrow"> Консультации</a>
+
+   <ul>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">ВСЕ КОНСУЛЬТАЦИИ</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Жемчуг и серебро</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Камни для коррекций</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Спирали для коррекций</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Килаки для коррекций</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Лингамы</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Пирамиды</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Вазы для коррекций</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Шри янтра Солнца</a>
+      </li>
+      <li class="dark-bg__burger-consult-item">
+         <a href="#">Другие артефакты</a>
+      </li>
+   </ul>
+
+</div>
+
+      <div class="dark-bg__burger-artifacts get-invisible">
+   <img class="dark-bg__burger-artifacts-cross" src="images/main/dark_bg/cross_close.svg" alt="Closing cross">
+
+   <a href="#"><img src="images/main/dark_bg/burger_menu_arrow_left.svg" alt="Burger Menu Arrow">
+      Артефакты</a>
+
+   <ul>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="artifacts.html">ВСЕ АРТЕФАКТЫ</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Жемчуг и серебро</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Камни для коррекций</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Спирали для коррекций</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Килаки для коррекций</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Лингамы</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Пирамиды</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Вазы для коррекций</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Шри янтра Солнца</a>
+      </li>
+      <li class="dark-bg__burger-artifacts-item">
+         <a href="#">Другие артефакты</a>
+      </li>
+   </ul>
+
+</div>
+
+   </div>
+</div>
+
+<!-- Затемнённый фон для всплывающих окон -->
+<div class="shadow center">
+   <div class="container shadow__container">
+
+      <div class="shadow__cart-menu cart-menu--invisible">
+
+   <div class="cart-menu__items">
+
+      <div class="cart-menu__item">
+         <a href="#">
+            <img src="images/main/cart/item-1.png" alt="Item-1" class="cart-menu__img">
+         </a>
+
+         <div class="cart-menu__info">
+            <div class="cart-menu__header"><a href="#">Круглая спираль Васту</a></div>
+            <div class="cart-menu__price-block">
+               <span class="cart-menu__price">1700 руб.</span>
+
+               <button class="cart-menu__minus"><svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M15 1H1" stroke="" stroke-width="2" stroke-linecap="round" />
+                  </svg></button>
+
+               <input type="number" value="1" class="cart-menu__counter">
+
+               <button class="cart-menu__plus"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M8 1V8M8 8V15M8 8H15M8 8H1" stroke="" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  </svg>
+               </button>
+
+               <button class="cart-menu__delete">
+                  <img src="images/main/cart/delete_icon.svg" alt="Delete Icon">
+               </button>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="cart-menu__result-price">
+      <span class="cart-menu__text">Итого:</span>
+      <span class="cart-menu__price">5100 руб.</span>
+   </div>
+
+   <div class="cart-menu__buttons">
+      <a href="artifacts_card.html" class="cart-menu__button cart-menu__button--clear">Продолжить</a>
+
+      <a href="cart_page.html" class="cart-menu__button cart-menu__button--order">Заказать</a>
+   </div>
+</div>
+
+   </div>
+</div>
+
+<header class="header center">
+   <!-- Затемнение для меню корзины -->
+   <div class="dark__header dark dark--invisible"></div>
+
+   <!-- Слой для имитирования тени и цвета хедера, перекрывающих выпадающие из nav меню -->
+   <div class="header-copy"></div>
+   <!-- Блоки меню, выпадающие из nav-меню -->
+   <!-- Меню при выборе пункта в nav-меню хедера -->
+<div class="drop__consult drop__menu drop__hidden">
+   <ul class="drop__consult__menu">
+      <li class="drop__consult__item">
+         <a href="consultations.html" class="drop__consult__anchor">Все консультации</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Жемчуг и серебро</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Камни для коррекций</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Спирали для
+            коррекций</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Килаки для
+            коррекций</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Лингамы</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Пирамиды</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Вазы для коррекций</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Шри янтра Солнца</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Другие артефакты</a>
+      </li>
+   </ul>
+</div>
+   <!-- Меню при выборе пункта в nav-меню хедера -->
+<div class="drop__artifacts drop__menu drop__hidden">
+   <ul class="drop__artifacts__menu">
+      <li class="drop__artifacts__item">
+         <a href="artifacts.html" class="drop__artifacts__anchor">Все артефакты</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Жемчуг и серебро</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Камни для коррекций</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Спирали для
+            коррекций</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Килаки для
+            коррекций</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Лингамы</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Пирамиды</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Вазы для коррекций</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Шри янтра Солнца</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Другие артефакты</a>
+      </li>
+   </ul>
+</div>
+
+   <div class="container header__container">
+
+      <div class="header__burger__icon">
+   <img src="images/main/header/burger.svg" alt="Burger Icon">
+</div>
+      <a href="#">
+   <div class="header__logo"><span>VASTU.RU</span></div>
+
+</a>
+      <div class="header__nav">
+   <a href="about.html" class="header__nav__item">О компании</a>
+   <a href="consultations.html" class="header__nav__item">Консультации</a>
+   <a href="artifacts.html" class="header__nav__item">Артефакты</a>
+   <a href="reviews.html" class="header__nav__item">Отзывы</a>
+   <a href="news.html" class="header__nav__item">Новости</a>
+   <a href="contacts.html" class="header__nav__item">Контакты</a>
+</div>
+      <div class="header__social">
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__telegram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__telegram-circle"
+            d="M19 37C28.9411 37 37 28.9411 37 19C37 9.05887 28.9411 1 19 1C9.05887 1 1 9.05887 1 19C1 28.9411 9.05887 37 19 37Z"
+            stroke="" />
+         <path d="M15.7008 27.25C15.1176 27.25 15.2167 27.0298 15.0156 26.4746L13.3008 20.8309L26.5008 13"
+            fill="#C8DAEA" />
+         <path d="M15.6992 27.2501C16.1492 27.2501 16.348 27.0443 16.5992 26.8001L18.9992 24.4664L16.0055 22.6611"
+            fill="#A9C9DD" />
+         <path
+            d="M16.0061 22.6616L23.2601 28.021C24.0879 28.4777 24.6853 28.2412 24.8915 27.2524L27.8442 13.338C28.1465 12.126 27.3822 11.5762 26.5903 11.9358L9.25182 18.6214C8.0683 19.0961 8.0752 19.7564 9.03609 20.0506L13.4855 21.4393L23.7865 14.9406C24.2728 14.6457 24.7191 14.8043 24.3528 15.1294"
+            fill="url(#paint0_linear_223_3590)" />
+         <defs>
+            <linearGradient id="paint0_linear_223_3590" x1="16.7468" y1="20.1058" x2="18.67" y2="26.327"
+               gradientUnits="userSpaceOnUse">
+               <stop stop-color="#EFF7FC" />
+               <stop offset="1" stop-color="white" />
+            </linearGradient>
+         </defs>
+      </svg>
+   </a>
+</div>
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__whatsup" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__whatsup-circle"
+            d="M19 37C28.9411 37 37 28.9411 37 19C37 9.05887 28.9411 1 19 1C9.05887 1 1 9.05887 1 19C1 28.9411 9.05887 37 19 37Z"
+            stroke="" />
+         <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M19.5941 29.014H19.5897C17.7983 29.0134 16.0381 28.5639 14.4748 27.7112L8.80078 29.1996L10.3192 23.6532C9.38258 22.03 8.88972 20.1887 8.89052 18.3023C8.89287 12.4009 13.6944 7.59961 19.594 7.59961C22.4573 7.60085 25.1446 8.71551 27.1654 10.7387C29.1862 12.7617 30.2985 15.4509 30.2974 18.3107C30.295 24.2108 25.4954 29.0116 19.5941 29.014ZM14.7377 25.7735L15.0625 25.9663C16.4284 26.7769 17.9941 27.2057 19.5905 27.2064H19.5941C24.4974 27.2064 28.4882 23.2155 28.4902 18.3101C28.4911 15.933 27.5666 13.6979 25.887 12.0163C24.2074 10.3348 21.9738 9.40826 19.5976 9.40744C14.6905 9.40744 10.6996 13.3979 10.6977 18.3029C10.697 19.9839 11.1673 21.621 12.0578 23.0373L12.2694 23.3739L11.3706 26.6568L14.7377 25.7735ZM24.6201 20.6152C24.8066 20.7053 24.9326 20.7662 24.9864 20.856C25.0532 20.9675 25.0532 21.5029 24.8305 22.1277C24.6075 22.7524 23.5391 23.3226 23.0252 23.3994C22.5645 23.4682 21.9814 23.497 21.3407 23.2934C20.9523 23.1701 20.4542 23.0056 19.8161 22.73C17.3089 21.6474 15.6146 19.2174 15.2943 18.7581C15.2719 18.726 15.2562 18.7035 15.2474 18.6918L15.2453 18.6889C15.1038 18.5 14.1554 17.2347 14.1554 15.9252C14.1554 14.6933 14.7605 14.0476 15.0391 13.7504C15.0582 13.73 15.0757 13.7113 15.0914 13.6941C15.3366 13.4264 15.6263 13.3594 15.8046 13.3594C15.9829 13.3594 16.1614 13.3611 16.3172 13.3689C16.3364 13.3699 16.3564 13.3697 16.3771 13.3696C16.5329 13.3687 16.7272 13.3676 16.9189 13.828C16.9927 14.0052 17.1006 14.2679 17.2144 14.5449C17.4445 15.1052 17.6987 15.7242 17.7435 15.8138C17.8104 15.9476 17.8549 16.1038 17.7658 16.2823C17.7524 16.3091 17.74 16.3344 17.7282 16.3585C17.6612 16.4952 17.612 16.5958 17.4983 16.7284C17.4537 16.7806 17.4075 16.8369 17.3613 16.8931C17.2693 17.0052 17.1773 17.1172 17.0972 17.197C16.9633 17.3304 16.8239 17.475 16.9799 17.7428C17.1359 18.0105 17.6727 18.8863 18.4677 19.5955C19.3224 20.3578 20.0652 20.68 20.4417 20.8433C20.5152 20.8752 20.5747 20.901 20.6184 20.9229C20.8858 21.0568 21.0418 21.0344 21.1978 20.856C21.3538 20.6775 21.8664 20.075 22.0446 19.8073C22.2229 19.5397 22.4012 19.5842 22.6463 19.6735C22.8915 19.7628 24.2064 20.4097 24.4738 20.5436C24.526 20.5697 24.5748 20.5933 24.6201 20.6152Z"
+            fill="#FDFDFD" />
+      </svg>
+   </a>
+</div>
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__vk" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__vk-circle"
+            d="M1 19C1 9.05887 9.05887 1 19 1C28.9411 1 37 9.05887 37 19C37 28.9411 28.9411 37 19 37C9.05887 37 1 28.9411 1 19Z"
+            stroke="" />
+         <path
+            d="M19.942 24.9073C19.942 24.9073 20.2885 24.8695 20.466 24.6823C20.6284 24.5109 20.6228 24.1873 20.6228 24.1873C20.6228 24.1873 20.6012 22.6765 21.3159 22.4534C22.0202 22.2341 22.9245 23.9145 23.8842 24.5607C24.6092 25.0492 25.1595 24.9423 25.1595 24.9423L27.7241 24.9073C27.7241 24.9073 29.0651 24.8261 28.4293 23.791C28.3767 23.7062 28.0584 23.025 26.523 21.6257C24.9144 20.161 25.1304 20.3979 27.0667 17.8639C28.2462 16.3208 28.7176 15.3787 28.5702 14.9759C28.4303 14.5906 27.5626 14.6929 27.5626 14.6929L24.6759 14.7104C24.6759 14.7104 24.4617 14.6818 24.303 14.7749C24.1481 14.8662 24.0476 15.0791 24.0476 15.0791C24.0476 15.0791 23.5912 16.2728 22.9818 17.2887C21.6962 19.4309 21.1825 19.5443 20.9722 19.4115C20.4829 19.1009 20.605 18.1653 20.605 17.5007C20.605 15.4239 20.9261 14.5583 19.9805 14.3343C19.6668 14.2597 19.4358 14.2108 18.6329 14.2025C17.6028 14.1924 16.7313 14.2062 16.2373 14.4431C15.9087 14.6007 15.6551 14.9528 15.8101 14.9731C16.0007 14.998 16.4327 15.0874 16.6618 15.3935C16.9576 15.7889 16.9473 16.6757 16.9473 16.6757C16.9473 16.6757 17.1173 19.1203 16.5501 19.4235C16.1613 19.6318 15.6279 19.2069 14.4813 17.2628C13.8944 16.2673 13.4511 15.1667 13.4511 15.1667C13.4511 15.1667 13.3657 14.9611 13.2126 14.8505C13.0276 14.7169 12.7694 14.6754 12.7694 14.6754L10.0263 14.6929C10.0263 14.6929 9.61407 14.704 9.46288 14.88C9.32859 15.0358 9.45255 15.3593 9.45255 15.3593C9.45255 15.3593 11.6002 20.2919 14.0324 22.7779C16.2627 25.0566 18.7944 24.9073 18.7944 24.9073H19.942Z"
+            fill="white" />
+      </svg>
+   </a>
+</div>
+</div>
+      <div class="header__cart">
+   <div class="header__cart__image">
+      <img src="images/main/header/cart_icon.svg" alt="Cart Icon">
+      <div class="header__cart__counter"><span>3</span></div>
+   </div>
+</div>
+      <div class="common cart-menu center-cart cart-menu--invisible">
+
+   <div class="cart-menu__items">
+
+      <div class="cart-menu__item">
+         <a href="#">
+            <img src="images/main/cart/item-1.png" alt="Item-1" class="cart-menu__img">
+         </a>
+
+         <div class="cart-menu__info">
+            <div class="cart-menu__header"><a href="#">Круглая спираль Васту</a></div>
+            <div class="cart-menu__price-block">
+               <span class="cart-menu__price">1700 руб.</span>
+
+               <button class="cart-menu__minus"><svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M15 1H1" stroke="" stroke-width="2" stroke-linecap="round" />
+                  </svg></button>
+
+               <input type="number" value="1" class="cart-menu__counter">
+
+               <button class="cart-menu__plus"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M8 1V8M8 8V15M8 8H15M8 8H1" stroke="" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  </svg>
+               </button>
+
+               <button class="cart-menu__delete">
+                  <img src="images/main/cart/delete_icon.svg" alt="Delete Icon">
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="cart-menu__item">
+         <a href="#">
+            <img src="images/main/cart/item-2.png" alt="Item-2" class="cart-menu__img">
+         </a>
+
+         <div class="cart-menu__info">
+            <div class="cart-menu__header"><a href="#">Круглая спираль Васту</a></div>
+
+            <div class="cart-menu__price-block">
+               <span class="cart-menu__price">1700 руб.</span>
+               <button class="cart-menu__minus"><svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M15 1H1" stroke="" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+               </button>
+
+               <input type="number" value="1" class="cart-menu__counter">
+
+               <button class="cart-menu__plus"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M8 1V8M8 8V15M8 8H15M8 8H1" stroke="" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  </svg></button>
+
+               <button class="cart-menu__delete">
+                  <img src="images/main/cart/delete_icon.svg" alt="Delete Icon">
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="cart-menu__item">
+         <a href="#">
+            <img src="images/main/cart/item-3.png" alt="Item-3" class="cart-menu__img">
+         </a>
+
+         <div class="cart-menu__info">
+            <div class="cart-menu__header"><a href="#">Круглая спираль Васту</a></div>
+
+            <div class="cart-menu__price-block">
+               <span class="cart-menu__price">1700 руб.</span>
+               <button class="cart-menu__minus"><svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M15 1H1" stroke="" stroke-width="2" stroke-linecap="round" />
+                  </svg></button>
+
+               <input type="number" value="1" class="cart-menu__counter">
+
+               <button class="cart-menu__plus"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M8 1V8M8 8V15M8 8H15M8 8H1" stroke="" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                  </svg></button>
+
+               <button class="cart-menu__delete">
+                  <img src="images/main/cart/delete_icon.svg" alt="Delete Icon">
+               </button>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div class="cart-menu__result-price">
+      <span class="cart-menu__text">Итого:</span>
+      <span class="cart-menu__price">5100 руб.</span>
+   </div>
+
+   <div class="cart-menu__buttons">
+      <button class="cart-menu__button cart-menu__button--clear">Очистить</button>
+
+      <a href="#" class="cart-menu__button cart-menu__button--order">Заказать</a>
+   </div>
+</div>
+
+   </div>
+
+</header>
+
+<!-- Оболочка страницы -->
+<div class="artifacts-card">
+
+   <section class="hero center">
+      <div class="container hero__container">
+
+      </div>
+   </section>
+
+   <section class="title-unit center">
+      <div class="container title-unit__container">
+         <div class="title-unit__title-mod">
+            <h2 class="title-unit__title-header">Артефакты</h2>
+         </div>
+      </div>
+   </section>
+
+   <section class="buy-now center">
+      <div class="container buy-now__container">
+         <div class="buy-now__img">
+            <img src="images/artifacts_card/buy_now/main img.png" alt="Main Image">
+
+            <div class="slider__container">
+               <div class="arrow-left">
+   <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M9 1L2.55635 7.04093C1.82686 7.72482 1.46211 8.06677 1.46211 8.5C1.46211 8.93323 1.82686 9.27518 2.55635 9.95908L9 16"
+         stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+   </svg>
+</div>
+
+               <div class="slider-swiper">
+                  <div class="swiper-wrapper slider__wrapper">
+
+                     <div class="swiper-slide slider__slide slide-1">
+                        <img src="images/artifacts_card/slider/sub_img-1.png" alt="Image 1">
+                     </div>
+
+                     <div class="swiper-slide slider__slide slide-2">
+                        <img src="images/artifacts_card/slider/sub_img-2.png" alt="Image 2">
+                     </div>
+
+                     <div class="swiper-slide slider__slide slide-3">
+                        <img src="images/artifacts_card/slider/sub_img-3.png" alt="Image 3">
+                     </div>
+
+                     <div class="swiper-slide slide-1">
+                        <img src="images/artifacts_card/slider/sub_img-1.png" alt="Image 1">
+                     </div>
+
+                     <div class="swiper-slide slide-2">
+                        <img src="images/artifacts_card/slider/sub_img-2.png" alt="Image 2">
+                     </div>
+
+                     <div class="swiper-slide slide-3">
+                        <img src="images/artifacts_card/slider/sub_img-3.png" alt="Image 3">
+                     </div>
+                  </div>
+
+               </div>
+               <div class="arrow-right">
+   <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M0.999999 16L7.44365 9.95908C8.17314 9.27518 8.53789 8.93323 8.53789 8.5C8.53789 8.06677 8.17314 7.72482 7.44365 7.04093L1 1"
+         stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+   </svg>
+</div>
+            </div>
+         </div>
+
+         <div class="buy-now__info">
+            <div class="buy-now__header">
+               <h2>Спираль Васту квадратная железная</h2>
+            </div>
+            <div class="buy-now__vendor-code">Артикул: 2312312412412</div>
+            <div class="buy-now__text">
+               <p>Спираль для коррекции жилого пространства. Предназначена для корректировки юго-западного сектора
+                  жилого пространства,
+                  изготовлена с учетом Ведических знаний и науки Васту. Монтируются в пол.</p>
+            </div>
+
+            <div class="price-block">
+   <span class="price-block__price">1300 руб.</span>
+
+   <button class="price-block__minus"><svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+         <path d="M15 1H1" stroke="" stroke-width="2" stroke-linecap="round" />
+      </svg></button>
+
+   <input type="number" value="1" class="price-block__counter">
+
+   <button class="price-block__plus"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+         <path d="M8 1V8M8 8V15M8 8H15M8 8H1" stroke="" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+      </svg>
+   </button>
+</div>
+
+            <div class="buy-now__btns">
+               <button class="buy-now__to-cart-btn">
+                  <img src="images/artifacts_card/buy_now/cart.svg" alt="Cart Icon">В корзину</button>
+
+               <a href="#" class="buy-now__just-btn">
+                  Купить сейчас!
+               </a>
+            </div>
+
+            <div class="buy-now__cash">
+               <div class="buy-now__pop-up opacity--zero">
+                  <p>Принимаем платежи мгновенно через ЮKassa. Оплачивайте свои покупки быстро и безопасно, не используя
+                     кредитную карту -
+                     вам понадобится только смартфон и приложение СберБанк Онлайн. Чтобы оплатить покупку через ЮKassa,
+                     выберите SberPay на
+                     странице оплаты и отсканируйте QR-код в приложении СберБанка. После этого осуществите оплату.
+                     Поздравляем, ваш заказ
+                     успешно оплачен!</p>
+                  <button class="buy-now__cross">
+                     <img src="images/artifacts_card/buy_now/cross.svg" alt="">
+                  </button>
+               </div>
+               <div class="buy-now__cash-image">
+                  <img src="images/artifacts_card/buy_now/u_money_logo.png" alt="U-money Logo">
+               </div>
+               <div class="buy-now__cash-text">Принимаем оплату через ЮKassa</div>
+               <button class="buy-now__info-icon">
+                  <img src="images/artifacts_card/buy_now/info_icon.svg" alt="Info Icon">
+               </button>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <section class="tabs center">
+      <div class="container tabs__container">
+         <div class="tabs__headers">
+            <div class="tabs__header tabs__header--active" data-tab="tab-1">Описание</div>
+            <div class="tabs__header" data-tab="tab-2">Детали</div>
+            <div class="tabs__header" data-tab="tab-3">Доставка и оплата</div>
+         </div>
+         <div class="tabs__texts">
+            <div class="tabs__text opacity--max" data-tab="tab-1">
+               <p>Спираль Васту - это уникальный товар, предназначенный для использования во время практик Васту. Этот
+                  предмет имеет форму квадрата и изготовлен из прочного железа, что делает его долговечным и надежным.
+                  Спираль Васту помогает создать гармонию и баланс в окружающем пространстве, а также улучшить
+                  энергетику помещения. Его уникальный дизайн и качественные материалы делают его прекрасным выбором для
+                  тех, кто интересуется практиками Васту и стремится к гармонии в своем доме или офисе.
+               </p>
+               <p>Кроме того, Спираль Васту может быть использована как декоративный элемент, добавляющий уникальный
+                  акцент в интерьере. Его компактные размеры делают его удобным для размещения на полках, столах или
+                  других поверхностях. Этот товар также может быть прекрасным подарком для тех, кто интересуется
+                  духовным развитием и гармонизацией пространства.
+               </p>
+               <p>Спираль Васту - это не только функциональный предмет, но и символ гармонии и баланса, который может
+                  принести пользу и радость своему владельцу. </p>
+            </div>
+
+            <div class="tabs__text opacity--zero display--none" data-tab="tab-2">
+               <p>Вторая закладка. Спираль Васту - Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  molestias dolores
+                  repellendus numquam ipsam incidunt perspiciatis, facere blanditiis tenetur nulla quos id quo
+                  exercitationem architecto doloribus adipisci quae sapiente praesentium.
+               </p>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, repudiandae commodi repellendus ab
+                  magnam tempore accusantium! Odio, quaerat esse obcaecati enim temporibus alias cum nam reiciendis
+                  consequuntur unde. In magni aspernatur facere officia dolore atque quas iure deserunt quis laborum.
+               </p>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente deleniti vero ea quos reprehenderit
+                  iusto quo est qui aliquid accusamus!</p>
+            </div>
+
+            <div class="tabs__text opacity--zero display--none" data-tab="tab-3">
+               <p>Третья закладка. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quasi nobis unde
+                  perspiciatis
+                  voluptatum similique obcaecati! Natus voluptatibus facilis reprehenderit impedit numquam iusto ducimus
+                  quam velit fugiat, temporibus, quos pariatur expedita sunt esse consequuntur labore, quasi similique
+                  distinctio placeat sapiente nihil eaque voluptas consectetur. Debitis accusamus quae nobis unde nemo?
+               </p>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid perspiciatis dolorem numquam
+                  tenetur, praesentium enim rem est, quaerat quisquam repellat deserunt sunt laudantium harum tempora
+                  eius amet ipsum ad sequi!
+               </p>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste molestiae doloribus et perferendis vel
+                  est a, incidunt nobis deleniti vero itaque illum quam dolor. Qui iste repellendus sunt! Adipisci earum
+                  dolorem maiores qui, quisquam ut! Sunt sint dolore earum quas?</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="title-block center">
+      <div class="container title-block__container">
+         <span class="title-block__title">Похожие товары</span>
+         <div class="title-block__line"></div>
+      </div>
+   </section>
+
+   <section class="cards center">
+      <div class="container cards__container">
+         <div class="cards__item">
+   <div class="cards__img">
+      <img src="images/artifacts/cards/img-1.png" alt="Image 1">
+   </div>
+   <div class="cards__title">Рубин необработанный</div>
+   <div class="cards__text">Натуральный камень <br> более 3 карат</div>
+   <div class="cards__price">2700 РУБ.</div>
+   <button class="cards__btn">
+      <img src="images/artifacts/cards/cart.svg" alt="Cart Icon">В корзину</button>
+</div><div class="cards__item">
+   <div class="cards__img">
+      <img src="images/artifacts/cards/img-2.png" alt="Image 2">
+   </div>
+   <div class="cards__title">Синий сапфир</div>
+   <div class="cards__text">Натуральный <br> неограненный камень</div>
+   <div class="cards__price">1800 РУБ.</div>
+   <button class="cards__btn">
+      <img src="images/artifacts/cards/cart.svg" alt="Cart Icon">В корзину</button>
+</div><div class="cards__item">
+   <div class="cards__img">
+      <img src="images/artifacts/cards/img-3.png" alt="Image 3">
+   </div>
+   <div class="cards__title">Зеленый изумруд</div>
+   <div class="cards__text">Неограненный камень <br> 2-3 карат</div>
+   <div class="cards__price">1800 РУБ.</div>
+   <button class="cards__btn">
+      <img src="images/artifacts/cards/cart.svg" alt="Cart Icon">В корзину</button>
+</div><div class="cards__item">
+   <div class="cards__img">
+      <img src="images/artifacts/cards/img-4.png" alt="Image 4">
+   </div>
+   <div class="cards__title">Красный коралл</div>
+   <div class="cards__text">Натуральный камень</div>
+   <div class="cards__price">1600 РУБ.</div>
+   <button class="cards__btn">
+      <img src="images/artifacts/cards/cart.svg" alt="Cart Icon">В корзину</button>
+</div><div class="cards__item">
+   <div class="cards__img">
+      <img src="images/artifacts/cards/img-5.png" alt="Image 5">
+   </div>
+   <div class="cards__title">Красный коралл 2ct</div>
+   <div class="cards__text">Цельный натуральный <br> камень, форма огня, 2ct+</div>
+   <div class="cards__price">2300 РУБ.</div>
+   <button class="cards__btn">
+      <img src="images/artifacts/cards/cart.svg" alt="Cart Icon">В корзину</button>
+</div><div class="cards__item">
+   <div class="cards__img">
+      <img src="images/artifacts/cards/img-6.png" alt="Image 6">
+   </div>
+   <div class="cards__title">Желтый сапфир</div>
+   <div class="cards__text">Натуральный <br> неограненный камень</div>
+   <div class="cards__price">1600 РУБ.</div>
+   <button class="cards__btn">
+      <img src="images/artifacts/cards/cart.svg" alt="Cart Icon">В корзину</button>
+</div><div class="cards__item">
+   <div class="cards__img">
+      <img src="images/artifacts/cards/img-7.png" alt="Image 7">
+   </div>
+   <div class="cards__title">Кошачий глаз</div>
+   <div class="cards__text">Натуральный камень</div>
+   <div class="cards__price">1600 РУБ.</div>
+   <button class="cards__btn">
+      <img src="images/artifacts/cards/cart.svg" alt="Cart Icon">В корзину</button>
+</div><div class="cards__item">
+   <div class="cards__img">
+      <img src="images/artifacts/cards/img-8.png" alt="Image 8">
+   </div>
+   <div class="cards__title">Горный хрусталь</div>
+   <div class="cards__text">Кристалл</div>
+   <div class="cards__price">1800 РУБ.</div>
+   <button class="cards__btn">
+      <img src="images/artifacts/cards/cart.svg" alt="Cart Icon">В корзину</button>
+</div>
+      </div>
+   </section>
+</div>
+
+<footer class="footer center">
+
+   <!-- Слой для имитирования тени и цвета хедера выше выпадающих меню -->
+   <div class="footer-copy"></div>
+
+   <div class="footer__drop--cover">
+      <!-- Блоки меню, выпадающие из nav-меню -->
+      <!-- Меню при выборе пункта в nav-меню хедера -->
+<div class="drop__consult drop__menu drop__hidden">
+   <ul class="drop__consult__menu">
+      <li class="drop__consult__item">
+         <a href="consultations.html" class="drop__consult__anchor">Все консультации</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Жемчуг и серебро</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Камни для коррекций</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Спирали для
+            коррекций</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Килаки для
+            коррекций</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Лингамы</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Пирамиды</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Вазы для коррекций</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Шри янтра Солнца</a>
+      </li>
+      <li class="drop__consult__item">
+         <a href="" class="drop__consult__anchor">Другие артефакты</a>
+      </li>
+   </ul>
+</div>
+      <!-- Меню при выборе пункта в nav-меню хедера -->
+<div class="drop__artifacts drop__menu drop__hidden">
+   <ul class="drop__artifacts__menu">
+      <li class="drop__artifacts__item">
+         <a href="artifacts.html" class="drop__artifacts__anchor">Все артефакты</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Жемчуг и серебро</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Камни для коррекций</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Спирали для
+            коррекций</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Килаки для
+            коррекций</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Лингамы</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Пирамиды</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Вазы для коррекций</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Шри янтра Солнца</a>
+      </li>
+      <li class="drop__artifacts__item">
+         <a href="" class="drop__artifacts__anchor">Другие артефакты</a>
+      </li>
+   </ul>
+</div>
+   </div>
+
+   <div class="container footer__container">
+
+      <a href="#">
+   <div class="header__logo"><span>VASTU.RU</span></div>
+
+</a>
+      <div class="header__nav">
+   <a href="about.html" class="header__nav__item">О компании</a>
+   <a href="consultations.html" class="header__nav__item">Консультации</a>
+   <a href="artifacts.html" class="header__nav__item">Артефакты</a>
+   <a href="reviews.html" class="header__nav__item">Отзывы</a>
+   <a href="news.html" class="header__nav__item">Новости</a>
+   <a href="contacts.html" class="header__nav__item">Контакты</a>
+</div>
+      <div class="header__social">
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__telegram" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__telegram-circle"
+            d="M19 37C28.9411 37 37 28.9411 37 19C37 9.05887 28.9411 1 19 1C9.05887 1 1 9.05887 1 19C1 28.9411 9.05887 37 19 37Z"
+            stroke="" />
+         <path d="M15.7008 27.25C15.1176 27.25 15.2167 27.0298 15.0156 26.4746L13.3008 20.8309L26.5008 13"
+            fill="#C8DAEA" />
+         <path d="M15.6992 27.2501C16.1492 27.2501 16.348 27.0443 16.5992 26.8001L18.9992 24.4664L16.0055 22.6611"
+            fill="#A9C9DD" />
+         <path
+            d="M16.0061 22.6616L23.2601 28.021C24.0879 28.4777 24.6853 28.2412 24.8915 27.2524L27.8442 13.338C28.1465 12.126 27.3822 11.5762 26.5903 11.9358L9.25182 18.6214C8.0683 19.0961 8.0752 19.7564 9.03609 20.0506L13.4855 21.4393L23.7865 14.9406C24.2728 14.6457 24.7191 14.8043 24.3528 15.1294"
+            fill="url(#paint0_linear_223_3590)" />
+         <defs>
+            <linearGradient id="paint0_linear_223_3590" x1="16.7468" y1="20.1058" x2="18.67" y2="26.327"
+               gradientUnits="userSpaceOnUse">
+               <stop stop-color="#EFF7FC" />
+               <stop offset="1" stop-color="white" />
+            </linearGradient>
+         </defs>
+      </svg>
+   </a>
+</div>
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__whatsup" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__whatsup-circle"
+            d="M19 37C28.9411 37 37 28.9411 37 19C37 9.05887 28.9411 1 19 1C9.05887 1 1 9.05887 1 19C1 28.9411 9.05887 37 19 37Z"
+            stroke="" />
+         <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M19.5941 29.014H19.5897C17.7983 29.0134 16.0381 28.5639 14.4748 27.7112L8.80078 29.1996L10.3192 23.6532C9.38258 22.03 8.88972 20.1887 8.89052 18.3023C8.89287 12.4009 13.6944 7.59961 19.594 7.59961C22.4573 7.60085 25.1446 8.71551 27.1654 10.7387C29.1862 12.7617 30.2985 15.4509 30.2974 18.3107C30.295 24.2108 25.4954 29.0116 19.5941 29.014ZM14.7377 25.7735L15.0625 25.9663C16.4284 26.7769 17.9941 27.2057 19.5905 27.2064H19.5941C24.4974 27.2064 28.4882 23.2155 28.4902 18.3101C28.4911 15.933 27.5666 13.6979 25.887 12.0163C24.2074 10.3348 21.9738 9.40826 19.5976 9.40744C14.6905 9.40744 10.6996 13.3979 10.6977 18.3029C10.697 19.9839 11.1673 21.621 12.0578 23.0373L12.2694 23.3739L11.3706 26.6568L14.7377 25.7735ZM24.6201 20.6152C24.8066 20.7053 24.9326 20.7662 24.9864 20.856C25.0532 20.9675 25.0532 21.5029 24.8305 22.1277C24.6075 22.7524 23.5391 23.3226 23.0252 23.3994C22.5645 23.4682 21.9814 23.497 21.3407 23.2934C20.9523 23.1701 20.4542 23.0056 19.8161 22.73C17.3089 21.6474 15.6146 19.2174 15.2943 18.7581C15.2719 18.726 15.2562 18.7035 15.2474 18.6918L15.2453 18.6889C15.1038 18.5 14.1554 17.2347 14.1554 15.9252C14.1554 14.6933 14.7605 14.0476 15.0391 13.7504C15.0582 13.73 15.0757 13.7113 15.0914 13.6941C15.3366 13.4264 15.6263 13.3594 15.8046 13.3594C15.9829 13.3594 16.1614 13.3611 16.3172 13.3689C16.3364 13.3699 16.3564 13.3697 16.3771 13.3696C16.5329 13.3687 16.7272 13.3676 16.9189 13.828C16.9927 14.0052 17.1006 14.2679 17.2144 14.5449C17.4445 15.1052 17.6987 15.7242 17.7435 15.8138C17.8104 15.9476 17.8549 16.1038 17.7658 16.2823C17.7524 16.3091 17.74 16.3344 17.7282 16.3585C17.6612 16.4952 17.612 16.5958 17.4983 16.7284C17.4537 16.7806 17.4075 16.8369 17.3613 16.8931C17.2693 17.0052 17.1773 17.1172 17.0972 17.197C16.9633 17.3304 16.8239 17.475 16.9799 17.7428C17.1359 18.0105 17.6727 18.8863 18.4677 19.5955C19.3224 20.3578 20.0652 20.68 20.4417 20.8433C20.5152 20.8752 20.5747 20.901 20.6184 20.9229C20.8858 21.0568 21.0418 21.0344 21.1978 20.856C21.3538 20.6775 21.8664 20.075 22.0446 19.8073C22.2229 19.5397 22.4012 19.5842 22.6463 19.6735C22.8915 19.7628 24.2064 20.4097 24.4738 20.5436C24.526 20.5697 24.5748 20.5933 24.6201 20.6152Z"
+            fill="#FDFDFD" />
+      </svg>
+   </a>
+</div>
+   <div class="header__social__item">
+   <a href="">
+      <svg class="header__social__vk" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path class="header__social__vk-circle"
+            d="M1 19C1 9.05887 9.05887 1 19 1C28.9411 1 37 9.05887 37 19C37 28.9411 28.9411 37 19 37C9.05887 37 1 28.9411 1 19Z"
+            stroke="" />
+         <path
+            d="M19.942 24.9073C19.942 24.9073 20.2885 24.8695 20.466 24.6823C20.6284 24.5109 20.6228 24.1873 20.6228 24.1873C20.6228 24.1873 20.6012 22.6765 21.3159 22.4534C22.0202 22.2341 22.9245 23.9145 23.8842 24.5607C24.6092 25.0492 25.1595 24.9423 25.1595 24.9423L27.7241 24.9073C27.7241 24.9073 29.0651 24.8261 28.4293 23.791C28.3767 23.7062 28.0584 23.025 26.523 21.6257C24.9144 20.161 25.1304 20.3979 27.0667 17.8639C28.2462 16.3208 28.7176 15.3787 28.5702 14.9759C28.4303 14.5906 27.5626 14.6929 27.5626 14.6929L24.6759 14.7104C24.6759 14.7104 24.4617 14.6818 24.303 14.7749C24.1481 14.8662 24.0476 15.0791 24.0476 15.0791C24.0476 15.0791 23.5912 16.2728 22.9818 17.2887C21.6962 19.4309 21.1825 19.5443 20.9722 19.4115C20.4829 19.1009 20.605 18.1653 20.605 17.5007C20.605 15.4239 20.9261 14.5583 19.9805 14.3343C19.6668 14.2597 19.4358 14.2108 18.6329 14.2025C17.6028 14.1924 16.7313 14.2062 16.2373 14.4431C15.9087 14.6007 15.6551 14.9528 15.8101 14.9731C16.0007 14.998 16.4327 15.0874 16.6618 15.3935C16.9576 15.7889 16.9473 16.6757 16.9473 16.6757C16.9473 16.6757 17.1173 19.1203 16.5501 19.4235C16.1613 19.6318 15.6279 19.2069 14.4813 17.2628C13.8944 16.2673 13.4511 15.1667 13.4511 15.1667C13.4511 15.1667 13.3657 14.9611 13.2126 14.8505C13.0276 14.7169 12.7694 14.6754 12.7694 14.6754L10.0263 14.6929C10.0263 14.6929 9.61407 14.704 9.46288 14.88C9.32859 15.0358 9.45255 15.3593 9.45255 15.3593C9.45255 15.3593 11.6002 20.2919 14.0324 22.7779C16.2627 25.0566 18.7944 24.9073 18.7944 24.9073H19.942Z"
+            fill="white" />
+      </svg>
+   </a>
+</div>
+</div>
+      
+
+   </div>
+   <div class="footer__copyright"><span>© соpyright 2024 vas-tu.ru</span></div>
+</footer>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+</body>
+
+</html>

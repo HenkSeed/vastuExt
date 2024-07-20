@@ -43,12 +43,12 @@
       width: 230px;
       /* max-height: 274px; */
       padding: 20px 20px 27px;
-      background-color: #F1C9A5;
-      border: .5px solid rgba(139, 69, 19, .3);
+      background-color: #f1c9a5;
+      border: 0.5px solid rgba(139, 69, 19, 0.3);
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
-      box-shadow: 1px 4px 0px 1px rgba(139, 69, 19, .2);
-      transition: transform .5s;
+      box-shadow: 1px 4px 0px 1px rgba(139, 69, 19, 0.2);
+      transition: transform 0.5s;
       z-index: -11;
       line-height: 23px;
 
@@ -62,18 +62,18 @@
          margin-left: -20px;
 
          &:hover {
-            background-color: #F2E8DE;
+            background-color: #f2e8de;
             cursor: pointer;
          }
       }
 
-      &__item~&__item {
+      &__item ~ &__item {
          margin-top: 8px;
       }
 
       &__item:first-child {
          padding-bottom: 0px;
-         border-bottom: #8B4513 2px solid;
+         border-bottom: #8b4513 2px solid;
 
          & a {
             font-size: 16px;
@@ -83,7 +83,7 @@
       &__anchor {
          font-size: 14px;
          font-weight: 500;
-         color: #8B4513;
+         color: #8b4513;
          margin-left: 20px;
       }
    }
@@ -97,12 +97,12 @@
       width: 230px;
       /* max-height: 274px; */
       padding: 20px 20px 27px;
-      background-color: #F1C9A5;
-      border: .5px solid rgba(139, 69, 19, .3);
+      background-color: #f1c9a5;
+      border: 0.5px solid rgba(139, 69, 19, 0.3);
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
-      box-shadow: 1px 4px 0px 1px rgba(139, 69, 19, .2);
-      transition: transform .5s;
+      box-shadow: 1px 4px 0px 1px rgba(139, 69, 19, 0.2);
+      transition: transform 0.5s;
       z-index: -11;
       line-height: 23px;
 
@@ -116,18 +116,18 @@
          margin-left: -20px;
 
          &:hover {
-            background-color: #F2E8DE;
+            background-color: #f2e8de;
             cursor: pointer;
          }
       }
 
-      &__item~&__item {
+      &__item ~ &__item {
          margin-top: 8px;
       }
 
       &__item:first-child {
          padding-bottom: 0px;
-         border-bottom: #8B4513 2px solid;
+         border-bottom: #8b4513 2px solid;
 
          & a {
             font-size: 16px;
@@ -137,7 +137,7 @@
       &__anchor {
          font-size: 14px;
          font-weight: 500;
-         color: #8B4513;
+         color: #8b4513;
          margin-left: 20px;
       }
    }
@@ -169,7 +169,7 @@
       /* gap: 3rem; */
 
       &__item {
-         color: #8B4513;
+         color: #8b4513;
          font-size: 1.4rem;
          text-transform: uppercase;
          font-weight: 500;
@@ -202,53 +202,53 @@
       }
 
       &__telegram {
-         fill: #F1C9A5;
+         fill: #f1c9a5;
       }
 
       /* Окружность вокруг иконки */
       &__telegram-circle {
-         stroke: #8B4513;
+         stroke: #8b4513;
          transition: all 0.3s;
       }
 
       /* При наведении закрашиваем фон иконки и окружность */
       &__telegram:hover &__telegram-circle {
-         fill: #37AEE2;
-         stroke: #37AEE2;
+         fill: #37aee2;
+         stroke: #37aee2;
       }
 
       &__whatsup {
-         fill: #F1C9A5;
+         fill: #f1c9a5;
       }
 
       &__whatsup-circle {
-         stroke: #8B4513;
+         stroke: #8b4513;
          transition: all 0.3s;
       }
 
       &__whatsup:hover &__whatsup-circle {
-         fill: #25D366;
-         stroke: #25D366;
+         fill: #25d366;
+         stroke: #25d366;
       }
 
       &__vk {
-         fill: #F1C9A5;
+         fill: #f1c9a5;
       }
 
       &__vk-circle {
-         stroke: #8B4513;
+         stroke: #8b4513;
          transition: all 0.3s;
       }
 
       &__vk:hover &__vk-circle {
-         fill: #4C6C91;
-         stroke: #4C6C91;
+         fill: #4c6c91;
+         stroke: #4c6c91;
       }
    }
 
    &__cart {
       /* "Поглащает" выступающий счётчик, сохраняя общий padding блока header */
-      padding-right: 2.0rem;
+      padding-right: 2rem;
       cursor: pointer;
 
       &__image {
@@ -281,21 +281,18 @@
          /* font-size: 1.2rem; */
          font-size: 12px;
       }
-
    }
 }
 
-@media(max-width:1200px) {
-
+@media (max-width: 1200px) {
    .header {
-
       &__nav {
          gap: calc(10px + (30 - 10) * ((100vw - 768px) / (1200 - 768)));
       }
    }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
    .header {
       &__container {
          padding: 20px 20px;
@@ -309,11 +306,11 @@
          font-size: 24px;
       }
 
-      /* Прячем навигационное меню и иконки соцсетей,
-      но только в шапке и подвале */
       &__nav,
       footer &__social,
       header &__social {
+         /* Прячем навигационное меню и иконки соцсетей,
+         но только в шапке и подвале */
          display: none;
       }
    }

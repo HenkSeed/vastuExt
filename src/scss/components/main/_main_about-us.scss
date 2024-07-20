@@ -19,7 +19,7 @@
    }
 
    &__header {
-      color: #8B4513;
+      color: #8b4513;
       font-size: 4.8rem;
       font-weight: 400;
       white-space: nowrap;
@@ -28,7 +28,7 @@
    &__line {
       width: 100%;
       height: 0;
-      border: 1px solid #F1C9A5;
+      border: 1px solid #f1c9a5;
       margin-top: 5px;
       /* display: inline; */
    }
@@ -52,7 +52,6 @@
       &__wraper {
          width: 100%;
          position: relative;
-
       }
 
       &__frame {
@@ -76,7 +75,7 @@
          top: 50%;
          transform: translate(-50%, -50%);
          border-radius: 50%;
-         background: linear-gradient(#F03319, #C7301B);
+         background: linear-gradient(#f03319, #c7301b);
          display: flex;
          justify-content: center;
          align-items: center;
@@ -118,7 +117,7 @@
       }
 
       &__more {
-         background-color: #8B4513;
+         background-color: #8b4513;
          transition: background-color 0.3s;
 
          /*          &:hover {
@@ -126,10 +125,8 @@
          } */
 
          @include media-hover() {
-            background-color: #A66321;
+            background-color: #a66321;
          }
-
-         ;
 
          & a {
             display: flex;
@@ -166,7 +163,7 @@
          top: 50%;
          transform: translate(-50%, -50%);
          border-radius: 50%;
-         background: linear-gradient(#F03319, #C7301B);
+         background: linear-gradient(#f03319, #c7301b);
          display: flex;
          justify-content: center;
          align-items: center;
@@ -180,8 +177,7 @@
    }
 }
 
-@media(max-width:1200px) {
-
+@media (max-width: 1200px) {
    .about-us {
       &__header {
          font-size: calc(34px + (48 - 34) * ((100vw - 360px) / (1200 - 360)));
@@ -195,8 +191,7 @@
    }
 }
 
-@media(max-width:768px) {
-
+@media (max-width: 768px) {
    .about-us {
       &__title {
          flex-direction: column;
@@ -228,8 +223,6 @@
             border-radius: 10px;
             overflow: hidden;
          }
-
-         /* &__wraper {} */
 
          &__frame {
             position: static;
@@ -266,7 +259,7 @@
    }
 }
 
-@media(max-width:360px) {
+@media (max-width: 360px) {
    .about-us {
       &__aside {
          &__text {

@@ -156,8 +156,6 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            /*             column-gap: 40px;
-            row-gap: 25px; */
             gap: 25px;
             margin-bottom: 40px;
          }
@@ -217,10 +215,6 @@
             &-phone {
                background: url("../images/contacts/form/phone_icon.svg") #fff no-repeat 10px center;
             }
-
-            /*             &-addr {
-               background: url("../images/cart_page/address/form_addr_icon.svg") #fff no-repeat 10px center;
-            } */
          }
 
          &__button--submit {

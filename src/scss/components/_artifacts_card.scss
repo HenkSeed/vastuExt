@@ -2,18 +2,14 @@
    background-color: #fff;
 
    .hero {
-      background-image: url('../images/artifacts_card/hero/bg_img.png');
+      background-image: url("../images/artifacts_card/hero/bg_img.png");
       height: 49.2rem;
       background-position: center center;
    }
 
    .title-unit {
-      background-color: #F2E8DE;
+      background-color: #f2e8de;
       margin: 0 auto;
-
-      /*       &-container {
-            position: relative;
-         } */
 
       &__container {
          position: relative;
@@ -22,7 +18,7 @@
       }
 
       &__title-mod {
-         background-color: rgba(139, 69, 19, .5);
+         background-color: rgba(139, 69, 19, 0.5);
          width: 45.1rem;
          height: 25.8rem;
          padding-top: 2.5rem;
@@ -58,7 +54,7 @@
          border-radius: 10px;
          overflow: hidden;
 
-         &>img {
+         & > img {
             width: 100%;
             border-radius: 10px;
          }
@@ -92,8 +88,7 @@
          & p {
             font-size: 18px;
             line-height: 140%;
-            color: #2A2A2A;
-
+            color: #2a2a2a;
          }
       }
 
@@ -115,29 +110,28 @@
          align-items: center;
          border-radius: 10px;
          transition: all 0.3s;
-
       }
 
       &__to-cart-btn {
          color: #fff;
-         background-color: #8B4513;
+         background-color: #8b4513;
 
          & img {
             pointer-events: none;
          }
 
          @include media-hover() {
-            background-color: #A66321;
+            background-color: #a66321;
          }
       }
 
       &__just-btn {
-         color: #8B4513;
+         color: #8b4513;
          background-color: transparent;
-         border: #8B4513 1px solid;
+         border: #8b4513 1px solid;
 
          @include media-hover() {
-            background-color: #A66321;
+            background-color: #a66321;
             color: #fff;
          }
       }
@@ -187,7 +181,7 @@
 
       &__cash-text {
          font-size: 16px;
-         color: #2A2A2A;
+         color: #2a2a2a;
       }
 
       &__info-icon {
@@ -204,8 +198,6 @@
    }
 
    .slider {
-      /* padding-bottom: 5.3rem; */
-
       &__container {
          display: flex;
          justify-content: start;
@@ -253,26 +245,26 @@
          background-color: #fff;
          border-top-left-radius: 10px;
          border-top-right-radius: 10px;
-         border: #F2E8DE 2px solid;
+         border: #f2e8de 2px solid;
          border-bottom: none;
          font-size: 14px;
-         color: #2A2A2A;
+         color: #2a2a2a;
          text-transform: uppercase;
          cursor: pointer;
          transition: all 0.5s;
 
          &--active {
-            background-color: #F2E8DE;
+            background-color: #f2e8de;
          }
       }
 
       &__texts {
-         border: #F2E8DE 2px solid;
+         border: #f2e8de 2px solid;
          border-radius: 10px;
          padding: 30px 40px 39px;
 
          &--active {
-            background-color: #F2E8DE;
+            background-color: #f2e8de;
          }
       }
 
@@ -285,7 +277,7 @@
             color: rgb(42, 42, 42);
          }
 
-         p~p {
+         p ~ p {
             margin-top: 26px;
          }
       }
@@ -302,7 +294,7 @@
 
       &__title {
          font-size: 48px;
-         color: #8B4513;
+         color: #8b4513;
       }
 
       &__line {
@@ -312,7 +304,7 @@
          width: 6000px;
          right: 6000px;
          border: none;
-         border-top: 2px solid #8B4513;
+         border-top: 2px solid #8b4513;
          margin-left: 20px;
          align-self: center;
       }
@@ -326,7 +318,6 @@
          flex-wrap: wrap;
          gap: 30px;
          justify-content: center;
-
       }
 
       &__item {
@@ -335,7 +326,7 @@
          align-items: center;
          max-width: 270px;
          padding: 10px 10px 20px;
-         background-color: #F1C9A5;
+         background-color: #f1c9a5;
          border-radius: 10px;
          text-align: center;
       }
@@ -351,7 +342,7 @@
 
       &__title {
          padding-bottom: 5px;
-         border-bottom: #F2E8DE 2px solid;
+         border-bottom: #f2e8de 2px solid;
          margin-bottom: 10px;
          font-size: 18px;
          color: #333333;
@@ -369,7 +360,7 @@
          width: 150px;
          border-radius: 10px;
          font-size: 20px;
-         color: #2A2A2A;
+         color: #2a2a2a;
          /* padding: 5px 28px; */
          padding: 7px;
          text-align: center;
@@ -377,7 +368,7 @@
       }
 
       &__btn {
-         background-color: #8B4513;
+         background-color: #8b4513;
          color: #fff;
          font-size: 16px;
          width: 200px;
@@ -394,7 +385,7 @@
          }
 
          @include media-hover() {
-            background-color: #A66321;
+            background-color: #a66321;
          }
       }
    }
@@ -432,7 +423,6 @@
 
             & p {
                font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
-
             }
          }
 
@@ -461,12 +451,12 @@
             left: calc(50vw + calc(37px + (-200 - 37) * ((100vw - 576px) / (1200 - 576))));
             top: calc(25px + (32 - 25) * ((100vw - 576px) / (1200 - 576)));
          }
-
       }
 
       .cards {
          &__container {
-            gap: calc(15px + (30 - 15) * ((100vw - 360px) / (1200 - 360))) calc(10px + (30 - 10) * ((100vw - 360px) / (1200 - 360)));
+            gap: calc(15px + (30 - 15) * ((100vw - 360px) / (1200 - 360)))
+               calc(10px + (30 - 10) * ((100vw - 360px) / (1200 - 360)));
          }
 
          &__item {
@@ -508,7 +498,6 @@
                font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (992 - 360)));
             }
          }
-
       }
    }
 }
@@ -565,9 +554,9 @@
          }
       }
 
-      /* Без этих строк слайдер не сжимается при уменьшении экрана */
       .slider {
          &-swiper {
+            /* Без этих строк слайдер не сжимается при уменьшении экрана */
             max-width: 100%;
          }
 
@@ -596,7 +585,8 @@
    .artifacts-card {
       .hero {
          background-size: auto 145%;
-         background-position: right calc(-125px + (125 - 0) * ((100vw - 360px) / (576 - 360))) top calc(-95px + (95 - 70) * ((100vw - 360px) / (576 - 360)));
+         background-position: right calc(-125px + (125 - 0) * ((100vw - 360px) / (576 - 360))) top
+            calc(-95px + (95 - 70) * ((100vw - 360px) / (576 - 360)));
       }
 
       .buy-now {
@@ -608,7 +598,7 @@
          &__img {
             border-radius: 0;
 
-            &>img {
+            & > img {
                border-radius: 0;
             }
          }
@@ -624,7 +614,6 @@
          padding-right: 20px;
       }
 
-
       .tabs {
          &__headers {
             padding-left: 0;
@@ -636,8 +625,6 @@
             padding-left: calc(16px + (32 - 16) * ((100vw - 360px) / (576 - 360)));
             padding-right: calc(16px + (32 - 16) * ((100vw - 360px) / (576 - 360)));
          }
-
-         /* &__texts {} */
       }
 
       .title-block {
@@ -649,7 +636,6 @@
             position: static;
             align-self: start;
             margin-left: 0;
-
          }
       }
    }

@@ -2,7 +2,8 @@
    background-color: $project-bg;
 
    .hero {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url('../images/artifacts_subcategory/hero/bg_img.png');
+      background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)),
+         url("../images/artifacts_subcategory/hero/bg_img.png");
       height: 49.2rem;
       background-position: center center;
 
@@ -23,7 +24,7 @@
 
       &__text {
          font-size: 4.8rem;
-         color: rgba(241, 201, 165, .58);
+         color: rgba(241, 201, 165, 0.58);
          font-weight: 400;
          text-transform: uppercase;
          position: absolute;
@@ -36,12 +37,11 @@
       padding-top: 12rem;
       padding-bottom: 3rem;
 
-      &__container {
+      /*  &__container {
          display: flex;
          flex-wrap: wrap;
          gap: 30px;
          justify-content: center;
-
       }
 
       &__item {
@@ -50,7 +50,7 @@
          align-items: center;
          max-width: 270px;
          padding: 10px 10px 20px;
-         background-color: #F1C9A5;
+         background-color: #f1c9a5;
          border-radius: 10px;
          text-align: center;
       }
@@ -66,7 +66,7 @@
 
       &__title {
          padding-bottom: 5px;
-         border-bottom: #F2E8DE 2px solid;
+         border-bottom: #f2e8de 2px solid;
          margin-bottom: 10px;
          font-size: 18px;
          color: #333333;
@@ -84,15 +84,14 @@
          width: 150px;
          border-radius: 10px;
          font-size: 20px;
-         color: #2A2A2A;
-         /* padding: 5px 28px; */
+         color: #2a2a2a;
          padding: 7px;
          text-align: center;
          background-color: #fff;
       }
 
       &__btn {
-         background-color: #8B4513;
+         background-color: #8b4513;
          color: #fff;
          font-size: 16px;
          width: 200px;
@@ -109,9 +108,9 @@
          }
 
          @include media-hover() {
-            background-color: #A66321;
+            background-color: #a66321;
          }
-      }
+      } */
    }
 
    .text-info {
@@ -122,10 +121,10 @@
 
          & p {
             font-size: 18px;
-            color: #2A2A2A;
+            color: #2a2a2a;
          }
 
-         & p~p {
+         & p ~ p {
             margin-top: 2.4rem;
          }
       }
@@ -134,7 +133,7 @@
 
 @media (max-width: 1200px) {
    .artifacts-subcategory {
-      .cards {
+      /*       .cards {
          &__container {
             gap: calc(15px + (30 - 15) * ((100vw - 360px) / (1200 - 360))) calc(10px + (30 - 10) * ((100vw - 360px) / (1200 - 360)));
          }
@@ -160,7 +159,7 @@
             font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1200 - 360)));
             width: calc(130px + (200 - 130) * ((100vw - 360px) / (1200 - 360)));
          }
-      }
+      } */
 
       .text-info {
          &__container {

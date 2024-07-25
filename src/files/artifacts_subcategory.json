@@ -1,66 +1,74 @@
 [
-	{
-		"slideNum": "1",
-		"image": "img-1.png",
-		"alt": "Image 1",
-		"title": "Жемчуг отборный",
-		"text": "Натуральный жемчуг из ракушек",
-		"price": "2700 РУБ."
-	},
-	{
-		"slideNum": "2",
-		"image": "img-2.png",
-		"alt": "Image 2",
-		"title": "Барочный жемчуг",
-		"text": "Натуральный жемчуг из ракушек",
-		"price": "1800 РУБ."
-	},
-	{
-		"slideNum": "3",
-		"image": "img-3.png",
-		"alt": "Image 3",
-		"title": "Жемчуг белый",
-		"text": "Натуральный жемчуг из ракушек",
-		"price": "1800 РУБ."
-	},
-	{
-		"slideNum": "4",
-		"image": "img-4.png",
-		"alt": "Image 4",
-		"title": "Ракушечный жемчуг",
-		"text": "Натуральный жемчуг из ракушек",
-		"price": "1600 РУБ."
-	},
-	{
-		"slideNum": "5",
-		"image": "img-5.png",
-		"alt": "Image 5",
-		"title": "Жемчуг белый",
-		"text": "Натуральный жемчуг из ракушек",
-		"price": "2300 РУБ."
-	},
-	{
-		"slideNum": "6",
-		"image": "img-6.png",
-		"alt": "Image 6",
-		"title": "Ракушечный жемчуг",
-		"text": "Натуральный жемчуг из ракушек",
-		"price": "1600 РУБ."
-	},
-	{
-		"slideNum": "7",
-		"image": "img-7.png",
-		"alt": "Image 7",
-		"title": "Жемчуг отборный",
-		"text": "Натуральный жемчуг из ракушек",
-		"price": "1600 РУБ."
-	},
-	{
-		"slideNum": "8",
-		"image": "img-8.png",
-		"alt": "Image 8",
-		"title": "Барочный жемчуг",
-		"text": "Натуральный жемчуг из ракушек",
-		"price": "1800 РУБ."
-	}
+  {
+    "slideNum": "subcat_cards1",
+    "imagePath": "images/artifacts_subcategory/cards",
+    "image": "img-1.png",
+    "alt": "Image 1",
+    "title": "Жемчуг отборный",
+    "text": "Натуральный жемчуг из ракушек",
+    "price": "2700 РУБ."
+  },
+  {
+    "slideNum": "subcat_cards2",
+    "imagePath": "images/artifacts_subcategory/cards",
+    "image": "img-2.png",
+    "alt": "Image 2",
+    "title": "Барочный жемчуг",
+    "text": "Натуральный жемчуг из ракушек",
+    "price": "1800 РУБ."
+  },
+  {
+    "slideNum": "subcat_cards3",
+    "imagePath": "images/artifacts_subcategory/cards",
+    "image": "img-3.png",
+    "alt": "Image 3",
+    "title": "Жемчуг белый",
+    "text": "Натуральный жемчуг из ракушек",
+    "price": "1800 РУБ."
+  },
+  {
+    "slideNum": "subcat_cards4",
+    "imagePath": "images/artifacts_subcategory/cards",
+    "image": "img-4.png",
+    "alt": "Image 4",
+    "title": "Ракушечный жемчуг",
+    "text": "Натуральный жемчуг из ракушек",
+    "price": "1600 РУБ."
+  },
+  {
+    "slideNum": "subcat_cards5",
+    "imagePath": "images/artifacts_subcategory/cards",
+    "image": "img-5.png",
+    "alt": "Image 5",
+    "title": "Жемчуг белый",
+    "text": "Натуральный жемчуг из ракушек",
+    "price": "2300 РУБ."
+  },
+  {
+    "slideNum": "subcat_cards6",
+    "imagePath": "images/artifacts_subcategory/cards",
+    "image": "img-6.png",
+    "alt": "Image 6",
+    "title": "Ракушечный жемчуг",
+    "text": "Натуральный жемчуг из ракушек",
+    "price": "1600 РУБ."
+  },
+  {
+    "slideNum": "subcat_cards7",
+    "imagePath": "images/artifacts_subcategory/cards",
+    "image": "img-7.png",
+    "alt": "Image 7",
+    "title": "Жемчуг отборный",
+    "text": "Натуральный жемчуг из ракушек",
+    "price": "1600 РУБ."
+  },
+  {
+    "slideNum": "subcat_cards8",
+    "imagePath": "images/artifacts_subcategory/cards",
+    "image": "img-8.png",
+    "alt": "Image 8",
+    "title": "Барочный жемчуг",
+    "text": "Натуральный жемчуг из ракушек",
+    "price": "1800 РУБ."
+  }
 ]

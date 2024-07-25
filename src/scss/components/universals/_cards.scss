@@ -1,0 +1,171 @@
+.cards {
+   /*    padding-top: 12rem;
+   padding-bottom: 12rem; */
+
+   /* Для всех слайдеров, 
+      класс которых начинается с cards__swiper_ */
+   [class^="cards__swiper_"] {
+      max-width: 270px;
+      /* Зафиксируем высоту, иначе наша пагинация для некоторых карточек */
+      /* будет занимать другую высоту и "заползать" на соседние блоки */
+      height: 480.33px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: #f1c9a5;
+      align-items: center;
+      justify-content: start;
+      padding-bottom: 20px;
+      border-radius: 10px;
+   }
+
+   .swiper-wrapper {
+      height: auto;
+   }
+
+   /*    &__info {
+      position: absolute;
+      z-index: 100;
+      left: 10px;
+      bottom: 20px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+   } */
+
+   /* Пагинацию не обязательно привязывать отдельно к каждой карточке */
+   /* так как Swiper у каждого слайдера будет искать внутри объекта */
+   &__pagination {
+      position: absolute;
+      bottom: 202px !important;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+   }
+
+   .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      border: #fff 1px solid;
+      background-color: transparent;
+      opacity: 1;
+
+      &-active {
+         background-color: #ffffff;
+      }
+   }
+
+   &__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+   }
+
+   &__item {
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+      max-width: 270px;
+      padding: 10px 10px 20px;
+      background-color: #f1c9a5;
+      border-radius: 10px;
+      text-align: center;
+   }
+
+   &__img {
+      /* margin-bottom: 20px; */
+
+      & img {
+         width: 100%;
+         border-radius: 10px;
+      }
+   }
+
+   &__title {
+      padding-bottom: 5px;
+      border-bottom: #f2e8de 2px solid;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #333333;
+      /* flex-grow: 0; */
+   }
+
+   &__text {
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: 16px;
+      color: #333333;
+      flex-grow: 2;
+      max-width: calc(100% - 20px);
+   }
+
+   &__price {
+      margin-bottom: 10px;
+      width: 150px;
+      border-radius: 10px;
+      font-size: 20px;
+      color: #2a2a2a;
+      padding: 7px;
+      text-align: center;
+      background-color: #fff;
+      /* flex-grow: 0; */
+   }
+
+   &__btn {
+      background-color: #8b4513;
+      color: #fff;
+      font-size: 16px;
+      width: 200px;
+      padding: 9px;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      align-items: center;
+      border-radius: 10px;
+      transition: all 0.3s;
+      /* flex-grow: 0; */
+
+      & img {
+         pointer-events: none;
+      }
+
+      @include media-hover() {
+         background-color: #a66321;
+      }
+   }
+}
+@media (max-width: 1200px) {
+   .cards {
+      &__container {
+         gap: calc(15px + (30 - 15) * ((100vw - 360px) / (1200 - 360)))
+            calc(10px + (30 - 10) * ((100vw - 360px) / (1200 - 360)));
+      }
+
+      &__item {
+         width: calc(155px + (270 - 155) * ((100vw - 360px) / (1200 - 360)));
+      }
+
+      &__title {
+         font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
+      }
+
+      &__text {
+         font-size: calc(12px + (16 - 12) * ((100vw - 360px) / (1200 - 360)));
+      }
+
+      &__price {
+         font-size: calc(15px + (20 - 15) * ((100vw - 360px) / (1200 - 360)));
+         width: calc(100px + (150 - 100) * ((100vw - 360px) / (1200 - 360)));
+      }
+
+      &__btn {
+         font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1200 - 360)));
+         width: calc(130px + (200 - 130) * ((100vw - 360px) / (1200 - 360)));
+      }
+   }
+}

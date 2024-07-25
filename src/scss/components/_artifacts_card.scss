@@ -269,7 +269,7 @@
       }
 
       &__text {
-         transition: all 0.5s;
+         transition: all 0.75s;
 
          p {
             font-size: 18px;
@@ -313,7 +313,8 @@
    .cards {
       padding-bottom: 12rem;
 
-      &__container {
+      /* По прошедствии времени удалить */
+      /* &__container {
          display: flex;
          flex-wrap: wrap;
          gap: 30px;
@@ -361,7 +362,6 @@
          border-radius: 10px;
          font-size: 20px;
          color: #2a2a2a;
-         /* padding: 5px 28px; */
          padding: 7px;
          text-align: center;
          background-color: #fff;
@@ -387,7 +387,7 @@
          @include media-hover() {
             background-color: #a66321;
          }
-      }
+      } */
    }
 }
 
@@ -453,7 +453,7 @@
          }
       }
 
-      .cards {
+      /*       .cards {
          &__container {
             gap: calc(15px + (30 - 15) * ((100vw - 360px) / (1200 - 360)))
                calc(10px + (30 - 10) * ((100vw - 360px) / (1200 - 360)));
@@ -480,7 +480,7 @@
             font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1200 - 360)));
             width: calc(130px + (200 - 130) * ((100vw - 360px) / (1200 - 360)));
          }
-      }
+      } */
    }
 }
 

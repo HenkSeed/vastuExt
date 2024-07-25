@@ -1,38 +1,27 @@
-@@include('html_parts/head.html')
-
-@@include('html_parts/main_dark-bg.html')
-
-@@include('html_parts/shadow.html')
-
-@@include('html_parts/header.html')
+@@include('html_parts/head.html') @@include('html_parts/main_dark-bg.html')
+@@include('html_parts/shadow.html') @@include('html_parts/header.html')
 
 <!-- Оболочка страницы -->
 <div class="artifacts-subcategory">
+  <!-- Секция hero -->
+  <section class="hero center">
+    <div class="container hero__container">
+      <div class="hero__title">Жемчуг</div>
+      <div class="hero__text">Артефакты</div>
+    </div>
+  </section>
 
-   <!-- Секция hero -->
-   <section class="hero center">
-      <div class="container hero__container">
-         <div class="hero__title">Жемчуг</div>
-         <div class="hero__text">Артефакты</div>
-      </div>
-   </section>
+  <section class="cards center">
+    <div class="container cards__container">
+      @@loop('html_parts/artifacts/artifacts_cards.html','../files/artifacts_subcategory.json')
+    </div>
+  </section>
 
-   <section class="cards center">
-      <div class="container cards__container">
-
-         @@loop('html_parts/artifacts/artifacts_subcategory_cards.html','../files/artifacts_subcategory.json')
-
-      </div>
-   </section>
-
-   <section class="text-info center">
-      <div class="container text-info__container">
-         @@loop('html_parts/artifacts/artifacts_subcategory_texts.html','../files/artifacts_subcategory_texts.json')
-      </div>
-   </section>
-
+  <section class="text-info center">
+    <div class="container text-info__container">
+      @@loop('html_parts/artifacts/artifacts_subcategory_texts.html','../files/artifacts_subcategory_texts.json')
+    </div>
+  </section>
 </div>
 
-@@include('html_parts/footer.html')
-
-@@include('html_parts/foot.html')
+@@include('html_parts/footer.html') @@include('html_parts/foot.html')

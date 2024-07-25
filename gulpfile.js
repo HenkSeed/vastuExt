@@ -111,6 +111,7 @@ export const building = () => {
 	).pipe(dest('dist'));
 };
 
+// Искажает файлы изображений при копировании папки images из папки src в dist
 export const buildImg = () => {
 	return src(
 		['src/images/**/*'],

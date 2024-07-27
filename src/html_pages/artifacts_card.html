@@ -1,188 +1,238 @@
-@@include('html_parts/head.html')
-
-@@include('html_parts/main_dark-bg.html')
-
-@@include('html_parts/shadow.html')
-
-@@include('html_parts/header.html')
+@@include('html_parts/head.html') @@include('html_parts/main_dark-bg.html')
+@@include('html_parts/shadow.html') @@include('html_parts/header.html')
 
 <!-- Оболочка страницы -->
 <div class="artifacts-card">
+  <section class="hero center">
+    <div class="container hero__container"></div>
+  </section>
 
-   <section class="hero center">
-      <div class="container hero__container">
-
+  <section class="title-unit center">
+    <div class="container title-unit__container">
+      <div class="title-unit__title-mod">
+        <h2 class="title-unit__title-header">Артефакты</h2>
       </div>
-   </section>
+    </div>
+  </section>
 
-   <section class="title-unit center">
-      <div class="container title-unit__container">
-         <div class="title-unit__title-mod">
-            <h2 class="title-unit__title-header">Артефакты</h2>
-         </div>
+  <section class="buy-now center">
+    <div class="container buy-now__container">
+      <div class="buy-now__img">
+        <img
+          src="images/artifacts_card/buy_now/main img.png"
+          alt="Main Image"
+        />
+
+        <div class="slider__container">
+          @@include('html_parts/universals/slider_arrow_left.html')
+
+          <div class="slider-swiper">
+            <div class="swiper-wrapper slider__wrapper">
+              <div class="swiper-slide slider__slide slide-1">
+                <img
+                  src="images/artifacts_card/slider/sub_img-1.png"
+                  alt="Image 1"
+                />
+              </div>
+
+              <div class="swiper-slide slider__slide slide-2">
+                <img
+                  src="images/artifacts_card/slider/sub_img-2.png"
+                  alt="Image 2"
+                />
+              </div>
+
+              <div class="swiper-slide slider__slide slide-3">
+                <img
+                  src="images/artifacts_card/slider/sub_img-3.png"
+                  alt="Image 3"
+                />
+              </div>
+
+              <div class="swiper-slide slide-1">
+                <img
+                  src="images/artifacts_card/slider/sub_img-1.png"
+                  alt="Image 1"
+                />
+              </div>
+
+              <div class="swiper-slide slide-2">
+                <img
+                  src="images/artifacts_card/slider/sub_img-2.png"
+                  alt="Image 2"
+                />
+              </div>
+
+              <div class="swiper-slide slide-3">
+                <img
+                  src="images/artifacts_card/slider/sub_img-3.png"
+                  alt="Image 3"
+                />
+              </div>
+            </div>
+          </div>
+          @@include('html_parts/universals/slider_arrow_right.html')
+        </div>
       </div>
-   </section>
 
-   <section class="buy-now center">
-      <div class="container buy-now__container">
-         <div class="buy-now__img">
-            <img src="images/artifacts_card/buy_now/main img.png" alt="Main Image">
+      <div class="buy-now__info">
+        <div class="buy-now__header">
+          <h2>Спираль Васту квадратная железная</h2>
+        </div>
+        <div class="buy-now__vendor-code">Артикул: 2312312412412</div>
+        <div class="buy-now__text">
+          <p>
+            Спираль для коррекции жилого пространства. Предназначена для
+            корректировки юго-западного сектора жилого пространства, изготовлена
+            с учетом Ведических знаний и науки Васту. Монтируются в пол.
+          </p>
+        </div>
 
-            <div class="slider__container">
-               @@include('html_parts/universals/slider_arrow_left.html')
+        @@include('html_parts/universals/cart_price_count.html')
 
-               <div class="slider-swiper">
-                  <div class="swiper-wrapper slider__wrapper">
+        <div class="buy-now__btns">
+          <button class="buy-now__to-cart-btn">
+            <img
+              src="images/artifacts_card/buy_now/cart.svg"
+              alt="Cart Icon"
+            />В корзину
+          </button>
 
-                     <div class="swiper-slide slider__slide slide-1">
-                        <img src="images/artifacts_card/slider/sub_img-1.png" alt="Image 1">
-                     </div>
+          <a href="cart_page.html" class="buy-now__just-btn">
+            Купить сейчас!
+          </a>
+        </div>
 
-                     <div class="swiper-slide slider__slide slide-2">
-                        <img src="images/artifacts_card/slider/sub_img-2.png" alt="Image 2">
-                     </div>
-
-                     <div class="swiper-slide slider__slide slide-3">
-                        <img src="images/artifacts_card/slider/sub_img-3.png" alt="Image 3">
-                     </div>
-
-                     <div class="swiper-slide slide-1">
-                        <img src="images/artifacts_card/slider/sub_img-1.png" alt="Image 1">
-                     </div>
-
-                     <div class="swiper-slide slide-2">
-                        <img src="images/artifacts_card/slider/sub_img-2.png" alt="Image 2">
-                     </div>
-
-                     <div class="swiper-slide slide-3">
-                        <img src="images/artifacts_card/slider/sub_img-3.png" alt="Image 3">
-                     </div>
-                  </div>
-
-               </div>
-               @@include('html_parts/universals/slider_arrow_right.html')
-            </div>
-         </div>
-
-         <div class="buy-now__info">
-            <div class="buy-now__header">
-               <h2>Спираль Васту квадратная железная</h2>
-            </div>
-            <div class="buy-now__vendor-code">Артикул: 2312312412412</div>
-            <div class="buy-now__text">
-               <p>Спираль для коррекции жилого пространства. Предназначена для корректировки юго-западного сектора
-                  жилого пространства,
-                  изготовлена с учетом Ведических знаний и науки Васту. Монтируются в пол.</p>
-            </div>
-
-            @@include('html_parts/universals/cart_price_count.html')
-
-            <div class="buy-now__btns">
-               <button class="buy-now__to-cart-btn">
-                  <img src="images/artifacts_card/buy_now/cart.svg" alt="Cart Icon">В корзину</button>
-
-               <a href="#" class="buy-now__just-btn">
-                  Купить сейчас!
-               </a>
-            </div>
-
-            <div class="buy-now__cash">
-               <div class="buy-now__pop-up opacity--zero">
-                  <p>Принимаем платежи мгновенно через ЮKassa. Оплачивайте свои покупки быстро и безопасно, не используя
-                     кредитную карту -
-                     вам понадобится только смартфон и приложение СберБанк Онлайн. Чтобы оплатить покупку через ЮKassa,
-                     выберите SberPay на
-                     странице оплаты и отсканируйте QR-код в приложении СберБанка. После этого осуществите оплату.
-                     Поздравляем, ваш заказ
-                     успешно оплачен!</p>
-                  <button class="buy-now__cross">
-                     <img src="images/artifacts_card/buy_now/cross.svg" alt="">
-                  </button>
-               </div>
-               <div class="buy-now__cash-image">
-                  <img src="images/artifacts_card/buy_now/u_money_logo.png" alt="U-money Logo">
-               </div>
-               <div class="buy-now__cash-text">Принимаем оплату через ЮKassa</div>
-               <button class="buy-now__info-icon">
-                  <img src="images/artifacts_card/buy_now/info_icon.svg" alt="Info Icon">
-               </button>
-            </div>
-         </div>
-
+        <div class="buy-now__cash">
+          <div class="buy-now__pop-up opacity--zero">
+            <p>
+              Принимаем платежи мгновенно через ЮKassa. Оплачивайте свои покупки
+              быстро и безопасно, не используя кредитную карту - вам понадобится
+              только смартфон и приложение СберБанк Онлайн. Чтобы оплатить
+              покупку через ЮKassa, выберите SberPay на странице оплаты и
+              отсканируйте QR-код в приложении СберБанка. После этого
+              осуществите оплату. Поздравляем, ваш заказ успешно оплачен!
+            </p>
+            <button class="buy-now__cross">
+              <img src="images/artifacts_card/buy_now/cross.svg" alt="" />
+            </button>
+          </div>
+          <div class="buy-now__cash-image">
+            <img
+              src="images/artifacts_card/buy_now/u_money_logo.png"
+              alt="U-money Logo"
+            />
+          </div>
+          <div class="buy-now__cash-text">Принимаем оплату через ЮKassa</div>
+          <button class="buy-now__info-icon">
+            <img
+              src="images/artifacts_card/buy_now/info_icon.svg"
+              alt="Info Icon"
+            />
+          </button>
+        </div>
       </div>
-   </section>
+    </div>
+  </section>
 
-   <section class="tabs center">
-      <div class="container tabs__container">
-         <div class="tabs__headers">
-            <div class="tabs__header tabs__header--active" data-tab="tab-1">Описание</div>
-            <div class="tabs__header" data-tab="tab-2">Детали</div>
-            <div class="tabs__header" data-tab="tab-3">Доставка и оплата</div>
-         </div>
-         <div class="tabs__texts">
-            <div class="tabs__text opacity--max" data-tab="tab-1">
-               <p>Спираль Васту - это уникальный товар, предназначенный для использования во время практик Васту. Этот
-                  предмет имеет форму квадрата и изготовлен из прочного железа, что делает его долговечным и надежным.
-                  Спираль Васту помогает создать гармонию и баланс в окружающем пространстве, а также улучшить
-                  энергетику помещения. Его уникальный дизайн и качественные материалы делают его прекрасным выбором для
-                  тех, кто интересуется практиками Васту и стремится к гармонии в своем доме или офисе.
-               </p>
-               <p>Кроме того, Спираль Васту может быть использована как декоративный элемент, добавляющий уникальный
-                  акцент в интерьере. Его компактные размеры делают его удобным для размещения на полках, столах или
-                  других поверхностях. Этот товар также может быть прекрасным подарком для тех, кто интересуется
-                  духовным развитием и гармонизацией пространства.
-               </p>
-               <p>Спираль Васту - это не только функциональный предмет, но и символ гармонии и баланса, который может
-                  принести пользу и радость своему владельцу. </p>
-            </div>
-
-            <div class="tabs__text opacity--zero display--none" data-tab="tab-2">
-               <p>Вторая закладка. Спираль Васту - Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-                  molestias dolores
-                  repellendus numquam ipsam incidunt perspiciatis, facere blanditiis tenetur nulla quos id quo
-                  exercitationem architecto doloribus adipisci quae sapiente praesentium.
-               </p>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, repudiandae commodi repellendus ab
-                  magnam tempore accusantium! Odio, quaerat esse obcaecati enim temporibus alias cum nam reiciendis
-                  consequuntur unde. In magni aspernatur facere officia dolore atque quas iure deserunt quis laborum.
-               </p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente deleniti vero ea quos reprehenderit
-                  iusto quo est qui aliquid accusamus!</p>
-            </div>
-
-            <div class="tabs__text opacity--zero display--none" data-tab="tab-3">
-               <p>Третья закладка. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quasi nobis unde
-                  perspiciatis
-                  voluptatum similique obcaecati! Natus voluptatibus facilis reprehenderit impedit numquam iusto ducimus
-                  quam velit fugiat, temporibus, quos pariatur expedita sunt esse consequuntur labore, quasi similique
-                  distinctio placeat sapiente nihil eaque voluptas consectetur. Debitis accusamus quae nobis unde nemo?
-               </p>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid perspiciatis dolorem numquam
-                  tenetur, praesentium enim rem est, quaerat quisquam repellat deserunt sunt laudantium harum tempora
-                  eius amet ipsum ad sequi!
-               </p>
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste molestiae doloribus et perferendis vel
-                  est a, incidunt nobis deleniti vero itaque illum quam dolor. Qui iste repellendus sunt! Adipisci earum
-                  dolorem maiores qui, quisquam ut! Sunt sint dolore earum quas?</p>
-            </div>
-         </div>
+  <section class="tabs center">
+    <div class="container tabs__container">
+      <div class="tabs__headers">
+        <div class="tabs__header tabs__header--active" data-tab="tab-1">
+          Описание
+        </div>
+        <div class="tabs__header" data-tab="tab-2">Детали</div>
+        <div class="tabs__header" data-tab="tab-3">Доставка и оплата</div>
       </div>
-   </section>
+      <div class="tabs__texts">
+        <div class="tabs__text opacity--max" data-tab="tab-1">
+          <p>
+            Спираль Васту - это уникальный товар, предназначенный для
+            использования во время практик Васту. Этот предмет имеет форму
+            квадрата и изготовлен из прочного железа, что делает его долговечным
+            и надежным. Спираль Васту помогает создать гармонию и баланс в
+            окружающем пространстве, а также улучшить энергетику помещения. Его
+            уникальный дизайн и качественные материалы делают его прекрасным
+            выбором для тех, кто интересуется практиками Васту и стремится к
+            гармонии в своем доме или офисе.
+          </p>
+          <p>
+            Кроме того, Спираль Васту может быть использована как декоративный
+            элемент, добавляющий уникальный акцент в интерьере. Его компактные
+            размеры делают его удобным для размещения на полках, столах или
+            других поверхностях. Этот товар также может быть прекрасным подарком
+            для тех, кто интересуется духовным развитием и гармонизацией
+            пространства.
+          </p>
+          <p>
+            Спираль Васту - это не только функциональный предмет, но и символ
+            гармонии и баланса, который может принести пользу и радость своему
+            владельцу.
+          </p>
+        </div>
 
-   <section class="title-block center">
-      <div class="container title-block__container">
-         <span class="title-block__title">Похожие товары</span>
-         <div class="title-block__line"></div>
-      </div>
-   </section>
+        <div class="tabs__text opacity--zero display--none" data-tab="tab-2">
+          <p>
+            Вторая закладка. Спираль Васту - Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Vero molestias dolores repellendus
+            numquam ipsam incidunt perspiciatis, facere blanditiis tenetur nulla
+            quos id quo exercitationem architecto doloribus adipisci quae
+            sapiente praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim,
+            repudiandae commodi repellendus ab magnam tempore accusantium! Odio,
+            quaerat esse obcaecati enim temporibus alias cum nam reiciendis
+            consequuntur unde. In magni aspernatur facere officia dolore atque
+            quas iure deserunt quis laborum.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+            deleniti vero ea quos reprehenderit iusto quo est qui aliquid
+            accusamus!
+          </p>
+        </div>
 
-   <section class="cards center">
-      <div class="container cards__container">
-         @@loop('html_parts/artifacts/artifacts_cards.html','../files/artifacts_cards.json')
+        <div class="tabs__text opacity--zero display--none" data-tab="tab-3">
+          <p>
+            Третья закладка. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eveniet quasi nobis unde perspiciatis voluptatum similique
+            obcaecati! Natus voluptatibus facilis reprehenderit impedit numquam
+            iusto ducimus quam velit fugiat, temporibus, quos pariatur expedita
+            sunt esse consequuntur labore, quasi similique distinctio placeat
+            sapiente nihil eaque voluptas consectetur. Debitis accusamus quae
+            nobis unde nemo?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
+            perspiciatis dolorem numquam tenetur, praesentium enim rem est,
+            quaerat quisquam repellat deserunt sunt laudantium harum tempora
+            eius amet ipsum ad sequi!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+            molestiae doloribus et perferendis vel est a, incidunt nobis
+            deleniti vero itaque illum quam dolor. Qui iste repellendus sunt!
+            Adipisci earum dolorem maiores qui, quisquam ut! Sunt sint dolore
+            earum quas?
+          </p>
+        </div>
       </div>
-   </section>
+    </div>
+  </section>
+
+  <section class="title-block center">
+    <div class="container title-block__container">
+      <span class="title-block__title">Похожие товары</span>
+      <div class="title-block__line"></div>
+    </div>
+  </section>
+
+  <section class="cards center">
+    <div class="container cards__container">
+      @@loop('html_parts/universals/cards.html','../files/artifacts_cards.json')
+    </div>
+  </section>
 </div>
 
-@@include('html_parts/footer.html')
-
-@@include('html_parts/foot.html')
+@@include('html_parts/footer.html') @@include('html_parts/foot.html')

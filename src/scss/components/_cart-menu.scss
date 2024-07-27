@@ -3,7 +3,7 @@
    z-index: 150;
    max-width: 410px;
    height: 487px;
-   background-color: #F2E8DE;
+   background-color: #f2e8de;
    padding-top: 30px;
    padding-bottom: 30px;
    padding-left: 30px;
@@ -23,12 +23,11 @@
 /* .common.cart-menu {} */
 
 .cart-menu {
-
    &__items {
       display: flex;
       flex-direction: column;
       padding-bottom: 30px;
-      border-bottom: #8B4513 2px solid;
+      border-bottom: #8b4513 2px solid;
       margin-bottom: 20px;
    }
 
@@ -44,6 +43,16 @@
       }
    }
 
+   &__img {
+      position: relative;
+
+      a,
+      img {
+         display: block;
+      }
+      @include image-hover;
+   }
+
    &__info {
       /* max-width: 220px; */
       height: 75px;
@@ -55,9 +64,11 @@
    &__header {
       font-size: 14px;
       text-transform: uppercase;
+      color: #2a2a2a;
 
-      & a {
-         color: #2a2a2a;
+      @include media-hover() {
+         color: #8b4513;
+         font-weight: 500;
       }
    }
 
@@ -66,9 +77,9 @@
       align-items: center;
       /* font-size: 16px; */
       font-weight: 500;
-      color: #2A2A2A;
+      color: #2a2a2a;
 
-      &>.cart-menu__price {
+      & > .cart-menu__price {
          font-size: 16px;
       }
    }
@@ -77,16 +88,20 @@
    &__minus {
       width: 24px;
       height: 24px;
-      border: 1px solid #8B4513;
+      border: 1px solid #8b4513;
       border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transition: all 0.3s;
 
       & svg {
-         stroke: #2A2A2A;
+         display: block;
+         stroke: #2a2a2a;
       }
 
       &:hover {
-         background-color: #A66321;
+         background-color: #a66321;
 
          & svg {
             stroke: #fff;
@@ -98,28 +113,29 @@
       margin-left: 30px;
       margin-right: 14px;
 
-      & svg {
+      /*       & svg {
          margin-bottom: 5px;
-      }
+      } */
    }
 
    &__plus {
       margin-left: 14px;
       margin-right: 20px;
 
-      & svg {
+      /*       & svg {
          margin-bottom: -1px;
-      }
+      } */
    }
 
    &__delete {
-      background-color: #F2E8DE;
+      background-color: #f2e8de;
       border: none;
    }
 
    &__counter {
       width: 10px;
-      background-color: #F2E8DE;
+      background-color: #f2e8de;
+      font-size: 16px;
       border: none;
    }
 
@@ -132,7 +148,7 @@
    &__text,
    &__price {
       font-size: 20px;
-      color: #2A2A2A;
+      color: #2a2a2a;
       font-weight: 500;
    }
 
@@ -145,32 +161,32 @@
       padding: 9px 44px;
       font-size: 16px;
       border-radius: 10px;
-      border: #8B4513 1px solid;
+      border: #8b4513 1px solid;
       overflow: hidden;
       transition: all 0.3s;
    }
 
    &__button--clear {
-      color: #8B4513;
-      background-color: #F2E8DE;
+      color: #8b4513;
+      background-color: #f2e8de;
 
       @include media-hover() {
-         background-color: #A66321;
+         background-color: #a66321;
          color: #fff;
       }
    }
 
    &__button--order {
       color: #fff;
-      background-color: #8B4513;
+      background-color: #8b4513;
 
       @include media-hover() {
-         background-color: #A66321;
+         background-color: #a66321;
       }
    }
 }
 
-@media(max-width:500px) {
+@media (max-width: 500px) {
    .cart-menu {
       padding-left: 20px;
       padding-right: 20px;

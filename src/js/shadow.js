@@ -36,8 +36,8 @@ export default function shadow() {
     // Заносим данные из выбранной карточки в окно корзины
     // Изображение
     artifactsPopUp.querySelector(".cart-menu__img").attributes.src.value =
-      event.target.parentElement.parentElement.querySelector(
-        ".cards__img>img"
+      event.target.parentElement.querySelector(
+        ".cards__img>a>img"
       ).attributes.src.value;
 
     // Название

@@ -19,6 +19,8 @@
 
       &__title-mod {
          background-color: rgba(139, 69, 19, 0.5);
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
          width: 45.1rem;
          height: 25.8rem;
          padding-top: 2.5rem;
@@ -186,12 +188,16 @@
 
       &__info-icon {
          position: absolute;
+         background-color: transparent;
+         border-radius: 50%;
+         overflow: hidden;
          top: 0;
          right: 0;
          width: 17px;
          transform: translateX(100%);
 
          & img {
+            display: block;
             width: 100%;
          }
       }

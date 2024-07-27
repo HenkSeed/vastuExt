@@ -1,6 +1,7 @@
 [
   {
     "slideNum": "subcat_cards1",
+    "artifactPage": "artifacts_card.html",
     "imagePath": "images/artifacts_subcategory/cards",
     "image": "img-1.png",
     "alt": "Image 1",
@@ -10,6 +11,7 @@
   },
   {
     "slideNum": "subcat_cards2",
+    "artifactPage": "artifacts_card.html",
     "imagePath": "images/artifacts_subcategory/cards",
     "image": "img-2.png",
     "alt": "Image 2",
@@ -19,6 +21,7 @@
   },
   {
     "slideNum": "subcat_cards3",
+    "artifactPage": "artifacts_card.html",
     "imagePath": "images/artifacts_subcategory/cards",
     "image": "img-3.png",
     "alt": "Image 3",
@@ -28,6 +31,7 @@
   },
   {
     "slideNum": "subcat_cards4",
+    "artifactPage": "artifacts_card.html",
     "imagePath": "images/artifacts_subcategory/cards",
     "image": "img-4.png",
     "alt": "Image 4",
@@ -37,6 +41,7 @@
   },
   {
     "slideNum": "subcat_cards5",
+    "artifactPage": "artifacts_card.html",
     "imagePath": "images/artifacts_subcategory/cards",
     "image": "img-5.png",
     "alt": "Image 5",
@@ -46,6 +51,7 @@
   },
   {
     "slideNum": "subcat_cards6",
+    "artifactPage": "artifacts_card.html",
     "imagePath": "images/artifacts_subcategory/cards",
     "image": "img-6.png",
     "alt": "Image 6",
@@ -55,6 +61,7 @@
   },
   {
     "slideNum": "subcat_cards7",
+    "artifactPage": "artifacts_card.html",
     "imagePath": "images/artifacts_subcategory/cards",
     "image": "img-7.png",
     "alt": "Image 7",
@@ -64,6 +71,7 @@
   },
   {
     "slideNum": "subcat_cards8",
+    "artifactPage": "artifacts_card.html",
     "imagePath": "images/artifacts_subcategory/cards",
     "image": "img-8.png",
     "alt": "Image 8",

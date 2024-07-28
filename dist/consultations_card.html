@@ -21,9 +21,7 @@
    <script type="module" src="js/main.js" defer></script>
 </head>
 
-<body>
-
-<!-- Затемнённый фон для бургер-меню -->
+<body> <!-- Затемнённый фон для бургер-меню -->
 <div class="dark-bg center">
    <div class="container dark-bg__container">
 
@@ -186,7 +184,6 @@
 
    </div>
 </div>
-
 <header class="header center">
    <!-- Затемнение для меню корзины -->
    <div class="dark__header dark dark--invisible"></div>
@@ -342,113 +339,328 @@
    </div>
 </div>
       <div class="common cart-menu center-cart cart-menu--invisible">
-
-   <div class="cart-menu__items">
-
-      <div class="cart-menu__item">
-         <a href="#">
-            <img src="images/main/cart/item-1.png" alt="Item-1" class="cart-menu__img">
-         </a>
-
-         <div class="cart-menu__info">
-            <div class="cart-menu__header"><a href="#">Круглая спираль Васту</a></div>
-            <div class="cart-menu__price-block">
-               <span class="cart-menu__price">1700 руб.</span>
-
-               <button class="cart-menu__minus"><svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M15 1H1" stroke="" stroke-width="2" stroke-linecap="round" />
-                  </svg></button>
-
-               <input type="number" value="1" class="cart-menu__counter">
-
-               <button class="cart-menu__plus"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M8 1V8M8 8V15M8 8H15M8 8H1" stroke="" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                  </svg>
-               </button>
-
-               <button class="cart-menu__delete">
-                  <img src="images/main/cart/delete_icon.svg" alt="Delete Icon">
-               </button>
-            </div>
-         </div>
+  <div class="cart-menu__items">
+    <div class="cart-menu__item">
+      <div class="cart-menu__img">
+        <a href="artifacts_card.html">
+          <img
+            src="images/main/cart/item-1.png"
+            alt="Item-1"
+            class="cart-menu__img"
+          />
+        </a>
       </div>
 
-      <div class="cart-menu__item">
-         <a href="#">
-            <img src="images/main/cart/item-2.png" alt="Item-2" class="cart-menu__img">
-         </a>
+      <div class="cart-menu__info">
+        <!-- <div class="cart-menu__header"> -->
+        <a href="artifacts_card.html" class="cart-menu__header"
+          >Круглая спираль Васту</a
+        >
+        <!-- </div> -->
+        <div class="cart-menu__price-block">
+          <span class="cart-menu__price">1700 руб.</span>
 
-         <div class="cart-menu__info">
-            <div class="cart-menu__header"><a href="#">Круглая спираль Васту</a></div>
+          <button class="cart-menu__minus">
+            <svg
+              width="16"
+              height="2"
+              viewBox="0 0 16 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 1H1"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
 
-            <div class="cart-menu__price-block">
-               <span class="cart-menu__price">1700 руб.</span>
-               <button class="cart-menu__minus"><svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M15 1H1" stroke="" stroke-width="2" stroke-linecap="round" />
-                  </svg>
-               </button>
+          <input type="number" value="1" class="cart-menu__counter" />
 
-               <input type="number" value="1" class="cart-menu__counter">
+          <button class="cart-menu__plus">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 1V8M8 8V15M8 8H15M8 8H1"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
 
-               <button class="cart-menu__plus"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M8 1V8M8 8V15M8 8H15M8 8H1" stroke="" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                  </svg></button>
+          <button class="cart-menu__delete">
+            <svg
+              width="16"
+              height="21"
+              viewBox="0 0 16 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.3 6.84615L13.1768 17.3997C13.0451 18.6366 12.9793 19.255 12.5806 19.6275C12.182 20 11.5859 20 10.3939 20H5.60612C4.41406 20 3.81803 20 3.41937 19.6275C3.02071 19.255 2.95489 18.6366 2.82325 17.3997L1.7 6.84615M15 3.92308H10.8M10.8 3.92308H5.2M10.8 3.92308C10.8 2.54513 10.8 1.85615 10.3899 1.42807C9.9799 1 9.31993 1 8 1C6.68007 1 6.0201 1 5.61005 1.42807C5.2 1.85615 5.2 2.54513 5.2 3.92308M5.2 3.92308H1M10.8 8.30769L10.1 16.3462M5.2 8.30769L5.9 16.3462"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
-               <button class="cart-menu__delete">
-                  <img src="images/main/cart/delete_icon.svg" alt="Delete Icon">
-               </button>
-            </div>
-         </div>
+    <div class="cart-menu__item">
+      <div class="cart-menu__img">
+        <a href="artifacts_card.html">
+          <img
+            src="images/main/cart/item-2.png"
+            alt="Item-2"
+            class="cart-menu__img"
+          />
+        </a>
       </div>
 
-      <div class="cart-menu__item">
-         <a href="#">
-            <img src="images/main/cart/item-3.png" alt="Item-3" class="cart-menu__img">
-         </a>
+      <div class="cart-menu__info">
+        <a href="artifacts_card.html" class="cart-menu__header"
+          >Круглая спираль Васту</a
+        >
 
-         <div class="cart-menu__info">
-            <div class="cart-menu__header"><a href="#">Круглая спираль Васту</a></div>
+        <div class="cart-menu__price-block">
+          <span class="cart-menu__price">1700 руб.</span>
+          <button class="cart-menu__minus">
+            <svg
+              width="16"
+              height="2"
+              viewBox="0 0 16 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 1H1"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
 
-            <div class="cart-menu__price-block">
-               <span class="cart-menu__price">1700 руб.</span>
-               <button class="cart-menu__minus"><svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M15 1H1" stroke="" stroke-width="2" stroke-linecap="round" />
-                  </svg></button>
+          <input type="number" value="1" class="cart-menu__counter" />
 
-               <input type="number" value="1" class="cart-menu__counter">
+          <button class="cart-menu__plus">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 1V8M8 8V15M8 8H15M8 8H1"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
 
-               <button class="cart-menu__plus"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M8 1V8M8 8V15M8 8H15M8 8H1" stroke="" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                  </svg></button>
+          <button class="cart-menu__delete">
+            <svg
+              width="16"
+              height="21"
+              viewBox="0 0 16 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.3 6.84615L13.1768 17.3997C13.0451 18.6366 12.9793 19.255 12.5806 19.6275C12.182 20 11.5859 20 10.3939 20H5.60612C4.41406 20 3.81803 20 3.41937 19.6275C3.02071 19.255 2.95489 18.6366 2.82325 17.3997L1.7 6.84615M15 3.92308H10.8M10.8 3.92308H5.2M10.8 3.92308C10.8 2.54513 10.8 1.85615 10.3899 1.42807C9.9799 1 9.31993 1 8 1C6.68007 1 6.0201 1 5.61005 1.42807C5.2 1.85615 5.2 2.54513 5.2 3.92308M5.2 3.92308H1M10.8 8.30769L10.1 16.3462M5.2 8.30769L5.9 16.3462"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
-               <button class="cart-menu__delete">
-                  <img src="images/main/cart/delete_icon.svg" alt="Delete Icon">
-               </button>
-            </div>
-         </div>
+    <div class="cart-menu__item">
+      <div class="cart-menu__img">
+        <a href="artifacts_card.html">
+          <img
+            src="images/main/cart/item-2.png"
+            alt="Item-2"
+            class="cart-menu__img"
+          />
+        </a>
       </div>
 
-   </div>
-   <div class="cart-menu__result-price">
-      <span class="cart-menu__text">Итого:</span>
-      <span class="cart-menu__price">5100 руб.</span>
-   </div>
+      <div class="cart-menu__info">
+        <a href="artifacts_card.html" class="cart-menu__header"
+          >Круглая спираль Васту</a
+        >
 
-   <div class="cart-menu__buttons">
-      <button class="cart-menu__button cart-menu__button--clear">Очистить</button>
+        <div class="cart-menu__price-block">
+          <span class="cart-menu__price">1700 руб.</span>
+          <button class="cart-menu__minus">
+            <svg
+              width="16"
+              height="2"
+              viewBox="0 0 16 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 1H1"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
 
-      <a href="#" class="cart-menu__button cart-menu__button--order">Заказать</a>
-   </div>
+          <input type="number" value="1" class="cart-menu__counter" />
+
+          <button class="cart-menu__plus">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 1V8M8 8V15M8 8H15M8 8H1"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <button class="cart-menu__delete">
+            <svg
+              width="16"
+              height="21"
+              viewBox="0 0 16 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.3 6.84615L13.1768 17.3997C13.0451 18.6366 12.9793 19.255 12.5806 19.6275C12.182 20 11.5859 20 10.3939 20H5.60612C4.41406 20 3.81803 20 3.41937 19.6275C3.02071 19.255 2.95489 18.6366 2.82325 17.3997L1.7 6.84615M15 3.92308H10.8M10.8 3.92308H5.2M10.8 3.92308C10.8 2.54513 10.8 1.85615 10.3899 1.42807C9.9799 1 9.31993 1 8 1C6.68007 1 6.0201 1 5.61005 1.42807C5.2 1.85615 5.2 2.54513 5.2 3.92308M5.2 3.92308H1M10.8 8.30769L10.1 16.3462M5.2 8.30769L5.9 16.3462"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-menu__item">
+      <div class="cart-menu__img">
+        <a href="artifacts_card.html">
+          <img
+            src="images/main/cart/item-3.png"
+            alt="Item-3"
+            class="cart-menu__img"
+          />
+        </a>
+      </div>
+
+      <div class="cart-menu__info">
+        <a href="artifacts_card.html" class="cart-menu__header"
+          >Круглая спираль Васту</a
+        >
+
+        <div class="cart-menu__price-block">
+          <span class="cart-menu__price">1700 руб.</span>
+          <button class="cart-menu__minus">
+            <svg
+              width="16"
+              height="2"
+              viewBox="0 0 16 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 1H1"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+
+          <input type="number" value="1" class="cart-menu__counter" />
+
+          <button class="cart-menu__plus">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 1V8M8 8V15M8 8H15M8 8H1"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <button class="cart-menu__delete">
+            <svg
+              width="16"
+              height="21"
+              viewBox="0 0 16 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.3 6.84615L13.1768 17.3997C13.0451 18.6366 12.9793 19.255 12.5806 19.6275C12.182 20 11.5859 20 10.3939 20H5.60612C4.41406 20 3.81803 20 3.41937 19.6275C3.02071 19.255 2.95489 18.6366 2.82325 17.3997L1.7 6.84615M15 3.92308H10.8M10.8 3.92308H5.2M10.8 3.92308C10.8 2.54513 10.8 1.85615 10.3899 1.42807C9.9799 1 9.31993 1 8 1C6.68007 1 6.0201 1 5.61005 1.42807C5.2 1.85615 5.2 2.54513 5.2 3.92308M5.2 3.92308H1M10.8 8.30769L10.1 16.3462M5.2 8.30769L5.9 16.3462"
+                stroke=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-menu__result-price">
+    <span class="cart-menu__text">Итого:</span>
+    <span class="cart-menu__price">5100 руб.</span>
+  </div>
+
+  <div class="cart-menu__buttons">
+    <button class="cart-menu__button cart-menu__button--clear">Очистить</button>
+
+    <a href="cart_page.html" class="cart-menu__button cart-menu__button--order"
+      >Заказать</a
+    >
+  </div>
 </div>
+
 
    </div>
 
@@ -456,182 +668,224 @@
 
 <!-- Оболочка страницы -->
 <div class="consultations-card">
+  <!-- Секция hero -->
+  <section class="hero center">
+    <div class="container hero__container">
+      <div class="hero__title">Бизнес</div>
+      <div class="hero__text">Консультация</div>
+    </div>
+  </section>
 
-   <!-- Секция hero -->
-   <section class="hero center">
-      <div class="container hero__container">
-         <div class="hero__title">Бизнес</div>
-         <div class="hero__text">Консультация</div>
+  <!-- Секция crowd -->
+  <section class="crowd center">
+    <div class="container crowd__container">
+      <div class="crowd__info">
+        <div class="crowd__header">О бизнес васту</div>
+        <div class="crowd__text">
+          <p>
+            Наши консультации по Васту для бизнеса предназначены для
+            предпринимателей и руководителей, желающих оптимизировать рабочее
+            пространство и повысить эффективность своего бизнеса. Наши эксперты
+            помогут вам создать гармоничное и энергетически благоприятное
+            рабочее окружение, которое способствует успеху и процветанию.
+          </p>
+        </div>
       </div>
-   </section>
 
-   <!-- Секция crowd -->
-   <section class="crowd center">
-      <div class="container crowd__container">
-         <div class="crowd__info">
-            <div class="crowd__header">О бизнес васту</div>
-            <div class="crowd__text">
-               <p>Наши консультации по Васту для бизнеса предназначены для предпринимателей и
-                  руководителей, желающих оптимизировать
-                  рабочее пространство и повысить эффективность своего бизнеса. Наши эксперты помогут вам создать
-                  гармоничное и
-                  энергетически благоприятное рабочее окружение, которое способствует успеху и процветанию.</p>
-            </div>
-         </div>
-
-         <div class="crowd__images">
-            <div class="crowd__img--1">
-               <img src="images/consultations_card/crowd/img_1.png" alt="Image 1">
-            </div>
-            <div class="crowd__img--2">
-               <img src="images/consultations_card/crowd/img_2.png" alt="Image 2">
-            </div>
-         </div>
-
+      <div class="crowd__images">
+        <div class="crowd__img--1">
+          <img src="images/consultations_card/crowd/img_1.png" alt="Image 1" />
+        </div>
+        <div class="crowd__img--2">
+          <img src="images/consultations_card/crowd/img_2.png" alt="Image 2" />
+        </div>
       </div>
-   </section>
+    </div>
+  </section>
 
-   <!-- Секция green -->
-   <section class="green center">
-      <div class="container green__container">
-         <div class="green__wrapper">
-            <div class="green__slogan">
-               <p>Позвольте энергии Васту принести успех
-                  и процветание в ваш бизнес – <br>
-                  начните сегодня!</p>
-            </div>
-            <button class="green__btn">Заказать консультацию</button>
-         </div>
+  <!-- Секция green -->
+  <section class="green center">
+    <div class="container green__container">
+      <div class="green__wrapper">
+        <div class="green__slogan">
+          <p>
+            Позвольте энергии Васту принести успех и процветание в ваш бизнес –
+            <br />
+            начните сегодня!
+          </p>
+        </div>
+        <button class="green__btn">Заказать консультацию</button>
       </div>
-   </section>
+    </div>
+  </section>
 
-   <!-- Секция cups -->
-   <section class="cups center">
-      <div class="container cups__container">
-         <div class="cups__left">
-            <div class="cups__left-image">
-               <img src="images/consultations_card/cups/left_img.png" alt="Cups Left Img">
-            </div>
-            <div class="cups__left-text">
-               <p>Наши консультации по Васту для бизнеса предназначены для предпринимателей и руководителей, желающих
-                  оптимизировать
-                  рабочее пространство и повысить эффективность своего бизнеса. Наши эксперты помогут вам создать
-                  гармоничное и
-                  энергетически благоприятное рабочее окружение, которое способствует успеху и процветанию.</p>
-            </div>
-         </div>
-
-         <div class="cups__right">
-            <div class="cups__right-info">
-               <div class="cups__right-header">О бизнес васту</div>
-               <div class="cups__right-text">
-                  <p>Наши консультации по Васту для бизнеса предназначены для предпринимателей и руководителей, желающих
-                     оптимизировать
-                     рабочее пространство и повысить эффективность своего бизнеса. Наши эксперты помогут вам создать
-                     гармоничное и
-                     энергетически благоприятное рабочее окружение, которое способствует успеху и процветанию.</p>
-                  <p>Наши консультации по Васту для бизнеса предназначены для предпринимателей и руководителей, желающих
-                     оптимизировать
-                     рабочее пространство и повысить эффективность своего бизнеса. Наши эксперты помогут вам создать
-                     гармоничное и
-                     энергетически благоприятное рабочее окружение, которое способствует успеху и процветанию.</p>
-               </div>
-            </div>
-            <div class="cups__right-images">
-               <div class="cups__right-images--1">
-                  <img src="images/consultations_card/cups/right_img_1.png" alt="Cups Right Img 1">
-               </div>
-               <div class="cups__right-images--2">
-                  <img src="images/consultations_card/cups/right_img_2.png" alt="Cups Right Img 2">
-               </div>
-            </div>
-         </div>
-
+  <!-- Секция cups -->
+  <section class="cups center">
+    <div class="container cups__container">
+      <div class="cups__left">
+        <div class="cups__left-image">
+          <img
+            src="images/consultations_card/cups/left_img.png"
+            alt="Cups Left Img"
+          />
+        </div>
+        <div class="cups__left-text">
+          <p>
+            Наши консультации по Васту для бизнеса предназначены для
+            предпринимателей и руководителей, желающих оптимизировать рабочее
+            пространство и повысить эффективность своего бизнеса. Наши эксперты
+            помогут вам создать гармоничное и энергетически благоприятное
+            рабочее окружение, которое способствует успеху и процветанию.
+          </p>
+        </div>
       </div>
-   </section>
 
-   <!-- Секция city-view -->
-   <section class="city-view center">
-      <div class="container city-view__container">
-         <div class="city-view__info">
-            <div class="city-view__header">О бизнес васту</div>
-            <div class="city-view__text">
-               <p>Наши консультации по Васту для бизнеса предназначены для предпринимателей и руководителей, желающих
-                  оптимизировать
-                  рабочее пространство и повысить эффективность своего бизнеса. Наши эксперты помогут вам создать
-                  гармоничное и
-                  энергетически благоприятное рабочее окружение, которое способствует успеху и процветанию.
-               </p>
-            </div>
-         </div>
-         <div class="city-view__img">
-            <img src="images/consultations_card/city_view/img_1.png" alt="City-View Img">
-         </div>
+      <div class="cups__right">
+        <div class="cups__right-info">
+          <div class="cups__right-header">О бизнес васту</div>
+          <div class="cups__right-text">
+            <p>
+              Наши консультации по Васту для бизнеса предназначены для
+              предпринимателей и руководителей, желающих оптимизировать рабочее
+              пространство и повысить эффективность своего бизнеса. Наши
+              эксперты помогут вам создать гармоничное и энергетически
+              благоприятное рабочее окружение, которое способствует успеху и
+              процветанию.
+            </p>
+            <p>
+              Наши консультации по Васту для бизнеса предназначены для
+              предпринимателей и руководителей, желающих оптимизировать рабочее
+              пространство и повысить эффективность своего бизнеса. Наши
+              эксперты помогут вам создать гармоничное и энергетически
+              благоприятное рабочее окружение, которое способствует успеху и
+              процветанию.
+            </p>
+          </div>
+        </div>
+        <div class="cups__right-images">
+          <div class="cups__right-images--1">
+            <img
+              src="images/consultations_card/cups/right_img_1.png"
+              alt="Cups Right Img 1"
+            />
+          </div>
+          <div class="cups__right-images--2">
+            <img
+              src="images/consultations_card/cups/right_img_2.png"
+              alt="Cups Right Img 2"
+            />
+          </div>
+        </div>
       </div>
-   </section>
+    </div>
+  </section>
 
-   <!-- Секция flower -->
-   <section class="flower center">
-      <div class="container flower__container">
-
-         <div class="flower__images">
-            <div class="flower__img--1">
-               <img src="images/consultations_card/flower/img_1.png" alt="Image 1">
-            </div>
-            <div class="flower__img--2">
-               <img src="images/consultations_card/flower/img_2.png" alt="Image 2">
-            </div>
-         </div>
-
-         <div class="flower__info">
-            <div class="flower__header">О бизнес васту</div>
-            <div class="flower__text">
-               <p>Наши консультации по Васту для бизнеса предназначены для предпринимателей и
-                  руководителей, желающих оптимизировать
-                  рабочее пространство и повысить эффективность своего бизнеса. Наши эксперты помогут вам создать
-                  гармоничное и
-                  энергетически благоприятное рабочее окружение, которое способствует успеху и процветанию.</p>
-            </div>
-         </div>
+  <!-- Секция city-view -->
+  <section class="city-view center">
+    <div class="container city-view__container">
+      <div class="city-view__info">
+        <div class="city-view__header">О бизнес васту</div>
+        <div class="city-view__text">
+          <p>
+            Наши консультации по Васту для бизнеса предназначены для
+            предпринимателей и руководителей, желающих оптимизировать рабочее
+            пространство и повысить эффективность своего бизнеса. Наши эксперты
+            помогут вам создать гармоничное и энергетически благоприятное
+            рабочее окружение, которое способствует успеху и процветанию.
+          </p>
+        </div>
       </div>
-   </section>
-
-   <!-- Секция candle -->
-   <section class="candle center">
-      <div class="container candle__container">
-         <div class="candle__wrapper">
-            <div class="candle__img">
-               <img src="images/consultations_card/candle/img.png" alt="Cabdle Image">
-            </div>
-
-            <div class="candle__form">
-               <div class=" candle__price">10 200 РУБ.</div>
-               <div class="candle__header">
-                  <h2>Консультация</h2>
-                  <p>Васту БИЗНЕС</p>
-               </div>
-               <div class="candle__name candle__field">
-                  <label for="candle-name">Имя</label>
-                  <input type="text" id="candle-name" placeholder="Введите Ваше имя" class="candle__input-name"
-                     autocomplete="off">
-               </div>
-               <div class="candle__email candle__field">
-                  <label for="candle-email">E-mail</label>
-                  <input type="email" id="candle-email" placeholder="Введите электронную почту"
-                     class="candle__input-email" autocomplete="off">
-               </div>
-               <div class="candle__phone candle__field">
-                  <label for="candle-phone">Телефон</label>
-                  <input type="tel" id="candle-phone" placeholder="Введите номер телефона" class="candle__input-phone"
-                     autocomplete="off">
-               </div>
-
-               <button type="submit" class="candle__button--submit">Заказать консультацию</button>
-            </div>
-         </div>
+      <div class="city-view__img">
+        <img
+          src="images/consultations_card/city_view/img_1.png"
+          alt="City-View Img"
+        />
       </div>
-   </section>
+    </div>
+  </section>
 
+  <!-- Секция flower -->
+  <section class="flower center">
+    <div class="container flower__container">
+      <div class="flower__images">
+        <div class="flower__img--1">
+          <img src="images/consultations_card/flower/img_1.png" alt="Image 1" />
+        </div>
+        <div class="flower__img--2">
+          <img src="images/consultations_card/flower/img_2.png" alt="Image 2" />
+        </div>
+      </div>
+
+      <div class="flower__info">
+        <div class="flower__header">О бизнес васту</div>
+        <div class="flower__text">
+          <p>
+            Наши консультации по Васту для бизнеса предназначены для
+            предпринимателей и руководителей, желающих оптимизировать рабочее
+            пространство и повысить эффективность своего бизнеса. Наши эксперты
+            помогут вам создать гармоничное и энергетически благоприятное
+            рабочее окружение, которое способствует успеху и процветанию.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция candle -->
+  <section class="candle center" id="candle">
+    <div class="container candle__container">
+      <div class="candle__wrapper">
+        <div class="candle__img">
+          <img
+            src="images/consultations_card/candle/img.png"
+            alt="Cabdle Image"
+          />
+        </div>
+
+        <div class="candle__form">
+          <div class="candle__price">10 200 РУБ.</div>
+          <div class="candle__header">
+            <h2>Консультация</h2>
+            <p>Васту БИЗНЕС</p>
+          </div>
+          <div class="candle__name candle__field">
+            <label for="candle-name">Имя</label>
+            <input
+              type="text"
+              id="candle-name"
+              placeholder="Введите Ваше имя"
+              class="candle__input-name"
+              autocomplete="off"
+            />
+          </div>
+          <div class="candle__email candle__field">
+            <label for="candle-email">E-mail</label>
+            <input
+              type="email"
+              id="candle-email"
+              placeholder="Введите электронную почту"
+              class="candle__input-email"
+              autocomplete="off"
+            />
+          </div>
+          <div class="candle__phone candle__field">
+            <label for="candle-phone">Телефон</label>
+            <input
+              type="tel"
+              id="candle-phone"
+              placeholder="Введите номер телефона"
+              class="candle__input-phone"
+              autocomplete="off"
+            />
+          </div>
+
+          <button type="submit" class="candle__button--submit">
+            Заказать консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <footer class="footer center">
@@ -784,9 +1038,7 @@
 
    </div>
    <div class="footer__copyright"><span>© соpyright 2024 vas-tu.ru</span></div>
-</footer>
-
-<script type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</footer> <script type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 

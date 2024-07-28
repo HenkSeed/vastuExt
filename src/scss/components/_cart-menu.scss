@@ -29,6 +29,9 @@
       padding-bottom: 30px;
       border-bottom: #8b4513 2px solid;
       margin-bottom: 20px;
+      overflow-y: scroll;
+      max-height: 310px;
+      /* flex-grow: 0; */
    }
 
    &__item {
@@ -130,6 +133,24 @@
    &__delete {
       background-color: #f2e8de;
       border: none;
+
+      & svg {
+         & path {
+            stroke: #8b4513;
+         }
+      }
+   }
+
+   @media (hover: hover) {
+      &__delete:hover svg path {
+         stroke: #a66321;
+      }
+   }
+
+   @media (hover: none) {
+      &__delete:hover svg path {
+         stroke: #a66321;
+      }
    }
 
    &__counter {
@@ -187,6 +208,11 @@
 }
 
 @media (max-width: 500px) {
+   .common.cart-menu {
+      /* Если использовать скролл товаров */
+      padding-left: calc(20px + (30 - 20) * ((100vw - 360px) / (500 - 360)));
+      padding-right: calc(20px + (30 - 20) * ((100vw - 360px) / (500 - 360)));
+   }
    .cart-menu {
       padding-left: 20px;
       padding-right: 20px;

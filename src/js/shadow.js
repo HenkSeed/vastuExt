@@ -10,8 +10,44 @@ export default function shadow() {
   // Находим кнопки на карточках
   const cardsButtons = document.querySelectorAll(".cards__btn");
 
-  // Проверяем, есть ли такие кнопки на текущей странице
+  // Находим кнопки-корзинки на артефактах
+  const jewelryCartBtns = document.querySelectorAll(".jewelry__cart-btn");
+
+  // Находим кнопку "В корзину" на карусели
+  const carouselMoreBtn = document.querySelector(".carousel__more-btn");
+
+  // Находим кнопку "В корзину" в подробной карточке товара
+  const buyNowToCartBtn = document.querySelector(".buy-now__to-cart-btn");
+
+  // Отслеживаем нажатие кнопки "В корзину" в подробной карточке товара
+  if (buyNowToCartBtn) {
+    buyNowToCartBtn.addEventListener("click", (event) => {
+      assignBuyNowProduct();
+      showShadow();
+    });
+  }
+
+  // Отслеживаем нажатие кнопки "В корзину" на карусели
+  if (carouselMoreBtn) {
+    carouselMoreBtn.addEventListener("click", (event) => {
+      assignCarouselProduct();
+      showShadow();
+    });
+  }
+
+  if (jewelryCartBtns.length != 0) {
+    // Отслеживаем нажатие на кнопки-корзинки на артефактах
+    jewelryCartBtns.forEach((btn) => {
+      btn.addEventListener("click", (event) => {
+        assignJewProduct(event);
+        showShadow();
+      });
+    });
+  }
+
+  // Отслеживаем нажатие на кнопки карточек
   if (cardsButtons.length != 0) {
+    // Проверяем, есть ли такие кнопки на текущей странице
     // Перебираем найденные кнопки и прикрепляем к ним "слушатели"
     cardsButtons.forEach((btn) => {
       btn.addEventListener("click", (event) => {
@@ -55,6 +91,94 @@ export default function shadow() {
       ".cart-menu__result-price>.cart-menu__price"
     ).textContent =
       event.target.parentElement.querySelector(".cards__price").textContent;
+  }
+
+  // Формируем карточку Pop Up по выбранному артефакту
+  function assignJewProduct(event) {
+    // Заносим данные из выбранной карточки в окно корзины
+    // Изображение
+    artifactsPopUp.querySelector(".cart-menu__img").attributes.src.value =
+      event.currentTarget.parentElement.parentElement.querySelector(
+        "img"
+      ).attributes.src.value;
+
+    // Название
+    artifactsPopUp.querySelector(".cart-menu__header>a").textContent =
+      event.currentTarget.parentElement.parentElement.parentElement.querySelector(
+        ".jewelry__header"
+      ).textContent;
+
+    // Цена товара
+    artifactsPopUp.querySelector(
+      ".cart-menu__price-block>.cart-menu__price"
+    ).textContent =
+      event.currentTarget.parentElement.parentElement.querySelector(
+        ".jewelry__price"
+      ).textContent;
+
+    // Итоговая цена
+    artifactsPopUp.querySelector(
+      ".cart-menu__result-price>.cart-menu__price"
+    ).textContent =
+      event.currentTarget.parentElement.parentElement.querySelector(
+        ".jewelry__price"
+      ).textContent;
+  }
+
+  // Формируем карточку по информации из карусели
+  function assignCarouselProduct() {
+    // Заносим данные из выбранной карточки в окно корзины
+    // Изображение
+    artifactsPopUp.querySelector(".cart-menu__img").attributes.src.value =
+      document.querySelector(
+        ".carousel__image img.swiper-slide-active"
+      ).attributes.src.value;
+
+    // Название
+    artifactsPopUp.querySelector(".cart-menu__header>a").textContent =
+      document.querySelector(".carousel__ground .carousel__header").textContent;
+
+    // Цена товара
+    artifactsPopUp.querySelector(
+      ".cart-menu__price-block>.cart-menu__price"
+    ).textContent = document.querySelector(
+      ".carousel__ground .carousel__btns>button"
+    ).textContent;
+
+    // Итоговая цена
+    artifactsPopUp.querySelector(
+      ".cart-menu__result-price>.cart-menu__price"
+    ).textContent = document.querySelector(
+      ".carousel__ground .carousel__btns>button"
+    ).textContent;
+  }
+
+  // Формируем карточку из подробной карточки товара
+  function assignBuyNowProduct() {
+    // Заносим данные из выбранной карточки в окно корзины
+    // Изображение
+    artifactsPopUp.querySelector(".cart-menu__img").attributes.src.value =
+      document.querySelector(
+        ".artifacts-card .buy-now__img>img"
+      ).attributes.src.value;
+
+    // Название
+    artifactsPopUp.querySelector(".cart-menu__header>a").textContent =
+      document.querySelector(".artifacts-card .buy-now__header>h2").textContent;
+
+    // Цена товара
+    artifactsPopUp.querySelector(
+      ".cart-menu__price-block>.cart-menu__price"
+    ).textContent = document.querySelector(
+      ".artifacts-card .price-block__price"
+    ).textContent;
+
+    // Итоговая цена
+    artifactsPopUp.querySelector(
+      ".cart-menu__result-price>.cart-menu__price"
+    ).textContent = document.querySelector(
+      ".artifacts-card .price-block__price"
+    ).textContent;
   }
 
   // ----- Конец блока обработки "окна" карзины артефактов --------

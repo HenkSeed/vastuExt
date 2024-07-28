@@ -1,6 +1,6 @@
 .consultations-card {
    .hero {
-      background-image: url('../images/consultations_card/hero/bg_img.png');
+      background-image: url("../images/consultations_card/hero/bg_img.png");
       height: 49.2rem;
 
       &__container {
@@ -20,7 +20,7 @@
 
       &__text {
          font-size: 4.8rem;
-         color: rgba(241, 201, 165, .48);
+         color: rgba(241, 201, 165, 0.48);
          font-weight: 400;
          text-transform: uppercase;
          position: absolute;
@@ -30,8 +30,8 @@
    }
 
    .crowd {
-      background-color: #F2E8DE;
-      background-image: url('../images/consultations_card/crowd/bg_img.svg');
+      background-color: #f2e8de;
+      background-image: url("../images/consultations_card/crowd/bg_img.svg");
       background-position: center 12rem;
       background-repeat: no-repeat;
       background-size: auto;
@@ -53,13 +53,13 @@
 
       &__header {
          font-size: 40px;
-         color: #8B4513;
+         color: #8b4513;
          margin-bottom: 20px;
       }
 
       &__text {
          font-size: 18px;
-         color: #8B4513;
+         color: #8b4513;
          line-height: 137%;
       }
 
@@ -70,7 +70,6 @@
       }
 
       &__img {
-
          &--1 {
             /* width: 19.7%; */
             width: 230px;
@@ -95,7 +94,7 @@
    }
 
    .green {
-      background-color: #F2E8DE;
+      background-color: #f2e8de;
       padding-bottom: 12rem;
 
       &__container {
@@ -107,7 +106,7 @@
          position: relative;
          flex-direction: column;
          justify-content: space-between;
-         background-image: url('../images/consultations_card/green/bg_img.png');
+         background-image: url("../images/consultations_card/green/bg_img.png");
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;
@@ -164,12 +163,18 @@
          border: #fff 1px solid;
          border-radius: 10px;
          font-size: 24px;
-         transition: all 0.3s
+         transition: all 0.3s;
+
+         &:hover {
+            background-color: rgba(241, 201, 165, 0.5);
+            /* color: #8b4513; */
+            border: rgba(241, 201, 165, 0.5) solid 1px;
+         }
       }
    }
 
    .cups {
-      background-color: #F2E8DE;
+      background-color: #f2e8de;
       padding-bottom: 12rem;
 
       &__container {
@@ -177,14 +182,13 @@
 
          & p {
             font-size: 18px;
-            color: #8B4513;
+            color: #8b4513;
             line-height: 140%;
          }
 
-         & p~p {
+         & p ~ p {
             margin-top: 2.6rem;
          }
-
       }
 
       &__left {
@@ -212,7 +216,7 @@
 
       &__right-header {
          font-size: 40px;
-         color: #8B4513;
+         color: #8b4513;
          line-height: 140%;
          margin-bottom: 20px;
       }
@@ -247,7 +251,7 @@
    }
 
    .city-view {
-      background-color: #F2E8DE;
+      background-color: #f2e8de;
 
       padding-bottom: 12rem;
 
@@ -257,14 +261,14 @@
 
          & p {
             font-size: 18px;
-            color: #8B4513;
+            color: #8b4513;
             line-height: 140%;
          }
       }
 
       &__info {
-         background-color: rgba(241, 201, 165, .6);
-         background-image: url('../images/consultations_card/city_view/bg_img.png');
+         background-color: rgba(241, 201, 165, 0.6);
+         background-image: url("../images/consultations_card/city_view/bg_img.png");
          background-position: center;
          background-repeat: no-repeat;
          background-size: auto 100%;
@@ -283,7 +287,7 @@
 
       &__header {
          font-size: 40px;
-         color: #8B4513;
+         color: #8b4513;
          line-height: 140%;
          margin-bottom: 20px;
       }
@@ -305,8 +309,8 @@
    }
 
    .flower {
-      background-color: #F2E8DE;
-      background-image: url('../images/consultations_card/flower/bg_img.svg');
+      background-color: #f2e8de;
+      background-image: url("../images/consultations_card/flower/bg_img.svg");
       background-position: center 1rem;
       background-repeat: no-repeat;
       background-size: auto;
@@ -354,19 +358,19 @@
 
       &__header {
          font-size: 40px;
-         color: #8B4513;
+         color: #8b4513;
          margin-bottom: 2rem;
       }
 
       &__text {
          font-size: 18px;
-         color: #8B4513;
+         color: #8b4513;
          line-height: 137%;
       }
    }
 
    .candle {
-      background-color: #F2E8DE;
+      background-color: #f2e8de;
       padding-bottom: 12rem;
 
       &__wrapper {
@@ -395,7 +399,7 @@
          overflow: hidden;
 
          & label {
-            color: #8B4513;
+            color: #8b4513;
             font-size: 16px;
             margin-left: 15px;
          }
@@ -405,18 +409,18 @@
             border-radius: 10px;
             border: none;
             font-size: 16px;
-            color: #8B4513;
+            color: #8b4513;
             padding-left: 50px;
 
             &::placeholder {
-               color: #D3D3D3;
+               color: #d3d3d3;
             }
          }
       }
 
       &__price {
          width: 190px;
-         background-color: rgba(139, 69, 19, .5);
+         background-color: rgba(139, 69, 19, 0.5);
          color: #fff;
          padding: 8px 20px;
          margin-left: -40px;
@@ -435,7 +439,7 @@
             font-size: 32px;
             font-weight: 500;
             line-height: 140%;
-            color: #8B4513;
+            color: #8b4513;
          }
 
          & p {
@@ -455,20 +459,20 @@
       }
 
       &__input-name {
-         background: url('../images/consultations/form_name_icon.svg') #fff no-repeat 10px center;
+         background: url("../images/consultations/form_name_icon.svg") #fff no-repeat 10px center;
       }
 
       &__input-email {
-         background: url('../images/consultations/form_email_icon.svg') #fff no-repeat 10px center;
+         background: url("../images/consultations/form_email_icon.svg") #fff no-repeat 10px center;
       }
 
       &__input-phone {
-         background: url('../images/consultations/form_phone_icon.svg') #fff no-repeat 10px center;
+         background: url("../images/consultations/form_phone_icon.svg") #fff no-repeat 10px center;
       }
 
       &__button {
          &--submit {
-            background-color: #8B4513;
+            background-color: #8b4513;
             color: #fff;
             font-size: 18px;
             margin-top: 10px;
@@ -479,23 +483,23 @@
             border-radius: 10px;
 
             @include media-hover() {
-               background-color: #A66321;
-               border-color: #A66321;
+               background-color: #a66321;
+               border-color: #a66321;
             }
          }
       }
    }
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
    .consultations-card {
-
       .hero {
          height: calc(300px + (492 - 300) * ((100vw - 360px) / (1200 - 360)));
       }
 
       .crowd {
-         background-size: calc(161px + (290 - 161) * ((100vw - 360px) / (1200 - 360))) calc(164px + (296 - 164) * ((100vw - 360px) / (1200 - 360)));
+         background-size: calc(161px + (290 - 161) * ((100vw - 360px) / (1200 - 360)))
+            calc(164px + (296 - 164) * ((100vw - 360px) / (1200 - 360)));
 
          &__container {
             height: calc(calc(393px + (468 - 393) * ((100vw - 768px) / (1200 - 768))) + 12rem + 12rem);
@@ -517,7 +521,6 @@
          }
 
          &__img {
-
             &--1 {
                /* width: 19.7%; */
                width: 23rem;
@@ -544,7 +547,6 @@
 
       .cups {
          &__container {
-
             & p {
                font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
             }
@@ -556,7 +558,6 @@
       }
 
       .city-view {
-
          &__container {
             height: calc(425px + (650 - 425) * ((100vw - 768px) / (1200 - 768)));
 
@@ -579,7 +580,8 @@
       }
 
       .flower {
-         background-size: calc(161px + (269 - 161) * ((100vw - 360px) / (1200 - 360))) calc(164px + (274 - 164) * ((100vw - 360px) / (1200 - 360)));
+         background-size: calc(161px + (269 - 161) * ((100vw - 360px) / (1200 - 360)))
+            calc(164px + (274 - 164) * ((100vw - 360px) / (1200 - 360)));
 
          &__header {
             font-size: calc(30px + (40 - 30) * ((100vw - 360px) / (1200 - 360)));
@@ -624,9 +626,7 @@
             }
          }
 
-
          &__field {
-
             &:last-of-type {
                margin-bottom: calc(60px + (70 - 60) * ((100vw - 992px) / (1200 - 992)));
             }
@@ -635,7 +635,7 @@
    }
 }
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
    .consultations-card {
       .candle {
          &__container {
@@ -647,7 +647,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
          }
 
          &__form {
@@ -667,17 +666,15 @@
          }
 
          &__field {
-
             &:last-of-type {
                margin-bottom: 60px;
             }
          }
-
       }
    }
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
    .consultations-card {
       .green {
          &__slogan {
@@ -687,11 +684,11 @@
    }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
    .consultations-card {
-
       .crowd {
-         background-position: calc(15px + (250 - 15) * ((100vw - 360px) / (768 - 360))) calc(305px - (305 - 252) * ((100vw - 360px) / (768 - 360)));
+         background-position: calc(15px + (250 - 15) * ((100vw - 360px) / (768 - 360)))
+            calc(305px - (305 - 252) * ((100vw - 360px) / (768 - 360)));
 
          &__container {
             height: calc(515px + 12rem + 12rem);
@@ -714,7 +711,6 @@
                margin-bottom: 40px;
             }
          }
-
       }
 
       .green {
@@ -781,7 +777,8 @@
       }
 
       .flower {
-         background-position: right calc(0px + (50 - 0) * ((100vw - 360px) / (768 - 360))) bottom calc(165px + (450 - 165) * ((100vw - 360px) / (768 - 360)));
+         background-position: right calc(0px + (50 - 0) * ((100vw - 360px) / (768 - 360))) bottom
+            calc(165px + (450 - 165) * ((100vw - 360px) / (768 - 360)));
 
          &__container {
             flex-direction: column-reverse;
@@ -841,11 +838,10 @@
             }
          }
       }
-
    }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
    .consultations-card {
       .cups {
          &__container {
@@ -865,7 +861,7 @@
    }
 }
 
-@media(max-width: 360px) {
+@media (max-width: 360px) {
    .consultations-card {
       .crowd {
          &__header {

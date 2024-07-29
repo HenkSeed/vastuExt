@@ -19,6 +19,17 @@ export default function shadow() {
   // Находим кнопку "В корзину" в подробной карточке товара
   const buyNowToCartBtn = document.querySelector(".buy-now__to-cart-btn");
 
+  // Находим кнопку "Продолжить"
+  const cartMenuButtonClear = document.querySelector(
+    ".cart-menu__button--clear"
+  );
+
+  // Отслеживаем нажатие кнопки "Продолжить"
+  cartMenuButtonClear.addEventListener("click", (event) => {
+    event.preventDefault();
+    hideShadow();
+  });
+
   // Отслеживаем нажатие кнопки "В корзину" в подробной карточке товара
   if (buyNowToCartBtn) {
     buyNowToCartBtn.addEventListener("click", (event) => {

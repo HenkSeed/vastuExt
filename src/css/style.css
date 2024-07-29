@@ -839,6 +839,7 @@ ul {
   transform: translateY(-50%);
   padding: 45px 18px 51px;
   max-width: 516px;
+  border-radius: 10px;
   background-color: rgba(241, 201, 165, 0.6);
 }
 .artifacts .back__header {

@@ -19,12 +19,24 @@ export default function shadow() {
   // Находим кнопку "В корзину" в подробной карточке товара
   const buyNowToCartBtn = document.querySelector(".buy-now__to-cart-btn");
 
-  // Находим кнопку "Продолжить"
+  // Находим кнопку "Продолжить" в PopUp
   const cartMenuButtonClear = document.querySelector(
     ".cart-menu__button--clear"
   );
 
-  // Отслеживаем нажатие кнопки "Продолжить"
+  // Находим кнопку "Заказать" в PopUp
+  const cartMenuButtonOrder = document.querySelector(
+    ".cart-menu__button--order"
+  );
+
+  // Отслеживаем нажатие кнопки "Заказать" в PopUp
+  cartMenuButtonOrder.addEventListener("click", (event) => {
+    event.preventDefault();
+    hideShadow();
+    window.location.href = "cart_page.html";
+  });
+
+  // Отслеживаем нажатие кнопки "Продолжить" в PopUp
   cartMenuButtonClear.addEventListener("click", (event) => {
     event.preventDefault();
     hideShadow();

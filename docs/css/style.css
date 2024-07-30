@@ -7025,17 +7025,6 @@ ul {
   padding-bottom: 12rem; */
   /* Для всех слайдеров, 
      класс которых начинается с cards__swiper_ */
-  /*    &__info {
-     position: absolute;
-     z-index: 100;
-     left: 10px;
-     bottom: 20px;
-     width: 250px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-between;
-  } */
   /* Пагинацию не обязательно привязывать отдельно к каждой карточке */
   /* так как Swiper у каждого слайдера будет искать внутри объекта */
 }
@@ -7100,9 +7089,6 @@ ul {
   justify-content: center;
 }
 .cards__item {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   max-width: 270px;
   padding: 10px 10px 20px;
   background-color: #f1c9a5;
@@ -7113,7 +7099,6 @@ ul {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  /* margin-bottom: 20px; */
   /* position: relative; */
   /*    & a:hover:after {
      background-color: rgba(138, 87, 44, 0.1);
@@ -7327,11 +7312,21 @@ ul {
 .cart-menu__plus svg, .cart-menu__minus svg {
   stroke: #2a2a2a;
 }
-.cart-menu__plus:hover, .cart-menu__minus:hover {
-  background-color: #a66321;
+@media (hover: hover) {
+  .cart-menu__plus:hover, .cart-menu__minus:hover {
+    background-color: #a66321;
+  }
+  .cart-menu__plus:hover svg, .cart-menu__minus:hover svg {
+    stroke: #fff;
+  }
 }
-.cart-menu__plus:hover svg, .cart-menu__minus:hover svg {
-  stroke: #fff;
+@media (hover: none) {
+  .cart-menu__plus:active, .cart-menu__minus:active {
+    background-color: #a66321;
+  }
+  .cart-menu__plus:active svg, .cart-menu__minus:active svg {
+    stroke: #fff;
+  }
 }
 .cart-menu__minus {
   margin-left: 30px;

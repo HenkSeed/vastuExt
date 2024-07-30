@@ -12,7 +12,7 @@ export default function cart() {
   const plusCounter = document.querySelectorAll('[class$="plus"]');
   // Находим все минусы
   const minusCounter = document.querySelectorAll('[class$="minus"]');
-  // Находим все счётчики, кроме счётчика иконки корзины
+  // Находим все счётчики, кроме счётчика корзины в хедере
   const counter = document.querySelectorAll(
     '[class$="menu__counter"], [class$="block__counter"]'
   );

@@ -52,9 +52,8 @@
          stroke: #2a2a2a;
       }
 
-      &:hover {
+      @include media-hover() {
          background-color: #a66321;
-
          & svg {
             stroke: #fff;
          }

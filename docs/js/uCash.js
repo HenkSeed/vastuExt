@@ -11,6 +11,42 @@ export default function uCash() {
   // Всё тело страницы
   const bodyLimit = document.querySelector("body");
 
+  // Находим активный элемент слайдера
+  // const slidersActive = document.querySelector(
+  //   ".slider-swiper .swiper-slide-active img"
+  // ).attributes.src.value;
+
+  // Находим элемент (ноду) для отслеживания
+  const sliderActive = document.querySelector(
+    ".slider-swiper .slider__wrapper"
+  );
+
+  let observerCounter = 0;
+
+  // Создаём наблюдателя
+  let observer = new MutationObserver((mutationRecords) => {
+    console.log("Произошли изменения");
+    console.log(observerCounter++);
+    if (observerCounter % 2 == 0) {
+      console.log(
+        document.querySelector(".slider-swiper .swiper-slide-active img")
+          .attributes.src.value
+      );
+    }
+    // sliderActive = document.querySelector(".slider-swiper .slider__wrapper");
+    // console.log(mutationRecords); // console.log(изменения)
+  });
+
+  // Задаём наблюдателю объект наблюдения и какие изменения отслеживать
+  if (sliderActive) {
+    observer.observe(sliderActive, {
+      attributes: true,
+      // childList: true, // наблюдать за непосредственными детьми
+      // subtree: true, // и более глубокими потомками
+      // characterDataOldValue: true, // передавать старое значение в колбэк
+    });
+  }
+
   if (buyNowPopUp != null) {
     bodyLimit.addEventListener("click", (event) => {
       if (

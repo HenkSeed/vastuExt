@@ -78,7 +78,6 @@
    &__price-block {
       display: flex;
       align-items: center;
-      /* font-size: 16px; */
       font-weight: 500;
       color: #2a2a2a;
 
@@ -103,9 +102,8 @@
          stroke: #2a2a2a;
       }
 
-      &:hover {
+      @include media-hover() {
          background-color: #a66321;
-
          & svg {
             stroke: #fff;
          }
@@ -115,19 +113,11 @@
    &__minus {
       margin-left: 30px;
       margin-right: 14px;
-
-      /*       & svg {
-         margin-bottom: 5px;
-      } */
    }
 
    &__plus {
       margin-left: 14px;
       margin-right: 20px;
-
-      /*       & svg {
-         margin-bottom: -1px;
-      } */
    }
 
    &__delete {
@@ -139,9 +129,15 @@
             stroke: #8b4513;
          }
       }
+
+      @include media-hover() {
+         & svg path {
+            stroke: #a66321;
+         }
+      }
    }
 
-   @media (hover: hover) {
+   /*    @media (hover: hover) {
       &__delete:hover svg path {
          stroke: #a66321;
       }
@@ -151,7 +147,7 @@
       &__delete:hover svg path {
          stroke: #a66321;
       }
-   }
+   } */
 
    &__counter {
       width: 10px;

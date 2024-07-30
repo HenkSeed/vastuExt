@@ -1,0 +1,60 @@
+/* Блок суммирования цены по примеру корзины (1200 руб. + 1 -) */
+.price-block {
+   display: flex;
+   align-items: center;
+   font-weight: 500;
+   color: #2a2a2a;
+
+   &__price {
+      font-size: 32px;
+      color: #2a2a2a;
+      font-weight: 500;
+   }
+
+   &__minus,
+   &__plus {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #8b4513;
+      border-radius: 2px;
+      transition: all 0.3s;
+
+      & svg {
+         stroke: #2a2a2a;
+      }
+
+      @include media-hover() {
+         background-color: #a66321;
+         & svg {
+            stroke: #fff;
+         }
+      }
+   }
+
+   &__minus {
+      margin-left: 30px;
+      margin-right: 14px;
+      padding-top: 6px;
+
+      & svg {
+         margin-bottom: 5px;
+      }
+   }
+
+   &__counter {
+      width: 10px;
+      color: #2a2a2a;
+      background-color: #fff;
+      border: none;
+      font-size: 16px;
+   }
+
+   &__plus {
+      margin-left: 14px;
+      margin-right: 20px;
+
+      & svg {
+         margin-bottom: -1px;
+      }
+   }
+}

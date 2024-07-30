@@ -1,98 +1,15 @@
 /* Центрирование отдельной секции страницы */
 .center {
-   padding-left: calc(50% - 60.0rem);
-   padding-right: calc(50% - 60.0rem);
+   padding-left: calc(50% - 60rem);
+   padding-right: calc(50% - 60rem);
 }
 
 /* Общий стиль для контейнера секции страницы */
 .container {
    display: flex;
-   max-width: 120.0rem;
+   max-width: 120rem;
    padding-left: 15px;
    padding-right: 15px;
-}
-
-/* Стрелка слайдера вправо */
-/* и Стрелка слайдера влево */
-.arrow-right,
-.arrow-left {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 36px;
-   height: 36px;
-   background-color: #F1C9A5;
-   stroke: #8B4513;
-   cursor: pointer;
-   transition: all 0.3s;
-   flex-shrink: 0;
-
-   &:hover {
-      background-color: #A66321;
-      stroke: #fff;
-   }
-}
-
-/* Блок суммирования цены по примеру корзины (1200 руб. + 1 -) */
-.price-block {
-   display: flex;
-   align-items: center;
-   font-weight: 500;
-   color: #2A2A2A;
-
-   &__price {
-      font-size: 32px;
-      color: #2A2A2A;
-      font-weight: 500;
-   }
-
-   &__minus,
-   &__plus {
-      width: 24px;
-      height: 24px;
-      border: 1px solid #8B4513;
-      border-radius: 2px;
-      transition: all 0.3s;
-
-      & svg {
-         stroke: #2A2A2A;
-      }
-
-      &:hover {
-         background-color: #A66321;
-
-         & svg {
-            stroke: #fff;
-         }
-      }
-   }
-
-   &__minus {
-      margin-left: 30px;
-      margin-right: 14px;
-      padding-top: 6px;
-
-      & svg {
-         margin-bottom: 5px;
-      }
-   }
-
-   &__counter {
-      width: 10px;
-      color: #2A2A2A;
-      background-color: #fff;
-      border: none;
-      font-size: 16px;
-   }
-
-   &__plus {
-      margin-left: 14px;
-      margin-right: 20px;
-
-      & svg {
-         margin-bottom: -1px;
-      }
-   }
 }
 
 /* Делает блок прозрачным */

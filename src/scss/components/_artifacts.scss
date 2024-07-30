@@ -58,13 +58,11 @@
          z-index: 10;
          width: 48.72%;
          left: 15px;
-         /* border-radius: 10px; */
          overflow: hidden;
 
          & img {
             width: 100%;
             border-radius: 10px;
-            /* height: 100%; */
          }
       }
 
@@ -390,7 +388,6 @@
 
    .back {
       background-image: url("../images/artifacts/back/bg_img.png");
-      /* background-size: 1632px auto; */
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 0 -485px;

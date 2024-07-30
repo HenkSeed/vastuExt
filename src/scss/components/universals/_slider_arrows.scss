@@ -1,0 +1,20 @@
+/* Стрелка слайдера вправо */
+/* и Стрелка слайдера влево */
+.arrow-right,
+.arrow-left {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 36px;
+   height: 36px;
+   background-color: #f1c9a5;
+   stroke: #8b4513;
+   cursor: pointer;
+   transition: all 0.3s;
+   flex-shrink: 0;
+
+   @include media-hover() {
+      background-color: #a66321;
+      stroke: #fff;
+   }
+}

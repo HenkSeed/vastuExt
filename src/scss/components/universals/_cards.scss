@@ -84,6 +84,9 @@
       padding-bottom: 5px;
       border-bottom: #f2e8de 2px solid;
       margin-bottom: 10px;
+      height: 40px;
+      flex-shrink: 0;
+      flex-grow: 0;
 
       a {
          font-size: 18px;
@@ -98,7 +101,9 @@
    &__text {
       text-align: center;
       margin-bottom: 16px;
-      flex-grow: 2;
+      height: 33px;
+      flex-grow: 16;
+      flex-shrink: 0;
       max-width: calc(100% - 20px);
 
       a {
@@ -151,26 +156,39 @@
             calc(10px + (30 - 10) * ((100vw - 360px) / (1200 - 360)));
       }
 
-      &__item {
+      &__item,
+      [class^="cards__swiper_"] {
          width: calc(155px + (270 - 155) * ((100vw - 360px) / (1200 - 360)));
+         height: calc(360px + (482 - 360) * ((100vw - 360px) / (1200 - 360)));
       }
 
       &__title {
-         font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
+         width: calc(100% - 20px);
+         text-align: center;
+         flex-grow: 2;
+         a {
+            font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1200 - 360)));
+         }
       }
 
       &__text {
-         font-size: calc(12px + (16 - 12) * ((100vw - 360px) / (1200 - 360)));
+         a {
+            font-size: calc(12px + (16 - 12) * ((100vw - 360px) / (1200 - 360)));
+         }
       }
 
       &__price {
          font-size: calc(15px + (20 - 15) * ((100vw - 360px) / (1200 - 360)));
          width: calc(100px + (150 - 100) * ((100vw - 360px) / (1200 - 360)));
+         padding-top: calc(3px + (7 - 3) * ((100vw - 360px) / (1200 - 360)));
+         padding-bottom: calc(3px + (7 - 3) * ((100vw - 360px) / (1200 - 360)));
+         border-radius: calc(6px + (10 - 6) * ((100vw - 360px) / (1200 - 360)));
       }
 
       &__btn {
          font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1200 - 360)));
          width: calc(130px + (200 - 130) * ((100vw - 360px) / (1200 - 360)));
+         border-radius: calc(6px + (10 - 6) * ((100vw - 360px) / (1200 - 360)));
       }
    }
 }

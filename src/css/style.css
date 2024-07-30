@@ -1077,10 +1077,12 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.artifacts-card .buy-now__img {
+.artifacts-card .buy-now__image {
   position: relative;
   z-index: 10;
   width: 49%;
+}
+.artifacts-card .buy-now__img {
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1437,7 +1439,7 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .artifacts-card .buy-now__img {
+  .artifacts-card .buy-now__image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1490,9 +1492,11 @@ ul {
   }
   .artifacts-card .buy-now__img {
     border-radius: 0;
+    width: 100%;
   }
   .artifacts-card .buy-now__img > img {
     border-radius: 0;
+    width: 100%;
   }
   .artifacts-card .buy-now__info {
     padding-left: 20px;
@@ -6963,6 +6967,12 @@ ul {
   padding-bottom: 5px;
   border-bottom: #f2e8de 2px solid;
   margin-bottom: 10px;
+  height: 40px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
 }
 .cards__title a {
   font-size: 18px;
@@ -6981,9 +6991,12 @@ ul {
 .cards__text {
   text-align: center;
   margin-bottom: 16px;
-  -webkit-box-flex: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
+  height: 33px;
+  -webkit-box-flex: 16;
+  -ms-flex-positive: 16;
+  flex-grow: 16;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   max-width: calc(100% - 20px);
 }
 .cards__text a {
@@ -7048,22 +7061,35 @@ ul {
   .cards__container {
     gap: calc(15px + 15 * (100vw - 360px) / 840) calc(10px + 20 * (100vw - 360px) / 840);
   }
-  .cards__item {
+  .cards__item,
+  .cards [class^=cards__swiper_] {
     width: calc(155px + 115 * (100vw - 360px) / 840);
+    height: calc(360px + 122 * (100vw - 360px) / 840);
   }
   .cards__title {
+    width: calc(100% - 20px);
+    text-align: center;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+  }
+  .cards__title a {
     font-size: calc(14px + 4 * (100vw - 360px) / 840);
   }
-  .cards__text {
+  .cards__text a {
     font-size: calc(12px + 4 * (100vw - 360px) / 840);
   }
   .cards__price {
     font-size: calc(15px + 5 * (100vw - 360px) / 840);
     width: calc(100px + 50 * (100vw - 360px) / 840);
+    padding-top: calc(3px + 4 * (100vw - 360px) / 840);
+    padding-bottom: calc(3px + 4 * (100vw - 360px) / 840);
+    border-radius: calc(6px + 4 * (100vw - 360px) / 840);
   }
   .cards__btn {
     font-size: calc(14px + 2 * (100vw - 360px) / 840);
     width: calc(130px + 70 * (100vw - 360px) / 840);
+    border-radius: calc(6px + 4 * (100vw - 360px) / 840);
   }
 }
 .cart-menu__item {

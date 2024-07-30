@@ -48,10 +48,13 @@
          justify-content: space-between;
       }
 
-      &__img {
+      &__image {
          position: relative;
          z-index: 10;
          width: 49%;
+      }
+
+      &__img {
          border-radius: 10px;
          overflow: hidden;
 
@@ -429,7 +432,7 @@
             padding-right: 20px;
          }
 
-         &__img {
+         &__image {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -495,9 +498,11 @@
 
          &__img {
             border-radius: 0;
+            width: 100%;
 
             & > img {
                border-radius: 0;
+               width: 100%;
             }
          }
 

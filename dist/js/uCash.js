@@ -16,6 +16,7 @@ export default function uCash() {
   //   ".slider-swiper .swiper-slide-active img"
   // ).attributes.src.value;
 
+  // Наблюдатель
   // Находим элемент (ноду) для отслеживания
   const sliderActive = document.querySelector(
     ".slider-swiper .slider__wrapper"

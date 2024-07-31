@@ -16,26 +16,34 @@ export default function uCash() {
   //   ".slider-swiper .swiper-slide-active img"
   // ).attributes.src.value;
 
-  // Наблюдатель
   // Находим элемент (ноду) для отслеживания
   const sliderActive = document.querySelector(
     ".slider-swiper .slider__wrapper"
   );
 
+  // Находим рамку для размещения картинки
+  const buyNowImg = document.querySelector(".buy-now__img>img");
+
+  const winWidth = window.innerWidth;
+
+  // При смене слайда, в слайдере изменяется класс двух элементов,
+  // поэтому, будем реагировать по окончании этого процесса
   let observerCounter = 0;
+
+  // При загрузке страницы
+  checkWinWidth();
+
+  // При изменениях ширины окна
+  window.addEventListener("resize", (event) => {
+    checkWinWidth();
+  });
 
   // Создаём наблюдателя
   let observer = new MutationObserver((mutationRecords) => {
     console.log("Произошли изменения");
-    console.log(observerCounter++);
     if (observerCounter % 2 == 0) {
-      console.log(
-        document.querySelector(".slider-swiper .swiper-slide-active img")
-          .attributes.src.value
-      );
+      checkWinWidth();
     }
-    // sliderActive = document.querySelector(".slider-swiper .slider__wrapper");
-    // console.log(mutationRecords); // console.log(изменения)
   });
 
   // Задаём наблюдателю объект наблюдения и какие изменения отслеживать
@@ -89,5 +97,23 @@ export default function uCash() {
   function popUpInvisible() {
     buyNowPopUp.classList.remove("opacity--max");
     buyNowPopUp.classList.add("opacity--zero");
+  }
+
+  function checkWinWidth() {
+    if (window.innerWidth < 500) {
+      buyNowImg.setAttribute(
+        "src",
+        document
+          .querySelector(".slider-swiper .swiper-slide-active img")
+          .getAttribute("src")
+      );
+    } else {
+      buyNowImg.setAttribute(
+        "src",
+        document
+          .querySelector(".slider-swiper .swiper-slide-next img")
+          .getAttribute("src")
+      );
+    }
   }
 }

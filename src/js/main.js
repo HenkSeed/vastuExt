@@ -66,7 +66,7 @@ const artifactsSlider = new Swiper(".artifacts-card .slider-swiper", {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-    769: {
+    500: {
       slidesPerView: 3,
       spaceBetween: 15,
     },
